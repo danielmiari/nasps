@@ -1,0 +1,831 @@
+[
+ {
+  "type": "begin",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Logo + Nav"
+ },
+ {
+  "type": "link",
+  "href": "../",
+  "name": "Logo",
+  "label": "",
+  "children": [
+   {
+    "type": "image",
+    "src": "assets/images/pyaDngF6J38whdYhhBSMKD5Qug.png",
+    "w": "2421",
+    "h": "510",
+    "alt": ""
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo + Nav"
+ },
+ {
+  "type": "begin",
+  "name": "Navigation"
+ },
+ {
+  "type": "link",
+  "href": "../",
+  "name": "Menu",
+  "label": "Home",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "Home"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "../about",
+  "name": "Menu",
+  "label": "About us",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "About us"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "../project",
+  "name": "Menu",
+  "label": "Project",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "Project"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Navigation"
+ },
+ {
+  "type": "link",
+  "href": "../contact",
+  "name": "Default",
+  "label": "CONTACT US CONTACT US CONTACT US",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Spacer"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "CONTACT US"
+   },
+   {
+    "type": "end",
+    "name": "Spacer"
+   },
+   {
+    "type": "begin",
+    "name": "Content"
+   },
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "CONTACT US"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "end",
+    "name": "Content"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Spacer"
+ },
+ {
+  "type": "end",
+  "name": "Spacer"
+ },
+ {
+  "type": "begin",
+  "name": "Project Title"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Main"
+ },
+ {
+  "type": "begin",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Subtitle"
+ },
+ {
+  "type": "begin",
+  "name": "Icon"
+ },
+ {
+  "type": "begin",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Icon"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Project"
+ },
+ {
+  "type": "end",
+  "name": "Subtitle"
+ },
+ {
+  "type": "text",
+  "tag": "h1",
+  "style": "display",
+  "html": "Scandic - Sälen"
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Scandic is expanding in Sweden with a new hotel in Sälen featuring 120 rooms, 16 apartments, and conference facilities, set to open in the 2027/2028 season. The hotel will offer a prime ski-in/ski-out location along with a wellness area including a sauna, gym, and pool. The investment is part of Scandic’s strategy to strengthen its position in the Nordic market. It also responds to growing demand from both winter and summer tourism."
+ },
+ {
+  "type": "end",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Details"
+ },
+ {
+  "type": "begin",
+  "name": "Client"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "Client"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Nordisk Pål och Borrteknik AB"
+ },
+ {
+  "type": "end",
+  "name": "Client"
+ },
+ {
+  "type": "begin",
+  "name": "Service"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "Service"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Supply of SDA"
+ },
+ {
+  "type": "end",
+  "name": "Service"
+ },
+ {
+  "type": "begin",
+  "name": "Year"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "Year"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "2026 -"
+ },
+ {
+  "type": "end",
+  "name": "Year"
+ },
+ {
+  "type": "begin",
+  "name": "Location"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "Location"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Sälen - Sweden"
+ },
+ {
+  "type": "end",
+  "name": "Location"
+ },
+ {
+  "type": "end",
+  "name": "Details"
+ },
+ {
+  "type": "link",
+  "href": "../contact",
+  "name": "Default",
+  "label": "Drop us a line",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "Drop us a line"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "begin",
+    "name": "Color"
+   },
+   {
+    "type": "begin",
+    "name": "Main Color"
+   },
+   {
+    "type": "end",
+    "name": "Main Color"
+   },
+   {
+    "type": "begin",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Color"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Main"
+ },
+ {
+  "type": "begin",
+  "name": "Image"
+ },
+ {
+  "type": "image",
+  "src": "assets/images/S8T2JhZ2BzcbjyyCxze77JzdZB0.jpeg",
+  "w": "4284",
+  "h": "5712",
+  "alt": ""
+ },
+ {
+  "type": "end",
+  "name": "Image"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Project Title"
+ },
+ {
+  "type": "begin",
+  "name": "Content Section"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Image"
+ },
+ {
+  "type": "begin",
+  "name": "Image"
+ },
+ {
+  "type": "image",
+  "src": "assets/images/8n1q4Y39wDEtbGYSgXgK0OaWFMM.png",
+  "w": "354",
+  "h": "360",
+  "alt": ""
+ },
+ {
+  "type": "begin",
+  "name": "Image"
+ },
+ {
+  "type": "image",
+  "src": "assets/images/Zf7fUJNNublYBMWIJAha1pxr5Q.jpeg",
+  "w": "4284",
+  "h": "5712",
+  "alt": ""
+ },
+ {
+  "type": "end",
+  "name": "Image"
+ },
+ {
+  "type": "end",
+  "name": "Image"
+ },
+ {
+  "type": "end",
+  "name": "Image"
+ },
+ {
+  "type": "begin",
+  "name": "Image"
+ },
+ {
+  "type": "begin",
+  "name": "Image"
+ },
+ {
+  "type": "image",
+  "src": "assets/images/N5ERvuO8iL6eZQthosuWFW5rDA.jpeg",
+  "w": "3024",
+  "h": "4032",
+  "alt": ""
+ },
+ {
+  "type": "end",
+  "name": "Image"
+ },
+ {
+  "type": "end",
+  "name": "Image"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Content Section"
+ },
+ {
+  "type": "begin",
+  "name": "CTA"
+ },
+ {
+  "type": "begin",
+  "name": "Background"
+ },
+ {
+  "type": "begin",
+  "name": "Background Image"
+ },
+ {
+  "type": "image",
+  "src": "assets/images/BwQCIkMmoEDfYfMiPDBzBxTvUQs.jpg",
+  "w": "2000",
+  "h": "1525",
+  "alt": ""
+ },
+ {
+  "type": "end",
+  "name": "Background Image"
+ },
+ {
+  "type": "begin",
+  "name": "Cover"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Section Title"
+ },
+ {
+  "type": "begin",
+  "name": "Title"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Get in Touch with NASPS"
+ },
+ {
+  "type": "text",
+  "tag": "h2",
+  "style": "h2",
+  "html": "Collaboration, Work Enquires or Just Say Hello."
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Contact us today, and we're here to guide you from design to construction."
+ },
+ {
+  "type": "end",
+  "name": "Section Title"
+ },
+ {
+  "type": "link",
+  "href": "../contact",
+  "name": "Default",
+  "label": "Drop us a line",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "Drop us a line"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "begin",
+    "name": "Color"
+   },
+   {
+    "type": "begin",
+    "name": "Main Color"
+   },
+   {
+    "type": "end",
+    "name": "Main Color"
+   },
+   {
+    "type": "begin",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Color"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Cover"
+ },
+ {
+  "type": "end",
+  "name": "Background"
+ },
+ {
+  "type": "end",
+  "name": "CTA"
+ },
+ {
+  "type": "begin",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Cover"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "begin",
+  "name": "Main"
+ },
+ {
+  "type": "begin",
+  "name": "Logo"
+ },
+ {
+  "type": "begin",
+  "name": "Logo"
+ },
+ {
+  "type": "link",
+  "href": "../",
+  "name": "Logo",
+  "label": "",
+  "children": [
+   {
+    "type": "image",
+    "src": "assets/images/pyaDngF6J38whdYhhBSMKD5Qug.png",
+    "w": "2421",
+    "h": "510",
+    "alt": ""
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo"
+ },
+ {
+  "type": "link",
+  "href": "../contact",
+  "name": "Default",
+  "label": "Drop us a line",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "Drop us a line"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "begin",
+    "name": "Color"
+   },
+   {
+    "type": "begin",
+    "name": "Main Color"
+   },
+   {
+    "type": "end",
+    "name": "Main Color"
+   },
+   {
+    "type": "begin",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Color"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo"
+ },
+ {
+  "type": "begin",
+  "name": "Links"
+ },
+ {
+  "type": "begin",
+  "name": "Widget"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6-sm",
+  "html": "Links"
+ },
+ {
+  "type": "begin",
+  "name": "Link"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"../\">Home</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"../about\">About</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"../product-hot-dip\">Services</a>"
+ },
+ {
+  "type": "end",
+  "name": "Link"
+ },
+ {
+  "type": "end",
+  "name": "Widget"
+ },
+ {
+  "type": "begin",
+  "name": "Widget"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6-sm",
+  "html": "Support"
+ },
+ {
+  "type": "begin",
+  "name": "Link"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"../contact\">Contact us</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"../blog\">News</a>"
+ },
+ {
+  "type": "end",
+  "name": "Link"
+ },
+ {
+  "type": "end",
+  "name": "Widget"
+ },
+ {
+  "type": "end",
+  "name": "Links"
+ },
+ {
+  "type": "end",
+  "name": "Main"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "begin",
+  "name": "Copyright"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "Copyright: © 2026 NASPS. All Rights Reserved."
+ },
+ {
+  "type": "end",
+  "name": "Copyright"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Cover"
+ },
+ {
+  "type": "end",
+  "name": "Desktop"
+ }
+]

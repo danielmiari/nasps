@@ -1,0 +1,1438 @@
+[
+ {
+  "type": "begin",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Logo + Nav"
+ },
+ {
+  "type": "link",
+  "href": "./",
+  "name": "Logo",
+  "label": "",
+  "children": [
+   {
+    "type": "image",
+    "src": "assets/images/pyaDngF6J38whdYhhBSMKD5Qug.png",
+    "w": "2421",
+    "h": "510",
+    "alt": ""
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo + Nav"
+ },
+ {
+  "type": "begin",
+  "name": "Navigation"
+ },
+ {
+  "type": "link",
+  "href": "./",
+  "name": "Menu",
+  "label": "Home",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "Home"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "./about",
+  "name": "Menu",
+  "label": "About us",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "About us"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "./project",
+  "name": "Menu",
+  "label": "Project",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "Project"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Navigation"
+ },
+ {
+  "type": "link",
+  "href": "./contact",
+  "name": "Default",
+  "label": "CONTACT US CONTACT US CONTACT US",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Spacer"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "CONTACT US"
+   },
+   {
+    "type": "end",
+    "name": "Spacer"
+   },
+   {
+    "type": "begin",
+    "name": "Content"
+   },
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "CONTACT US"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "end",
+    "name": "Content"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Spacer"
+ },
+ {
+  "type": "end",
+  "name": "Spacer"
+ },
+ {
+  "type": "begin",
+  "name": "Hero"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Hero Title"
+ },
+ {
+  "type": "begin",
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Transforming Dream"
+ },
+ {
+  "type": "text",
+  "tag": "h2",
+  "style": "h2",
+  "html": "Specialized products for"
+ },
+ {
+  "type": "begin",
+  "name": "Icon"
+ },
+ {
+  "type": "image",
+  "src": "assets/images/hMmb1WkPBHp9B6truLHX8uD3CZI.png",
+  "w": "63",
+  "h": "55",
+  "alt": ""
+ },
+ {
+  "type": "end",
+  "name": "Icon"
+ },
+ {
+  "type": "end",
+  "name": "Transforming Dream"
+ },
+ {
+  "type": "begin",
+  "name": "Into Reality"
+ },
+ {
+  "type": "text",
+  "tag": "h2",
+  "style": "h2",
+  "html": "modern foundation engineering"
+ },
+ {
+  "type": "end",
+  "name": "Into Reality"
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Content"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Our focus is on functionality, production efficiency, and technical precision — products that perform in real-world conditions, under real-world demands."
+ },
+ {
+  "type": "link",
+  "href": "./project",
+  "name": "Fixed",
+  "label": "View Projects",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "View Projects"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "begin",
+    "name": "Color"
+   },
+   {
+    "type": "begin",
+    "name": "Main Color"
+   },
+   {
+    "type": "end",
+    "name": "Main Color"
+   },
+   {
+    "type": "begin",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Color"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Content"
+ },
+ {
+  "type": "end",
+  "name": "Hero Title"
+ },
+ {
+  "type": "begin",
+  "name": "Desktop/01"
+ },
+ {
+  "type": "image",
+  "src": "assets/images/baOhnJ42x3Zd9NuecnW2H77vxWM.png",
+  "w": "1536",
+  "h": "1024",
+  "alt": ""
+ },
+ {
+  "type": "begin",
+  "name": "Cover"
+ },
+ {
+  "type": "begin",
+  "name": "Main Content"
+ },
+ {
+  "type": "begin",
+  "name": "Content"
+ },
+ {
+  "type": "begin",
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Subtitle"
+ },
+ {
+  "type": "begin",
+  "name": "Icon"
+ },
+ {
+  "type": "begin",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Icon"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Nordic Anchor &amp; Steel Pile Supply AB - NASPS"
+ },
+ {
+  "type": "end",
+  "name": "Subtitle"
+ },
+ {
+  "type": "text",
+  "tag": "h3",
+  "style": "h3",
+  "html": "Specialized products for modern foundation engineering."
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "Nordic Anchor &amp; Steel Pile Supply AB (NASPS) is a specialized supplier of engineered systems and components for foundation construction, geotechnical works, and infrastructure applications.\nWe provide self-drilling anchors, steel pile and interlock solutions, grouting equipment, drilling tools, and associated accessories for contractors operating in technically demanding ground conditions across the Nordic region and Europe.\nOur product portfolio is selected and developed with focus on structural performance, installation efficiency, dimensional accuracy, durability, and site-proven functionality. NASPS supports projects where reliable load transfer, efficient drilling performance, controlled grouting, and robust execution methods are critical to achieving safe and cost-effective construction outcomes."
+ },
+ {
+  "type": "end",
+  "name": "Content"
+ },
+ {
+  "type": "end",
+  "name": "Main Content"
+ },
+ {
+  "type": "end",
+  "name": "Cover"
+ },
+ {
+  "type": "end",
+  "name": "Desktop/01"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Hero"
+ },
+ {
+  "type": "begin",
+  "name": "Quote Section"
+ },
+ {
+  "type": "begin",
+  "name": "Background"
+ },
+ {
+  "type": "begin",
+  "name": "Background Image"
+ },
+ {
+  "type": "image",
+  "src": "assets/images/Hcgpx6Vg09DBH4uxjSm6lebpj0.png",
+  "w": "1536",
+  "h": "1024",
+  "alt": ""
+ },
+ {
+  "type": "end",
+  "name": "Background Image"
+ },
+ {
+  "type": "begin",
+  "name": "Cover"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Quotes"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6",
+  "html": "\"<em>Through our work in foundation, engineering and infrastructure support, we help create safer communities and more resilient built environments.<br>Every project contributes to the stability beneath homes, workplaces, transport systems, and critical infrastructure.<br><br>As we continue to grow internationally, our ability to make a positive impact on people, families, and communities will grow with us.</em>\""
+ },
+ {
+  "type": "end",
+  "name": "Quotes"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Cover"
+ },
+ {
+  "type": "end",
+  "name": "Background"
+ },
+ {
+  "type": "end",
+  "name": "Quote Section"
+ },
+ {
+  "type": "begin",
+  "name": "Our Service"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Desktop/01"
+ },
+ {
+  "type": "begin",
+  "name": "Content"
+ },
+ {
+  "type": "begin",
+  "name": "Title Section"
+ },
+ {
+  "type": "begin",
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Subtitle"
+ },
+ {
+  "type": "begin",
+  "name": "Icon"
+ },
+ {
+  "type": "begin",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Icon"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "PRODUCTS"
+ },
+ {
+  "type": "end",
+  "name": "Subtitle"
+ },
+ {
+  "type": "text",
+  "tag": "h2",
+  "style": "h2",
+  "html": "R Thread Self Drilling Anchor Bolt System"
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "R thread self drilling anchor bolt system performs drilling, grouting &amp; anchoring in one step. <br>Easy to process and no risks of drill hole collapse. Suitable for unstable conditions."
+ },
+ {
+  "type": "end",
+  "name": "Title Section"
+ },
+ {
+  "type": "begin",
+  "name": "Service List"
+ },
+ {
+  "type": "begin",
+  "name": "Title List"
+ },
+ {
+  "type": "begin",
+  "name": "Title 01"
+ },
+ {
+  "type": "begin",
+  "name": "Active"
+ },
+ {
+  "type": "begin",
+  "name": "Big/Active"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6-sm",
+  "html": "R Thread Self Drilling Anchor Bolt System"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Big/Active"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "01"
+ },
+ {
+  "type": "end",
+  "name": "Active"
+ },
+ {
+  "type": "end",
+  "name": "Title 01"
+ },
+ {
+  "type": "begin",
+  "name": "Title 02"
+ },
+ {
+  "type": "begin",
+  "name": "Default"
+ },
+ {
+  "type": "begin",
+  "name": "Big/No Link"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6-sm",
+  "html": "T thread self drilling hollow rock bolt"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Big/No Link"
+ },
+ {
+  "type": "end",
+  "name": "Default"
+ },
+ {
+  "type": "end",
+  "name": "Title 02"
+ },
+ {
+  "type": "begin",
+  "name": "Title 04"
+ },
+ {
+  "type": "begin",
+  "name": "Default"
+ },
+ {
+  "type": "begin",
+  "name": "Big/No Link"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6-sm",
+  "html": "Stainless Steel Self Drilling Anchor Bolt"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Big/No Link"
+ },
+ {
+  "type": "end",
+  "name": "Default"
+ },
+ {
+  "type": "end",
+  "name": "Title 04"
+ },
+ {
+  "type": "begin",
+  "name": "Title 05"
+ },
+ {
+  "type": "begin",
+  "name": "Default"
+ },
+ {
+  "type": "begin",
+  "name": "Big/No Link"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6-sm",
+  "html": "Hot-dip Galvanizing Rock Bolts System"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Big/No Link"
+ },
+ {
+  "type": "end",
+  "name": "Default"
+ },
+ {
+  "type": "end",
+  "name": "Title 05"
+ },
+ {
+  "type": "begin",
+  "name": "Title 06"
+ },
+ {
+  "type": "begin",
+  "name": "Default"
+ },
+ {
+  "type": "begin",
+  "name": "Big/No Link"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6-sm",
+  "html": "Duplex Coating Rock Bolt"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Big/No Link"
+ },
+ {
+  "type": "end",
+  "name": "Default"
+ },
+ {
+  "type": "end",
+  "name": "Title 06"
+ },
+ {
+  "type": "end",
+  "name": "Title List"
+ },
+ {
+  "type": "begin",
+  "name": "Description"
+ },
+ {
+  "type": "begin",
+  "name": "Title"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6",
+  "html": "R Thread Self Drilling Anchor Bolt System"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "R thread self drilling anchor bolt system is composed by hollow rock bolt, anchor nut, anchor plate, anchor coupler, drill bit, centralizer, and the hollow anchor bars can be cut and lengthened by coupling on request."
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "link",
+  "href": "./product-r-thread",
+  "name": "Fixed",
+  "label": "READ MORE",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "READ MORE"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "begin",
+    "name": "Color"
+   },
+   {
+    "type": "begin",
+    "name": "Main Color"
+   },
+   {
+    "type": "end",
+    "name": "Main Color"
+   },
+   {
+    "type": "begin",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Color"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Description"
+ },
+ {
+  "type": "end",
+  "name": "Service List"
+ },
+ {
+  "type": "begin",
+  "name": "Image"
+ },
+ {
+  "type": "image",
+  "src": "assets/images/Pbk4MyEU538FtAGhuWR6brBHfUA.png",
+  "w": "1537",
+  "h": "1023",
+  "alt": ""
+ },
+ {
+  "type": "end",
+  "name": "Image"
+ },
+ {
+  "type": "end",
+  "name": "Content"
+ },
+ {
+  "type": "end",
+  "name": "Desktop/01"
+ },
+ {
+  "type": "begin",
+  "name": "Spacer 02"
+ },
+ {
+  "type": "end",
+  "name": "Spacer 02"
+ },
+ {
+  "type": "begin",
+  "name": "Spacer 05"
+ },
+ {
+  "type": "end",
+  "name": "Spacer 05"
+ },
+ {
+  "type": "begin",
+  "name": "Spacer 06"
+ },
+ {
+  "type": "end",
+  "name": "Spacer 06"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Our Service"
+ },
+ {
+  "type": "begin",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Subtitle"
+ },
+ {
+  "type": "begin",
+  "name": "Icon"
+ },
+ {
+  "type": "begin",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Icon"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "You're in Good Hands"
+ },
+ {
+  "type": "end",
+  "name": "Subtitle"
+ },
+ {
+  "type": "text",
+  "tag": "h2",
+  "style": "h2",
+  "html": "Passionate Expertise, Collaborative Brilliance"
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Team List"
+ },
+ {
+  "type": "link",
+  "href": "https://twitter.com",
+  "name": "Variant 1",
+  "label": "Kim Rasmussen Co-Founder/Co-owner, Senior Advisor, Sales IG64, DTH kim@nasps.se",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Image"
+   },
+   {
+    "type": "image",
+    "src": "assets/images/NO3EV3gw5rPeJC4ulAqO0Chpkc.png",
+    "w": "1500",
+    "h": "2000",
+    "alt": ""
+   },
+   {
+    "type": "end",
+    "name": "Image"
+   },
+   {
+    "type": "begin",
+    "name": "Description"
+   },
+   {
+    "type": "text",
+    "tag": "h6",
+    "style": "h6",
+    "html": "Kim Rasmussen"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "xs",
+    "html": "Co-Founder/Co-owner, Senior Advisor, Sales IG64, DTH"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "xs",
+    "html": "kim@nasps.se"
+   },
+   {
+    "type": "end",
+    "name": "Description"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "https://twitter.com",
+  "name": "Variant 1",
+  "label": "Ingemar Andersson Co-Founder/Co-owner, Senior Advisor, Sales IG64, DTH, DaiPra ingemar@nasps.se",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Image"
+   },
+   {
+    "type": "image",
+    "src": "assets/images/6kNwUeXEnS521sTNiQPdaQxHw.png",
+    "w": "1290",
+    "h": "2796",
+    "alt": ""
+   },
+   {
+    "type": "end",
+    "name": "Image"
+   },
+   {
+    "type": "begin",
+    "name": "Description"
+   },
+   {
+    "type": "text",
+    "tag": "h6",
+    "style": "h6",
+    "html": "Ingemar Andersson"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "xs",
+    "html": "Co-Founder/Co-owner, Senior Advisor, Sales IG64, DTH, DaiPra"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "xs",
+    "html": "ingemar@nasps.se"
+   },
+   {
+    "type": "end",
+    "name": "Description"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "https://twitter.com",
+  "name": "Variant 1",
+  "label": "Jukka Ahonen Co-Founder/Co-owner, Senior Advisor, Sales IG64, DTH, DaiPra, MAIT jukka@nasps.se",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Image"
+   },
+   {
+    "type": "image",
+    "src": "assets/images/Mdf3KpIOjryiDWhH45YOt00RBaI.png",
+    "w": "1254",
+    "h": "1254",
+    "alt": ""
+   },
+   {
+    "type": "end",
+    "name": "Image"
+   },
+   {
+    "type": "begin",
+    "name": "Description"
+   },
+   {
+    "type": "text",
+    "tag": "h6",
+    "style": "h6",
+    "html": "Jukka Ahonen"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "xs",
+    "html": "Co-Founder/Co-owner, Senior Advisor, Sales IG64, DTH, DaiPra, MAIT"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "xs",
+    "html": "jukka@nasps.se"
+   },
+   {
+    "type": "end",
+    "name": "Description"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Team List"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "CTA"
+ },
+ {
+  "type": "begin",
+  "name": "Background"
+ },
+ {
+  "type": "begin",
+  "name": "Background Image"
+ },
+ {
+  "type": "image",
+  "src": "assets/images/Hcgpx6Vg09DBH4uxjSm6lebpj0.png",
+  "w": "1536",
+  "h": "1024",
+  "alt": ""
+ },
+ {
+  "type": "end",
+  "name": "Background Image"
+ },
+ {
+  "type": "begin",
+  "name": "Cover"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Section Title"
+ },
+ {
+  "type": "begin",
+  "name": "Title"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Get in Touch with NASPS"
+ },
+ {
+  "type": "text",
+  "tag": "h2",
+  "style": "h2",
+  "html": "Collaboration, Work Enquires or Just Say Hello."
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Contact us today, and  we're here to guide you from design to construction."
+ },
+ {
+  "type": "end",
+  "name": "Section Title"
+ },
+ {
+  "type": "link",
+  "href": "./contact",
+  "name": "Default",
+  "label": "Drop us a line",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "Drop us a line"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "begin",
+    "name": "Color"
+   },
+   {
+    "type": "begin",
+    "name": "Main Color"
+   },
+   {
+    "type": "end",
+    "name": "Main Color"
+   },
+   {
+    "type": "begin",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Color"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Cover"
+ },
+ {
+  "type": "end",
+  "name": "Background"
+ },
+ {
+  "type": "end",
+  "name": "CTA"
+ },
+ {
+  "type": "begin",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Cover"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "begin",
+  "name": "Main"
+ },
+ {
+  "type": "begin",
+  "name": "Logo"
+ },
+ {
+  "type": "begin",
+  "name": "Logo"
+ },
+ {
+  "type": "link",
+  "href": "./",
+  "name": "Logo",
+  "label": "",
+  "children": [
+   {
+    "type": "image",
+    "src": "assets/images/pyaDngF6J38whdYhhBSMKD5Qug.png",
+    "w": "2421",
+    "h": "510",
+    "alt": ""
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo"
+ },
+ {
+  "type": "link",
+  "href": "./contact",
+  "name": "Default",
+  "label": "Drop us a line",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "Drop us a line"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "begin",
+    "name": "Color"
+   },
+   {
+    "type": "begin",
+    "name": "Main Color"
+   },
+   {
+    "type": "end",
+    "name": "Main Color"
+   },
+   {
+    "type": "begin",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Color"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo"
+ },
+ {
+  "type": "begin",
+  "name": "Links"
+ },
+ {
+  "type": "begin",
+  "name": "Widget"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6-sm",
+  "html": "Links"
+ },
+ {
+  "type": "begin",
+  "name": "Link"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./\">Home</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./about\">About</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./product-hot-dip\">Services</a>"
+ },
+ {
+  "type": "end",
+  "name": "Link"
+ },
+ {
+  "type": "end",
+  "name": "Widget"
+ },
+ {
+  "type": "begin",
+  "name": "Widget"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6-sm",
+  "html": "Support"
+ },
+ {
+  "type": "begin",
+  "name": "Link"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./contact\">Contact us</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./blog\">News</a>"
+ },
+ {
+  "type": "end",
+  "name": "Link"
+ },
+ {
+  "type": "end",
+  "name": "Widget"
+ },
+ {
+  "type": "end",
+  "name": "Links"
+ },
+ {
+  "type": "end",
+  "name": "Main"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "begin",
+  "name": "Copyright"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "Copyright: © 2026 NASPS. All Rights Reserved."
+ },
+ {
+  "type": "end",
+  "name": "Copyright"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Cover"
+ },
+ {
+  "type": "end",
+  "name": "Desktop"
+ }
+]

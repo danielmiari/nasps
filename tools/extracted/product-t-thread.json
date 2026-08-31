@@ -1,0 +1,712 @@
+[
+ {
+  "type": "begin",
+  "name": "Tablet"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Logo + Nav"
+ },
+ {
+  "type": "link",
+  "href": "./",
+  "name": "Logo",
+  "label": "",
+  "children": [
+   {
+    "type": "image",
+    "src": "assets/images/pyaDngF6J38whdYhhBSMKD5Qug.png",
+    "w": "2421",
+    "h": "510",
+    "alt": ""
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo + Nav"
+ },
+ {
+  "type": "begin",
+  "name": "Navigation"
+ },
+ {
+  "type": "link",
+  "href": "./",
+  "name": "Menu",
+  "label": "Home",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "Home"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "./about",
+  "name": "Menu",
+  "label": "About us",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "About us"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "./project",
+  "name": "Menu",
+  "label": "Project",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "Project"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Navigation"
+ },
+ {
+  "type": "link",
+  "href": "./contact",
+  "name": "Default",
+  "label": "CONTACT US CONTACT US CONTACT US",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Spacer"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "CONTACT US"
+   },
+   {
+    "type": "end",
+    "name": "Spacer"
+   },
+   {
+    "type": "begin",
+    "name": "Content"
+   },
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "CONTACT US"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "end",
+    "name": "Content"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Tablet"
+ },
+ {
+  "type": "begin",
+  "name": "Spacer"
+ },
+ {
+  "type": "end",
+  "name": "Spacer"
+ },
+ {
+  "type": "begin",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Image"
+ },
+ {
+  "type": "image",
+  "src": "assets/images/RvwDomKxByGKMr4EPsmiL3lN5HM.png",
+  "w": "1444",
+  "h": "1089",
+  "alt": ""
+ },
+ {
+  "type": "end",
+  "name": "Image"
+ },
+ {
+  "type": "text",
+  "tag": "h2",
+  "style": "h2",
+  "html": "T  Thread Self Drilling Anchor Bolt System"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<strong>Description：</strong><br>T thread self-drilling rock bolts, a wide range of diameter, and more powerful support. Widely used in complicated, loose, narrow spaces and broken geological conditions."
+ },
+ {
+  "type": "begin",
+  "name": "Button"
+ },
+ {
+  "type": "begin",
+  "name": "Button"
+ },
+ {
+  "type": "end",
+  "name": "Button"
+ },
+ {
+  "type": "end",
+  "name": "Button"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Subtitle"
+ },
+ {
+  "type": "begin",
+  "name": "Icon"
+ },
+ {
+  "type": "begin",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Icon"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "INTRODUCTION"
+ },
+ {
+  "type": "end",
+  "name": "Subtitle"
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "As an efficient anchoring method, self drilling rock bolt is used in complicated, loose and broken geological condition. It’s widely applied to pre-support project, radial support project, slope stabilization, foundation support project, roadway support project, soil nail wall, back pull anchor rod retaining wall and other rock supporting work.<br><br><strong>Functions:</strong><br>Self drilling rock bolt system is an advanced system which can ensure the anchoring effect for complex ground conditions. It can be integrated with the functions of drilling, grouting and anchoring.<br><br><strong>Conditions:</strong><br>Self drilling rock bolt system is mainly used for slope stabilization, foundation with micropiles and tunneling, it’s also widely used in the railway system, metro project, etc. It can be installed in sites with weak rocks, loose soil, weathered layer, sand with stone layer and so difficult to create a hole in complex formation. The unconsolidated ground condition favor the self drilling anchor bolt technique for fast and simple method of installed compared to the traditional method."
+ },
+ {
+  "type": "end",
+  "name": "Page Title"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Title"
+ },
+ {
+  "type": "text",
+  "tag": "h1",
+  "style": "h3",
+  "html": "<strong>Featurs and Advantages</strong>"
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "1. It features a hollow bore for flushing, or simultaneous drilling and grouting.<br>2. Reliable, Efficient and Convenient.<br>3. Choice of drill bits for different ground conditions.<br>4. It can be elongated by using couplers.<br>5. Suitable for anchoring in broken geological condition and narrow space, which has achieved perfect effect."
+ },
+ {
+  "type": "text",
+  "tag": "h1",
+  "style": "h3",
+  "html": "<strong>Application</strong>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Hot dip galvanizing anchor bolt is especially suitable for various acid, alkali mist and other corrosive environments, as well as occasions with longer service life requirements and complex environments in geotechnical engineering."
+ },
+ {
+  "type": "end",
+  "name": "Page Title"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Page Title"
+ },
+ {
+  "type": "embed",
+  "html": "<style>\n  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap');\n  .tdt-root {\n    font-family: 'Barlow', sans-serif;\n    background: #F1EFEA;\n    color: #1a1a18;\n    padding: 32px 28px;\n    max-width: 100%;\n    box-sizing: border-box;\n  }\n  .tdt-tabs {\n    display: flex;\n    gap: 4px;\n    margin-bottom: 28px;\n    overflow-x: auto;\n    padding-bottom: 4px;\n    scrollbar-width: none;\n  }\n  .tdt-tabs::-webkit-scrollbar { display: none; }\n  .tdt-tab {\n    font-family: 'Barlow Condensed', sans-serif;\n    font-size: 13px; font-weight: 700; letter-spacing: 0.08em;\n    padding: 6px 16px; border: none; cursor: pointer; white-space: nowrap; flex-shrink: 0;\n    transition: background 0.15s, color 0.15s;\n    background: #d6d2c8; color: #6b6860;\n    clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 100%, 6px 100%);\n  }\n  .tdt-tab.active { background: #e8620a; color: #fff; }\n  .tdt-tab:hover:not(.active) { background: #c4bfb4; color: #1a1a18; }\n  .tdt-section { margin-bottom: 26px; }\n  .tdt-section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }\n  .tdt-section-icon { width: 36px; height: 36px; background: #e8620a; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }\n  .tdt-section-icon svg { width: 20px; height: 20px; fill: #fff; }\n  .tdt-section-title { font-family: 'Barlow Condensed', sans-serif; font-size: 16px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #1a1a18; }\n  .tdt-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }\n  .tdt-table thead tr { background: #2a2a26; color: #fff; }\n  .tdt-table thead th { padding: 7px 10px; font-weight: 600; text-align: center; white-space: nowrap; font-size: 11px; letter-spacing: 0.04em; }\n  .tdt-table thead th:first-child { text-align: left; }\n  .tdt-table tbody tr { border-bottom: 1px solid #ddd9d0; transition: background 0.1s; }\n  .tdt-table tbody tr:nth-child(even) { background: #ede9e2; }\n  .tdt-table tbody tr:hover { background: #fde8d6; }\n  .tdt-table tbody td { padding: 7px 10px; text-align: center; color: #333; }\n  .tdt-table tbody td:first-child { text-align: left; font-weight: 600; color: #1a1a18; }\n  .tdt-bit-group td {\n    font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 700;\n    letter-spacing: 0.08em; text-transform: uppercase;\n    background: rgba(232,98,10,0.12) !important; color: #b84a04;\n    padding: 4px 10px; border-left: 3px solid #e8620a; text-align: left !important;\n  }\n  .tdt-note { font-size: 11px; color: #666; text-align: left !important; }\n  .tdt-app { text-align: left !important; font-size: 11.5px; color: #555; }\n  .tdt-empty { text-align: center; padding: 16px; color: #aaa; font-size: 13px; font-style: italic; }\n</style><div class=\"tdt-root\"><div class=\"tdt-tabs\"><button class=\"tdt-tab active\">T30</button><button class=\"tdt-tab\">T40</button><button class=\"tdt-tab\">T52</button><button class=\"tdt-tab\">T73</button><button class=\"tdt-tab\">T76</button><button class=\"tdt-tab\">T103</button><button class=\"tdt-tab\">T111</button><button class=\"tdt-tab\">T127</button><button class=\"tdt-tab\">T130</button><button class=\"tdt-tab\">T150</button><button class=\"tdt-tab\">T200</button></div><div class=\"tdt-section\"><div class=\"tdt-section-header\"><div class=\"tdt-section-icon\"><svg viewBox=\"0 0 24 24\"><rect x=\"3\" y=\"10\" width=\"18\" height=\"4\" rx=\"2\"></rect><rect x=\"9\" y=\"7\" width=\"6\" height=\"10\" rx=\"1\" opacity=\".5\"></rect></svg></div><span class=\"tdt-section-title\">Hollow Anchor Bar</span></div><table class=\"tdt-table\"><thead><tr><th>Size</th><th>Outer Dia. (mm)</th><th>Ultimate Load (kN)</th><th>Yield Load (kN)</th><th>Weight (kg/m)</th></tr></thead><tbody><tr><td>SST30L</td><td>30</td><td>220</td><td>180</td><td>2.9</td></tr><tr><td>SST30N</td><td>30</td><td>260</td><td>220</td><td>3.35</td></tr><tr><td>SST30S</td><td>30</td><td>320</td><td>260</td><td>3.6</td></tr><tr><td>SET30S</td><td>30</td><td>320</td><td>260</td><td>3.35</td></tr></tbody></table></div><div class=\"tdt-section\"><div class=\"tdt-section-header\"><div class=\"tdt-section-icon\"><svg viewBox=\"0 0 24 24\"><rect x=\"2\" y=\"9\" width=\"20\" height=\"6\" rx=\"3\"></rect><rect x=\"7\" y=\"7\" width=\"4\" height=\"10\" rx=\"1\" opacity=\".6\"></rect><rect x=\"13\" y=\"7\" width=\"4\" height=\"10\" rx=\"1\" opacity=\".6\"></rect></svg></div><span class=\"tdt-section-title\">Coupler</span></div><table class=\"tdt-table\"><thead><tr><th>Size</th><th>Outer Dia. (mm)</th><th>Length (mm)</th><th>Weight (kg/pc)</th><th>Note</th></tr></thead><tbody><tr><td>SST30</td><td>38</td><td>105</td><td>0.39</td><td class=\"tdt-note\">With sealing structure</td></tr><tr><td>SET30</td><td>38</td><td>105</td><td>0.45</td><td class=\"tdt-note\">Without sealing structure</td></tr></tbody></table></div><div class=\"tdt-section\"><div class=\"tdt-section-header\"><div class=\"tdt-section-icon\"><svg viewBox=\"0 0 24 24\"><polygon points=\"12,2 20,7 20,17 12,22 4,17 4,7\"></polygon><circle cx=\"12\" cy=\"12\" r=\"3.5\" fill=\"#e8620a\"></circle></svg></div><span class=\"tdt-section-title\">Hex Nut</span></div><table class=\"tdt-table\"><thead><tr><th>Size</th><th>Key Size (mm)</th><th>Length (mm)</th><th>Weight (kg/pc)</th><th>Note</th></tr></thead><tbody><tr><td>SST30</td><td>46</td><td>35</td><td>0.29</td><td class=\"tdt-note\">Heat treatment</td></tr><tr><td>SET30</td><td>46</td><td>35</td><td>0.31</td><td class=\"tdt-note\">Without heat treatment</td></tr></tbody></table></div><div class=\"tdt-section\"><div class=\"tdt-section-header\"><div class=\"tdt-section-icon\"><svg viewBox=\"0 0 24 24\"><polygon points=\"12,2 20,7 20,17 12,22 4,17 4,7\"></polygon><circle cx=\"12\" cy=\"12\" r=\"3.5\" fill=\"#e8620a\"></circle></svg></div><span class=\"tdt-section-title\">Spherical Collar Nut</span></div><table class=\"tdt-table\"><thead><tr><th>Size</th><th>Key Size (mm)</th><th>Length (mm)</th><th>Weight (kg/pc)</th><th>Note</th></tr></thead><tbody><tr><td>SST30</td><td>46</td><td>35</td><td>0.33</td><td class=\"tdt-note\">Heat treatment</td></tr><tr><td>SET30</td><td>46</td><td>35</td><td>0.33</td><td class=\"tdt-note\">Without heat treatment</td></tr></tbody></table></div><div class=\"tdt-section\"><div class=\"tdt-section-header\"><div class=\"tdt-section-icon\"><svg viewBox=\"0 0 24 24\"><rect x=\"2\" y=\"6\" width=\"20\" height=\"12\" rx=\"1\"></rect><circle cx=\"12\" cy=\"12\" r=\"2.5\" fill=\"#e8620a\"></circle></svg></div><span class=\"tdt-section-title\">Flat Plate</span></div><table class=\"tdt-table\"><thead><tr><th>Size</th><th>Dimensions (mm)</th><th>Thickness (mm)</th><th>Hole Dia. (mm)</th><th>Weight (kg/pc)</th></tr></thead><tbody><tr><td>SST30</td><td>150×150</td><td>25</td><td>40</td><td>4.2</td></tr><tr><td></td><td>200×200</td><td>8</td><td>36</td><td>2.43</td></tr></tbody></table></div><div class=\"tdt-section\"><div class=\"tdt-section-header\"><div class=\"tdt-section-icon\"><svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\" stroke-width=\"2\" stroke=\"#fff\" fill=\"none\"></circle><circle cx=\"12\" cy=\"12\" r=\"4\"></circle></svg></div><span class=\"tdt-section-title\">Centralizer</span></div><table class=\"tdt-table\"><thead><tr><th>Size</th><th>Outer Dia. (mm)</th><th>Length (mm)</th><th>Weight (kg/pc)</th></tr></thead><tbody><tr><td>SET30</td><td>70</td><td>35</td><td>0.2</td></tr></tbody></table></div><div class=\"tdt-section\"><div class=\"tdt-section-header\"><div class=\"tdt-section-icon\"><svg viewBox=\"0 0 24 24\"><polygon points=\"12,3 21,9 18,20 6,20 3,9\"></polygon><circle cx=\"12\" cy=\"13\" r=\"3\" fill=\"#e8620a\"></circle></svg></div><span class=\"tdt-section-title\">Drill Bit</span></div><table class=\"tdt-table\"><thead><tr><th>Size</th><th>Outer Dia. (mm)</th><th class=\"tdt-app\">Application Range (Advice)</th></tr></thead><tbody><tr class=\"tdt-bit-group\"><td colspan=\"3\">EX</td></tr><tr><td>SST30/51</td><td>51</td><td class=\"tdt-app\">Sand, fills, gravel</td></tr><tr><td>SST30/76</td><td>76</td><td class=\"tdt-app\"></td></tr><tr class=\"tdt-bit-group\"><td colspan=\"3\">EXX</td></tr><tr><td>SST30/51</td><td>51</td><td class=\"tdt-app\">Softer sedimentary rocks such as marls, mudstones, siltstone</td></tr><tr><td>SST30/76</td><td>76</td><td class=\"tdt-app\"></td></tr><tr class=\"tdt-bit-group\"><td colspan=\"3\">EXX(Venturi)</td></tr><tr><td>SST30/63</td><td>63</td><td class=\"tdt-app\"></td></tr><tr class=\"tdt-bit-group\"><td colspan=\"3\">Clay Bit</td></tr><tr><td>SST30/76</td><td>76</td><td class=\"tdt-app\">Clay, soft soil, marls, loose sand or gravel</td></tr><tr><td>SST30/95</td><td>95</td><td class=\"tdt-app\"></td></tr><tr class=\"tdt-bit-group\"><td colspan=\"3\">ES-F</td></tr><tr><td>SST30/51</td><td>51</td><td class=\"tdt-app\">Gravel, soft rock</td></tr><tr class=\"tdt-bit-group\"><td colspan=\"3\">ESS-F</td></tr><tr><td>SST30/51</td><td>51</td><td class=\"tdt-app\">Weathered rock, stone walls, rubble</td></tr><tr class=\"tdt-bit-group\"><td colspan=\"3\">EYY</td></tr><tr><td>SST30/76</td><td>76</td><td class=\"tdt-app\">Competent ground, strong rock</td></tr></tbody></table></div></div>"
+ },
+ {
+  "type": "end",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "CTA"
+ },
+ {
+  "type": "begin",
+  "name": "Background"
+ },
+ {
+  "type": "begin",
+  "name": "Background Image"
+ },
+ {
+  "type": "image",
+  "src": "assets/images/BwQCIkMmoEDfYfMiPDBzBxTvUQs.jpg",
+  "w": "2000",
+  "h": "1525",
+  "alt": ""
+ },
+ {
+  "type": "end",
+  "name": "Background Image"
+ },
+ {
+  "type": "begin",
+  "name": "Cover"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Section Title"
+ },
+ {
+  "type": "begin",
+  "name": "Title"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Get in Touch with NASPS"
+ },
+ {
+  "type": "text",
+  "tag": "h2",
+  "style": "h2",
+  "html": "Collaboration, Work Enquires or Just Say Hello."
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "end",
+  "name": "Section Title"
+ },
+ {
+  "type": "link",
+  "href": "./contact",
+  "name": "Default",
+  "label": "Drop us a line",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "Drop us a line"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "begin",
+    "name": "Color"
+   },
+   {
+    "type": "begin",
+    "name": "Main Color"
+   },
+   {
+    "type": "end",
+    "name": "Main Color"
+   },
+   {
+    "type": "begin",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Color"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Cover"
+ },
+ {
+  "type": "end",
+  "name": "Background"
+ },
+ {
+  "type": "end",
+  "name": "CTA"
+ },
+ {
+  "type": "begin",
+  "name": "Tablet"
+ },
+ {
+  "type": "begin",
+  "name": "Cover"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "begin",
+  "name": "Main"
+ },
+ {
+  "type": "begin",
+  "name": "Logo"
+ },
+ {
+  "type": "begin",
+  "name": "Logo"
+ },
+ {
+  "type": "link",
+  "href": "./",
+  "name": "Logo",
+  "label": "",
+  "children": [
+   {
+    "type": "image",
+    "src": "assets/images/pyaDngF6J38whdYhhBSMKD5Qug.png",
+    "w": "2421",
+    "h": "510",
+    "alt": ""
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo"
+ },
+ {
+  "type": "link",
+  "href": "./contact",
+  "name": "Default",
+  "label": "Drop us a line",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "Drop us a line"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "begin",
+    "name": "Color"
+   },
+   {
+    "type": "begin",
+    "name": "Main Color"
+   },
+   {
+    "type": "end",
+    "name": "Main Color"
+   },
+   {
+    "type": "begin",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Color"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo"
+ },
+ {
+  "type": "begin",
+  "name": "Links"
+ },
+ {
+  "type": "begin",
+  "name": "Widget"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6-sm",
+  "html": "Links"
+ },
+ {
+  "type": "begin",
+  "name": "Link"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./\">Home</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./about\">About</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./product-hot-dip\">Services</a>"
+ },
+ {
+  "type": "end",
+  "name": "Link"
+ },
+ {
+  "type": "end",
+  "name": "Widget"
+ },
+ {
+  "type": "begin",
+  "name": "Widget"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6-sm",
+  "html": "Support"
+ },
+ {
+  "type": "begin",
+  "name": "Link"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./contact\">Contact us</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./blog\">News</a>"
+ },
+ {
+  "type": "end",
+  "name": "Link"
+ },
+ {
+  "type": "end",
+  "name": "Widget"
+ },
+ {
+  "type": "end",
+  "name": "Links"
+ },
+ {
+  "type": "end",
+  "name": "Main"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "begin",
+  "name": "Copyright"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "Copyright: © 2026 NASPS. All Rights Reserved."
+ },
+ {
+  "type": "end",
+  "name": "Copyright"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Cover"
+ },
+ {
+  "type": "end",
+  "name": "Tablet"
+ }
+]

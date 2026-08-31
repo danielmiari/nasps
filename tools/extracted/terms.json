@@ -1,0 +1,640 @@
+[
+ {
+  "type": "begin",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Logo + Nav"
+ },
+ {
+  "type": "link",
+  "href": "./",
+  "name": "Logo",
+  "label": "",
+  "children": [
+   {
+    "type": "image",
+    "src": "assets/images/pyaDngF6J38whdYhhBSMKD5Qug.png",
+    "w": "2421",
+    "h": "510",
+    "alt": ""
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo + Nav"
+ },
+ {
+  "type": "begin",
+  "name": "Navigation"
+ },
+ {
+  "type": "link",
+  "href": "./",
+  "name": "Menu",
+  "label": "Home",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "Home"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "./about",
+  "name": "Menu",
+  "label": "About us",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "About us"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "./project",
+  "name": "Menu",
+  "label": "Project",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "Project"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Navigation"
+ },
+ {
+  "type": "link",
+  "href": "./contact",
+  "name": "Default",
+  "label": "CONTACT US CONTACT US CONTACT US",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Spacer"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "CONTACT US"
+   },
+   {
+    "type": "end",
+    "name": "Spacer"
+   },
+   {
+    "type": "begin",
+    "name": "Content"
+   },
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "CONTACT US"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "end",
+    "name": "Content"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Spacer"
+ },
+ {
+  "type": "end",
+  "name": "Spacer"
+ },
+ {
+  "type": "begin",
+  "name": "Main Section"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Subtitle"
+ },
+ {
+  "type": "begin",
+  "name": "Icon"
+ },
+ {
+  "type": "begin",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Icon"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "License &amp; Notices"
+ },
+ {
+  "type": "end",
+  "name": "Subtitle"
+ },
+ {
+  "type": "text",
+  "tag": "h2",
+  "style": "h2",
+  "html": "Terms of Service"
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Last updated: April 20, 2024"
+ },
+ {
+  "type": "end",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Content"
+ },
+ {
+  "type": "begin",
+  "name": "Item"
+ },
+ {
+  "type": "text",
+  "tag": "h5",
+  "style": "h5",
+  "html": "Introduction"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Welcome to [Your Company Name]! These Terms of Service govern your use of our website [URL] and services. By accessing or using our platform, you agree to comply with these terms and conditions."
+ },
+ {
+  "type": "end",
+  "name": "Item"
+ },
+ {
+  "type": "begin",
+  "name": "Item"
+ },
+ {
+  "type": "text",
+  "tag": "h5",
+  "style": "h5",
+  "html": "User Responsibilities"
+ },
+ {
+  "type": "text",
+  "tag": "ul",
+  "style": "",
+  "html": "<li><strong>Account Creation:</strong> If you create an account, you are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.</li>"
+ },
+ {
+  "type": "text",
+  "tag": "ul",
+  "style": "",
+  "html": "<li><strong>Prohibited Activities:</strong> You agree not to engage in any illegal, unauthorized, or abusive activities on our platform. This includes but is not limited to spamming, hacking, and violating intellectual property rights.</li><li><strong>Content Guidelines:</strong> You are responsible for the content you upload, post, or share on our platform. Content must not infringe upon the rights of others or contain offensive, defamatory, or harmful material.</li>"
+ },
+ {
+  "type": "end",
+  "name": "Item"
+ },
+ {
+  "type": "begin",
+  "name": "Item"
+ },
+ {
+  "type": "text",
+  "tag": "h5",
+  "style": "h5",
+  "html": "Intellectual Property"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Our platform and its content, including but not limited to text, graphics, logos, and software, are protected by intellectual property laws. You may not use, reproduce, or distribute our content without our express permission."
+ },
+ {
+  "type": "end",
+  "name": "Item"
+ },
+ {
+  "type": "begin",
+  "name": "Item"
+ },
+ {
+  "type": "text",
+  "tag": "h5",
+  "style": "h5",
+  "html": "Privacy"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Your privacy is important to us. Please review our Privacy Policy [Link to Privacy Policy] to understand how we collect, use, and protect your personal information."
+ },
+ {
+  "type": "end",
+  "name": "Item"
+ },
+ {
+  "type": "begin",
+  "name": "Item"
+ },
+ {
+  "type": "text",
+  "tag": "h5",
+  "style": "h5",
+  "html": "Payment and Billing"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "If our services require payment, you agree to pay all applicable fees and charges. Payments are processed securely, and we do not store your payment information."
+ },
+ {
+  "type": "end",
+  "name": "Item"
+ },
+ {
+  "type": "begin",
+  "name": "Item"
+ },
+ {
+  "type": "text",
+  "tag": "h5",
+  "style": "h5",
+  "html": "Contact Us"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "If you have any questions or concerns about our Privacy Policy, please contact us at [Contact Information]."
+ },
+ {
+  "type": "end",
+  "name": "Item"
+ },
+ {
+  "type": "end",
+  "name": "Content"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Main Section"
+ },
+ {
+  "type": "begin",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Cover"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "begin",
+  "name": "Main"
+ },
+ {
+  "type": "begin",
+  "name": "Logo"
+ },
+ {
+  "type": "begin",
+  "name": "Logo"
+ },
+ {
+  "type": "link",
+  "href": "./",
+  "name": "Logo",
+  "label": "",
+  "children": [
+   {
+    "type": "image",
+    "src": "assets/images/pyaDngF6J38whdYhhBSMKD5Qug.png",
+    "w": "2421",
+    "h": "510",
+    "alt": ""
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo"
+ },
+ {
+  "type": "link",
+  "href": "./contact",
+  "name": "Default",
+  "label": "Drop us a line",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "Drop us a line"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "begin",
+    "name": "Color"
+   },
+   {
+    "type": "begin",
+    "name": "Main Color"
+   },
+   {
+    "type": "end",
+    "name": "Main Color"
+   },
+   {
+    "type": "begin",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Color"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo"
+ },
+ {
+  "type": "begin",
+  "name": "Links"
+ },
+ {
+  "type": "begin",
+  "name": "Widget"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6-sm",
+  "html": "Links"
+ },
+ {
+  "type": "begin",
+  "name": "Link"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./\">Home</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./about\">About</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./product-hot-dip\">Services</a>"
+ },
+ {
+  "type": "end",
+  "name": "Link"
+ },
+ {
+  "type": "end",
+  "name": "Widget"
+ },
+ {
+  "type": "begin",
+  "name": "Widget"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6-sm",
+  "html": "Support"
+ },
+ {
+  "type": "begin",
+  "name": "Link"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./contact\">Contact us</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./blog\">News</a>"
+ },
+ {
+  "type": "end",
+  "name": "Link"
+ },
+ {
+  "type": "end",
+  "name": "Widget"
+ },
+ {
+  "type": "end",
+  "name": "Links"
+ },
+ {
+  "type": "end",
+  "name": "Main"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "begin",
+  "name": "Copyright"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "Copyright: © 2026 NASPS. All Rights Reserved."
+ },
+ {
+  "type": "end",
+  "name": "Copyright"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Cover"
+ },
+ {
+  "type": "end",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "No Padding"
+ },
+ {
+  "type": "link",
+  "href": "https://framer.link/2uNk59O",
+  "name": "Buy",
+  "label": "Use for FREE",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "",
+    "html": "Use for FREE"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "https://marcframe.com/",
+  "name": "More",
+  "label": "More Templates",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "",
+    "html": "More Templates"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "No Padding"
+ }
+]

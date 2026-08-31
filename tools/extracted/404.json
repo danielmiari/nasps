@@ -1,0 +1,291 @@
+[
+ {
+  "type": "begin",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Logo + Nav"
+ },
+ {
+  "type": "link",
+  "href": "./",
+  "name": "Logo",
+  "label": "",
+  "children": [
+   {
+    "type": "image",
+    "src": "assets/images/pyaDngF6J38whdYhhBSMKD5Qug.png",
+    "w": "2421",
+    "h": "510",
+    "alt": ""
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo + Nav"
+ },
+ {
+  "type": "begin",
+  "name": "Navigation"
+ },
+ {
+  "type": "link",
+  "href": "./",
+  "name": "Menu",
+  "label": "Home",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "Home"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "./about",
+  "name": "Menu",
+  "label": "About us",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "About us"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "./project",
+  "name": "Menu",
+  "label": "Project",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "Project"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Navigation"
+ },
+ {
+  "type": "link",
+  "href": "./contact",
+  "name": "Default",
+  "label": "CONTACT US CONTACT US CONTACT US",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Spacer"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "CONTACT US"
+   },
+   {
+    "type": "end",
+    "name": "Spacer"
+   },
+   {
+    "type": "begin",
+    "name": "Content"
+   },
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "CONTACT US"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "end",
+    "name": "Content"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Spacer"
+ },
+ {
+  "type": "end",
+  "name": "Spacer"
+ },
+ {
+  "type": "begin",
+  "name": "Main Content"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Description"
+ },
+ {
+  "type": "text",
+  "tag": "h1",
+  "style": "display",
+  "html": "Apologies, the page you're seeking cannot be found at the moment."
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "The page you are looking for doesnot exist or has been moved"
+ },
+ {
+  "type": "end",
+  "name": "Description"
+ },
+ {
+  "type": "link",
+  "href": "./",
+  "name": "Default",
+  "label": "Back to homepage Back to homepage Back to homepage",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Spacer"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "Back to homepage"
+   },
+   {
+    "type": "end",
+    "name": "Spacer"
+   },
+   {
+    "type": "begin",
+    "name": "Content"
+   },
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "Back to homepage"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "end",
+    "name": "Content"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Main Content"
+ },
+ {
+  "type": "begin",
+  "name": "No Padding"
+ },
+ {
+  "type": "link",
+  "href": "https://framer.link/2uNk59O",
+  "name": "Buy",
+  "label": "Use for FREE",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "",
+    "html": "Use for FREE"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "https://marcframe.com/",
+  "name": "More",
+  "label": "More Templates",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "",
+    "html": "More Templates"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "No Padding"
+ }
+]

@@ -1,0 +1,740 @@
+[
+ {
+  "type": "begin",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Logo + Nav"
+ },
+ {
+  "type": "link",
+  "href": "../",
+  "name": "Logo",
+  "label": "",
+  "children": [
+   {
+    "type": "image",
+    "src": "assets/images/pyaDngF6J38whdYhhBSMKD5Qug.png",
+    "w": "2421",
+    "h": "510",
+    "alt": ""
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo + Nav"
+ },
+ {
+  "type": "begin",
+  "name": "Navigation"
+ },
+ {
+  "type": "link",
+  "href": "../",
+  "name": "Menu",
+  "label": "Home",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "Home"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "../about",
+  "name": "Menu",
+  "label": "About us",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "About us"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "../project",
+  "name": "Menu",
+  "label": "Project",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "Project"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Navigation"
+ },
+ {
+  "type": "link",
+  "href": "../contact",
+  "name": "Default",
+  "label": "CONTACT US CONTACT US CONTACT US",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Spacer"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "CONTACT US"
+   },
+   {
+    "type": "end",
+    "name": "Spacer"
+   },
+   {
+    "type": "begin",
+    "name": "Content"
+   },
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "CONTACT US"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "end",
+    "name": "Content"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Spacer"
+ },
+ {
+  "type": "end",
+  "name": "Spacer"
+ },
+ {
+  "type": "begin",
+  "name": "Main Content"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Post Title"
+ },
+ {
+  "type": "begin",
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Subtitle"
+ },
+ {
+  "type": "begin",
+  "name": "Icon"
+ },
+ {
+  "type": "begin",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Icon"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "Project"
+ },
+ {
+  "type": "end",
+  "name": "Subtitle"
+ },
+ {
+  "type": "text",
+  "tag": "h1",
+  "style": "h2",
+  "html": "Röda Ulven expands in Skagshamn – investing in increased capacity"
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Details"
+ },
+ {
+  "type": "begin",
+  "name": "Date"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "Posted on"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "May 13, 2026"
+ },
+ {
+  "type": "end",
+  "name": "Date"
+ },
+ {
+  "type": "begin",
+  "name": "Author"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "Posted by"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Kim Rasmussen - Co Founder"
+ },
+ {
+  "type": "end",
+  "name": "Author"
+ },
+ {
+  "type": "end",
+  "name": "Details"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Nordic Anchor &amp; Steel Pile Supply AB (NASPS AB) is proud to contribute to the development of Röda Ulven, which continues to grow its production in Skagshamn through a planned expansion of the existing facility."
+ },
+ {
+  "type": "end",
+  "name": "Post Title"
+ },
+ {
+  "type": "begin",
+  "name": "Post Image"
+ },
+ {
+  "type": "begin",
+  "name": "Image"
+ },
+ {
+  "type": "image",
+  "src": "assets/images/zOvaxEHKpHUO0R5Epy6ztJL5YKE.jpeg",
+  "w": "3024",
+  "h": "4032",
+  "alt": ""
+ },
+ {
+  "type": "end",
+  "name": "Image"
+ },
+ {
+  "type": "end",
+  "name": "Post Image"
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Post Content"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Nordic Anchor &amp; Steel Pile Supply AB (NASPS AB) is proud to contribute to the development of Röda Ulven, which continues to grow its production in Skagshamn through a planned expansion of the existing facility."
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "The project comprises a new cold storage facility of approximately 500 m², intended to strengthen the company's capacity to handle variations in raw material supply and to ensure a stable supply of surströmming to the market. The investment is an important step in future-proofing production within an industry that in recent years has been marked by limited availability of herring."
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "The expansion takes place directly adjacent to the existing factory in Skagshamn and is a strategic investment to optimize storage, logistics and quality throughout the entire production chain."
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "In the project's foundation phase, NASPS AB has supplied 75 R51/29 anchors, contributing to a safe and efficient foundation for the new facility."
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "The delivery was carried out in collaboration with Nordisk Grundteknik AB as drilling contractor. NASPS AB thanks them for the order and looks forward to further collaborations."
+ },
+ {
+  "type": "end",
+  "name": "Post Content"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Main Content"
+ },
+ {
+  "type": "begin",
+  "name": "Latest Blog"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Subtitle"
+ },
+ {
+  "type": "begin",
+  "name": "Icon"
+ },
+ {
+  "type": "begin",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Icon"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "Related Post"
+ },
+ {
+  "type": "end",
+  "name": "Subtitle"
+ },
+ {
+  "type": "text",
+  "tag": "h2",
+  "style": "h2",
+  "html": "Browse Our Resources"
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Variant 1"
+ },
+ {
+  "type": "link",
+  "href": "./project-salen",
+  "name": "Post Image",
+  "label": "",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Image"
+   },
+   {
+    "type": "image",
+    "src": "assets/images/DLBQHynZOkyaXv7UAUQPVj6qYMw.jpg",
+    "w": "800",
+    "h": "482",
+    "alt": ""
+   },
+   {
+    "type": "end",
+    "name": "Image"
+   }
+  ]
+ },
+ {
+  "type": "begin",
+  "name": "Post Content"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "nav",
+  "html": "Apr 30, 2024"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6",
+  "html": "<a href=\"./project-salen\">Nordic Anchor &amp; Steel Pile Supply AB (NASPS AB) is proud to contribute to the development of a new mountain hotel in Sälen</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "xs",
+  "html": "NASPS delivers high-quality products for geotechnical foundation work in complex environments. Our self-drilling anchor systems enable fast installation and high reliability, even under challenging ground conditions."
+ },
+ {
+  "type": "end",
+  "name": "Post Content"
+ },
+ {
+  "type": "end",
+  "name": "Variant 1"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Latest Blog"
+ },
+ {
+  "type": "begin",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Cover"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "begin",
+  "name": "Main"
+ },
+ {
+  "type": "begin",
+  "name": "Logo"
+ },
+ {
+  "type": "begin",
+  "name": "Logo"
+ },
+ {
+  "type": "link",
+  "href": "../",
+  "name": "Logo",
+  "label": "",
+  "children": [
+   {
+    "type": "image",
+    "src": "assets/images/pyaDngF6J38whdYhhBSMKD5Qug.png",
+    "w": "2421",
+    "h": "510",
+    "alt": ""
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo"
+ },
+ {
+  "type": "link",
+  "href": "../contact",
+  "name": "Default",
+  "label": "Drop us a line",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "Drop us a line"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "begin",
+    "name": "Color"
+   },
+   {
+    "type": "begin",
+    "name": "Main Color"
+   },
+   {
+    "type": "end",
+    "name": "Main Color"
+   },
+   {
+    "type": "begin",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Color"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo"
+ },
+ {
+  "type": "begin",
+  "name": "Links"
+ },
+ {
+  "type": "begin",
+  "name": "Widget"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6-sm",
+  "html": "Links"
+ },
+ {
+  "type": "begin",
+  "name": "Link"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"../\">Home</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"../about\">About</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"../product-hot-dip\">Services</a>"
+ },
+ {
+  "type": "end",
+  "name": "Link"
+ },
+ {
+  "type": "end",
+  "name": "Widget"
+ },
+ {
+  "type": "begin",
+  "name": "Widget"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6-sm",
+  "html": "Support"
+ },
+ {
+  "type": "begin",
+  "name": "Link"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"../contact\">Contact us</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"../blog\">News</a>"
+ },
+ {
+  "type": "end",
+  "name": "Link"
+ },
+ {
+  "type": "end",
+  "name": "Widget"
+ },
+ {
+  "type": "end",
+  "name": "Links"
+ },
+ {
+  "type": "end",
+  "name": "Main"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "begin",
+  "name": "Copyright"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "Copyright: © 2026 NASPS. All Rights Reserved."
+ },
+ {
+  "type": "end",
+  "name": "Copyright"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Cover"
+ },
+ {
+  "type": "end",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "No Padding"
+ },
+ {
+  "type": "link",
+  "href": "https://framer.link/2uNk59O",
+  "name": "Buy",
+  "label": "Use for FREE",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "",
+    "html": "Use for FREE"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "https://marcframe.com/",
+  "name": "More",
+  "label": "More Templates",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "",
+    "html": "More Templates"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "No Padding"
+ }
+]

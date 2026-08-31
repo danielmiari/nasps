@@ -1,35 +1,106 @@
-# nasps.se — export från Framer
+# nasps.se
 
-Hämtat 2026-08-30 från https://www.nasps.se (Framer, server-renderat/SSG).
+Statisk sajt i NASPS designspråk. Sidorna är handskriven HTML mot ett gemensamt
+designsystem i [`styles.css`](styles.css) — inget ramverk, ingen runtime utöver
+[`script.js`](script.js) (mobilmeny, FAQ-dragspel, storlekstabbar, bildsnurra,
+videofasad, parallax på bildbanden).
 
-## Innehåll
-- `pages/` — 19 råa HTML-sidor exakt som Framer serverar dem
-- `content/` — samma sidor som markdown (rubriker, brödtext, listor, bild- och länkreferenser)
-- `content/_index.json` — sidregister: titel, meta-description, antal bilder/länkar
-- `assets/images/` — 22 bilder i originalupplösning (22 MB)
-- `assets/fonts/` — 27 woff2-filer (Plus Jakarta Sans + Inter)
-- `sitemap.xml`, `urls.txt`, `assets-all.txt` — källistor
+Designen är hämtad ur den tidigare Framer-sajten: färger, typografi, mått,
+sektionsindelning och all text kommer därifrån. Originalexporten ligger kvar i
+[`pages/`](pages/) som referens.
 
-## Sidstruktur
+## Struktur
+
 | Rutt | Fil |
 |---|---|
-| `/` | index |
-| `/about` | about |
-| `/blog` + 3 inlägg | blog, blog__* |
-| `/project` + 2 case | project, project__salen, project__rodaulven |
-| 5 produktsidor | product-hot-dip, product-r-thread, product-t-thread, product-shank_adapter, product-self-drilling-anchor-bolt |
+| `/` | `index.html` |
+| `/about` | `about.html` |
+| `/project` | `project.html` |
+| `/project/salen`, `/project/rodaulven` | `project/*.html` |
+| `/products` | `products.html` — produktöversikt med kort |
+| 5 produktsidor | `product-*.html` |
+
+Produktöversikten listar sex produkter: Duplex Coating Rock Bolt saknar egen sida
+och visas som ett kort utan Read more-länk (`'slug': None` i `PRODUCTS`). Shank
+Adapter är borttagen och `/product-shank_adapter` omdirigeras till `/products`.
+| `/blog` + 3 inlägg | `blog.html`, `blog/*.html` |
 | `/contact`, `/faq`, `/privacy`, `/terms`, `/404` | resp. fil |
 
+Huvudmenyn är Home / About us / Products / Project + kontaktknappen.
+
+Sidlänkarna är utan filändelse (`/about`). Det kräver en värd som mappar
+`/about` → `about.html` — Vercel gör det via [`vercel.json`](vercel.json)
+(`cleanUrls`). Filsökvägar (CSS, JS, bilder) är relativa till sidan, så
+designen visas även om man öppnar en HTML-fil direkt från disk.
+
+## Förhandsvisa lokalt
+
+```sh
+python3 tools/serve.py        # http://127.0.0.1:8000
+```
+
+`python3 -m http.server` duger **inte** — den hittar inte `about.html` när
+webbläsaren ber om `/about` utan svarar med sin egen felsida. `tools/serve.py`
+gör samma sak som Vercel: provar `about.html`, `about/index.html`, och visar
+sajtens egen `404.html` för okända adresser. Är porten upptagen tas nästa
+lediga och adressen skrivs ut.
+
 ## Designtokens
-Typsnitt: **Plus Jakarta Sans** (primär), Inter (fallback/kod)
+
+Typsnitt: **Plus Jakarta Sans** (självhostad i `assets/fonts/`, variabel vikt).
 
 | Roll | Hex |
 |---|---|
 | Text / mörk bas | `#1e1e1c` |
-| Ljus bakgrund | `#f1efea` |
+| Bakgrund | `#f1efea` |
 | Vit | `#ffffff` |
 | Accent röd | `#ee3423` |
-| Accent orange | `#e8792f` / `#e8620a` |
-| Länk/interaktiv blå | `#0099ff` |
+| Accent orange (hover) | `#e8792f` |
 
-Opacitetsvarianter av `#1e1e1c`: 05, 0d, 33, 4d, 80, 99, b3, cc, e6.
+Typografiskalan (`.t-display` 64 → `.t-xs` 12) och stegen mellan brytpunkterna
+följer originalets. Brytpunkter: desktop ≥1200px, tablet 810–1199px, telefon
+<810px. Sidbredd max 1440px, sektionspadding 50/40px.
+
+## Bygga om sidorna
+
+Sidorna genereras ur innehållet i `tools/extracted/` så att sidhuvud, sidfot och
+komponenter hålls identiska på alla sidor:
+
+```sh
+python3 tools/extract.py pages/*.html   # innehåll ur Framer-exporten -> JSON
+python3 tools/build.py                  # JSON + mallar -> HTML i roten
+```
+
+HTP Roller 400 finns inte i Framer-exporten — dess text, specifikationer och
+bilder ligger i `HTP_ROLLER` överst bland produkterna i `tools/build.py`. Nya
+produkter läggs till på samma sätt: en post i `PRODUCTS` (kortet och sidan) och
+en i `SHOWCASE` (startsidans karusell).
+
+`extract.py` behövs bara om innehållet i `pages/` ändras. Redigera du HTML-filerna
+direkt skrivs ändringarna över nästa gång `build.py` körs — layoutändringar hör
+hemma i `tools/build.py`, formgivning i `styles.css`.
+
+`styles.css` och `script.js` länkas med ett innehållshash (`?v=…`) som byts vid
+varje bygge. Det hindrar webbläsare från att para ihop ny HTML med gammal
+cachad CSS eller JS — en blandning som ger trasig layout utan att något syns
+fel i källkoden.
+
+## Bildverktyg
+
+Produktrenderingarna ligger på genomskinlig bakgrund. Kommer en ny bild med
+vit platta bakom sig:
+
+```sh
+python3 tools/cutout.py bild.png bild.png
+```
+
+Den plockar bort den vita ytan och den mjuka slagskuggan, mjukar upp kanten och
+sparar som palett-PNG i samma storleksordning som de övriga bilderna.
+
+## Övrigt
+
+- `assets/images/` — 22 bilder i originalupplösning, `assets/fonts/` — typsnitt
+- `content/`, `assets-all.txt`, `list-*.txt`, `urls.txt` — underlag från exporten
+- Produktsidornas spec-tabeller är egna HTML-komponenter som följt med från
+  exporten; den innehåller bara data för den första storleken, övriga flikar
+  visar ett tomt läge.

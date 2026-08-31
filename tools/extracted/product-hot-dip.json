@@ -1,0 +1,762 @@
+[
+ {
+  "type": "begin",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Logo + Nav"
+ },
+ {
+  "type": "link",
+  "href": "./",
+  "name": "Logo",
+  "label": "",
+  "children": [
+   {
+    "type": "image",
+    "src": "assets/images/pyaDngF6J38whdYhhBSMKD5Qug.png",
+    "w": "2421",
+    "h": "510",
+    "alt": ""
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo + Nav"
+ },
+ {
+  "type": "begin",
+  "name": "Navigation"
+ },
+ {
+  "type": "link",
+  "href": "./",
+  "name": "Menu",
+  "label": "Home",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "Home"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "./about",
+  "name": "Menu",
+  "label": "About us",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "About us"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "./project",
+  "name": "Menu",
+  "label": "Project",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "Project"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Navigation"
+ },
+ {
+  "type": "link",
+  "href": "./contact",
+  "name": "Default",
+  "label": "CONTACT US CONTACT US CONTACT US",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Spacer"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "CONTACT US"
+   },
+   {
+    "type": "end",
+    "name": "Spacer"
+   },
+   {
+    "type": "begin",
+    "name": "Content"
+   },
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "CONTACT US"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "end",
+    "name": "Content"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Spacer"
+ },
+ {
+  "type": "end",
+  "name": "Spacer"
+ },
+ {
+  "type": "begin",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Image"
+ },
+ {
+  "type": "image",
+  "src": "assets/images/5xcxmtKjHvVjeeHnGG3i9HIZKMs.png",
+  "w": "1445",
+  "h": "1088",
+  "alt": ""
+ },
+ {
+  "type": "end",
+  "name": "Image"
+ },
+ {
+  "type": "begin",
+  "name": "Button"
+ },
+ {
+  "type": "text",
+  "tag": "h2",
+  "style": "h2",
+  "html": "Hot-dip Galvanizing Rock Bolts System"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "Description:<br>Hot-dip galvanizing rock bolt is a sda rock bolt with good anti-corrosion property. It forms a protective layer by putting clean-surface products into molten galvanizing zinc, which has good effect on the anti-corrosion of steel."
+ },
+ {
+  "type": "begin",
+  "name": "Button"
+ },
+ {
+  "type": "end",
+  "name": "Button"
+ },
+ {
+  "type": "end",
+  "name": "Button"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Subtitle"
+ },
+ {
+  "type": "begin",
+  "name": "Icon"
+ },
+ {
+  "type": "begin",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Icon"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "INTRODUCTION"
+ },
+ {
+  "type": "end",
+  "name": "Subtitle"
+ },
+ {
+  "type": "text",
+  "tag": "h3",
+  "style": "h3",
+  "html": "<strong>Anti-corrosion Mechanism</strong>"
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Immerse the derusted anchor bar and accessories in liquid zinc for a certain time, so that the atoms can penetrate and diffuse each other, thereby forming an iron-zinc alloy layer, which is dense, uniform, firmly bonded, bright and corrosion resistant."
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Zinc is an amphoteric metal. In thermodynamics, zinc has a stable area. Hot-dip galvanizing is an electrochemical anti-corrosion method, which hinder further corrosion through insoluble chemical substances produced by interaction between zinc and concrete solution.<strong><br></strong><br>"
+ },
+ {
+  "type": "text",
+  "tag": "h3",
+  "style": "h3",
+  "html": "<strong>Product Standard</strong>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Sinorock has formulated the standard for galvanized products coatings in accordance with ISO 1461 \" Hot dip galvanized coatings on fabricated iron and steel articles — Specifications and test methods\". The coating thickness of main products is as follows:<strong><br></strong><br>"
+ },
+ {
+  "type": "embed",
+  "html": "<style>\n  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap');\n  .ct-root { font-family: 'Barlow', sans-serif; background: #F1EFEA; color: #1a1a18; padding: 32px 28px; max-width: 100%; box-sizing: border-box; }\n  .ct-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }\n  .ct-icon { width: 36px; height: 36px; background: #e8620a; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }\n  .ct-icon svg { width: 20px; height: 20px; fill: #fff; }\n  .ct-title { font-family: 'Barlow Condensed', sans-serif; font-size: 16px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #1a1a18; }\n  .ct-note { font-size: 11px; color: #888; font-style: italic; margin-top: 6px; padding: 6px 10px; border-left: 3px solid #e8620a; background: rgba(232,98,10,0.06); }\n  .ct-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }\n  .ct-table thead tr { background: #2a2a26; color: #fff; }\n  .ct-table thead th { padding: 7px 10px; font-weight: 600; text-align: center; font-size: 11px; letter-spacing: 0.04em; }\n  .ct-table thead th:first-child { text-align: left; }\n  .ct-table tbody tr { border-bottom: 1px solid #ddd9d0; transition: background 0.1s; }\n  .ct-table tbody tr:nth-child(even) { background: #ede9e2; }\n  .ct-table tbody tr:hover { background: #fde8d6; }\n  .ct-table tbody td { padding: 7px 10px; text-align: center; color: #333; }\n  .ct-table tbody td:first-child { text-align: left; font-weight: 600; color: #1a1a18; }\n</style><div class=\"ct-root\"><div class=\"ct-header\"><div class=\"ct-icon\"><svg viewBox=\"0 0 24 24\"><rect x=\"2\" y=\"15\" width=\"20\" height=\"3\" rx=\"1\"></rect><rect x=\"2\" y=\"11\" width=\"20\" height=\"3\" rx=\"1\" opacity=\".6\"></rect><rect x=\"2\" y=\"7\" width=\"20\" height=\"3\" rx=\"1\" opacity=\".3\"></rect></svg></div><span class=\"ct-title\">Product Standard — Coating Thickness (ISO 1461)</span></div><table class=\"ct-table\"><thead><tr><th>Product</th><th>Mean Coating Thickness min. (μm)</th><th>Local Coating Thickness min. (μm)</th></tr></thead><tbody><tr><td>Hollow Anchor Bar</td><td>85</td><td>70</td></tr><tr><td>Coupler</td><td>55</td><td>45</td></tr><tr><td>Nut</td><td>55</td><td>45</td></tr><tr><td>Plate</td><td>85</td><td>70</td></tr><tr><td>Centralizer</td><td>55</td><td>45</td></tr><tr><td>Wedge</td><td>55</td><td>45</td></tr></tbody></table><div class=\"ct-note\">Note: This table is for general use, and we can also meet customers' special requirements.</div></div>"
+ },
+ {
+  "type": "end",
+  "name": "Page Title"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Title"
+ },
+ {
+  "type": "text",
+  "tag": "h3",
+  "style": "h3",
+  "html": "<strong>Featurs and Advantages</strong>"
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "<strong>Excellent anti-corrosion properties:</strong> As zinc is an active metal, after coating surface is damaged, it will protect the steel by battery effect."
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "<strong>Long service life:</strong> Zinc layer is consumed very slowly in the atmosphere, so its service life far exceeds that of any other coatings."
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "<strong>Full protection:</strong> As immersed into hot-dip galvanizing bath, products are fully protected and anti-corrosion effect is better."
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "<strong>Lower price:</strong> In most cases, the hot-dip galvanizing cost is lower. Zinc coating is more durable than others, and does not require maintenance in the future."
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "<strong>High processing efficiency:</strong> Hot-dip galvanizing bath is simple and efficiency is higher than other coatings.<br><br><strong>Not affect steel performance:</strong> Hot-dip galvanizing is carried out in an environment of more than 400 ℃, and will not affect the performance and toughness of steel.<strong><br></strong><br>"
+ },
+ {
+  "type": "text",
+  "tag": "h3",
+  "style": "h3",
+  "html": "<strong>Service Life</strong>"
+ },
+ {
+  "type": "embed",
+  "html": "<style>\n  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap');\n  .cv-root { font-family: 'Barlow', sans-serif; background: #F1EFEA; color: #1a1a18; padding: 32px 28px; max-width: 100%; box-sizing: border-box; }\n  .cv-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }\n  .cv-icon { width: 36px; height: 36px; background: #e8620a; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }\n  .cv-icon svg { width: 20px; height: 20px; fill: #fff; }\n  .cv-title { font-family: 'Barlow Condensed', sans-serif; font-size: 16px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #1a1a18; }\n  .cv-note { font-size: 11px; color: #888; font-style: italic; margin-top: 6px; padding: 6px 10px; border-left: 3px solid #e8620a; background: rgba(232,98,10,0.06); }\n  .cv-table { width: 100%; border-collapse: collapse; font-size: 12px; }\n  .cv-table thead tr { background: #2a2a26; color: #fff; }\n  .cv-table thead th { padding: 7px 10px; font-weight: 600; text-align: center; font-size: 11px; letter-spacing: 0.04em; vertical-align: middle; }\n  .cv-table thead th:first-child { text-align: left; }\n  .cv-table thead tr.cv-sub th { background: #3d3d38; font-size: 10px; font-weight: 500; color: #ccc; }\n  .cv-table tbody tr { border-bottom: 1px solid #ddd9d0; transition: background 0.1s; }\n  .cv-table tbody tr:nth-child(even) { background: #ede9e2; }\n  .cv-table tbody tr:hover { background: #fde8d6; }\n  .cv-table tbody td { padding: 7px 10px; text-align: center; color: #333; vertical-align: top; }\n  .cv-table tbody td:first-child { text-align: left; font-weight: 600; color: #1a1a18; }\n  .cv-env { text-align: left !important; font-size: 11.5px; color: #555; }\n</style><div class=\"cv-root\"><div class=\"cv-header\"><div class=\"cv-icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M12 2 L20 7 L20 17 L12 22 L4 17 L4 7 Z\" opacity=\".3\"></path><path d=\"M12 5 L17 8 L17 16 L12 19 L7 16 L7 8 Z\" opacity=\".6\"></path><circle cx=\"12\" cy=\"12\" r=\"3\" fill=\"#e8620a\"></circle></svg></div><span class=\"cv-title\">Service Life — Atmospheric Corrosivity Categories (ISO 12944-2)</span></div><table class=\"cv-table\"><thead><tr><th rowspan=\"2\">Corrosivity Category</th><th colspan=\"2\">Steel</th><th colspan=\"2\">Zinc</th><th colspan=\"2\">Typical Environments (temperate climate)</th></tr><tr class=\"cv-sub\"><th>Mass loss (g/m²)</th><th>Thickness loss (μm)</th><th>Mass loss (g/m²)</th><th>Thickness loss (μm)</th><th>Exterior</th><th>Interior</th></tr></thead><tbody><tr><td>C1 — Very Low</td><td>≤10</td><td>≤1.3</td><td>≤0.7</td><td>≤0.1</td><td class=\"cv-env\">—</td><td class=\"cv-env\">Heated buildings with clean atmospheres, e.g. offices, shops, schools, hotels</td></tr><tr><td>C2 — Low</td><td>&gt;10 to 200</td><td>&gt;1.3 to 25</td><td>&gt;0.7 to 5</td><td>&gt;0.1 to 0.7</td><td class=\"cv-env\">Atmospheres with low level of pollution: mostly rural areas</td><td class=\"cv-env\">Unheated buildings where condensation can occur, e.g. depots, sports halls</td></tr><tr><td>C3 — Medium</td><td>&gt;200 to 400</td><td>&gt;25 to 50</td><td>&gt;5 to 15</td><td>&gt;0.7 to 2.1</td><td class=\"cv-env\">Urban and industrial atmospheres, moderate sulfur dioxide pollution; coastal areas with low salinity</td><td class=\"cv-env\">Production rooms with high humidity and some air pollution, e.g. food-processing plants, laundries, breweries, dairies</td></tr><tr><td>C4 — High</td><td>&gt;400 to 650</td><td>&gt;50 to 80</td><td>&gt;15 to 30</td><td>&gt;2.1 to 4.2</td><td class=\"cv-env\">Industrial areas and coastal areas with moderate salinity</td><td class=\"cv-env\">Chemical plants, swimming pools, coastal ships and boatyards</td></tr><tr><td>C5-I — Very High (Industrial)</td><td>&gt;650 to 1500</td><td>&gt;80 to 200</td><td>&gt;30 to 60</td><td>&gt;4.2 to 8.4</td><td class=\"cv-env\">Industrial and coastal areas with high humidity and aggressive atmosphere</td><td class=\"cv-env\">Buildings with almost constant condensation and a highly contaminated atmosphere</td></tr><tr><td>C5-M — Very High (Marine)</td><td>&gt;650 to 1500</td><td>&gt;80 to 200</td><td>&gt;30 to 60</td><td>&gt;4.2 to 8.4</td><td class=\"cv-env\">Coastal and ocean areas with high salinity</td><td class=\"cv-env\">Buildings with almost constant condensation and a highly contaminated atmosphere</td></tr></tbody></table><div class=\"cv-note\">Note: The highest reduction in coating thickness happens during the first year. As time goes on, the corrosion rate is greatly reduced, because the chemical substances produced by interaction between zinc and the environment hinder its further corrosion.</div></div>"
+ },
+ {
+  "type": "text",
+  "tag": "h3",
+  "style": "h3",
+  "html": "<strong>Application</strong>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Hot dip galvanizing anchor bolt is especially suitable for various acid, alkali mist and other corrosive environments, as well as occasions with longer service life requirements and complex environments in geotechnical engineering."
+ },
+ {
+  "type": "end",
+  "name": "Page Title"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "CTA"
+ },
+ {
+  "type": "begin",
+  "name": "Background"
+ },
+ {
+  "type": "begin",
+  "name": "Background Image"
+ },
+ {
+  "type": "image",
+  "src": "assets/images/BwQCIkMmoEDfYfMiPDBzBxTvUQs.jpg",
+  "w": "2000",
+  "h": "1525",
+  "alt": ""
+ },
+ {
+  "type": "end",
+  "name": "Background Image"
+ },
+ {
+  "type": "begin",
+  "name": "Cover"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Section Title"
+ },
+ {
+  "type": "begin",
+  "name": "Title"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Get in Touch with NASPS"
+ },
+ {
+  "type": "text",
+  "tag": "h2",
+  "style": "h2",
+  "html": "Collaboration, Work Enquires or Just Say Hello."
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "end",
+  "name": "Section Title"
+ },
+ {
+  "type": "link",
+  "href": "./contact",
+  "name": "Default",
+  "label": "Drop us a line",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "Drop us a line"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "begin",
+    "name": "Color"
+   },
+   {
+    "type": "begin",
+    "name": "Main Color"
+   },
+   {
+    "type": "end",
+    "name": "Main Color"
+   },
+   {
+    "type": "begin",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Color"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Cover"
+ },
+ {
+  "type": "end",
+  "name": "Background"
+ },
+ {
+  "type": "end",
+  "name": "CTA"
+ },
+ {
+  "type": "begin",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Cover"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "begin",
+  "name": "Main"
+ },
+ {
+  "type": "begin",
+  "name": "Logo"
+ },
+ {
+  "type": "begin",
+  "name": "Logo"
+ },
+ {
+  "type": "link",
+  "href": "./",
+  "name": "Logo",
+  "label": "",
+  "children": [
+   {
+    "type": "image",
+    "src": "assets/images/pyaDngF6J38whdYhhBSMKD5Qug.png",
+    "w": "2421",
+    "h": "510",
+    "alt": ""
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo"
+ },
+ {
+  "type": "link",
+  "href": "./contact",
+  "name": "Default",
+  "label": "Drop us a line",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "Drop us a line"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "begin",
+    "name": "Color"
+   },
+   {
+    "type": "begin",
+    "name": "Main Color"
+   },
+   {
+    "type": "end",
+    "name": "Main Color"
+   },
+   {
+    "type": "begin",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Color"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo"
+ },
+ {
+  "type": "begin",
+  "name": "Links"
+ },
+ {
+  "type": "begin",
+  "name": "Widget"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6-sm",
+  "html": "Links"
+ },
+ {
+  "type": "begin",
+  "name": "Link"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./\">Home</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./about\">About</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./product-hot-dip\">Services</a>"
+ },
+ {
+  "type": "end",
+  "name": "Link"
+ },
+ {
+  "type": "end",
+  "name": "Widget"
+ },
+ {
+  "type": "begin",
+  "name": "Widget"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6-sm",
+  "html": "Support"
+ },
+ {
+  "type": "begin",
+  "name": "Link"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./contact\">Contact us</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./blog\">News</a>"
+ },
+ {
+  "type": "end",
+  "name": "Link"
+ },
+ {
+  "type": "end",
+  "name": "Widget"
+ },
+ {
+  "type": "end",
+  "name": "Links"
+ },
+ {
+  "type": "end",
+  "name": "Main"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "begin",
+  "name": "Copyright"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "Copyright: © 2026 NASPS. All Rights Reserved."
+ },
+ {
+  "type": "end",
+  "name": "Copyright"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Cover"
+ },
+ {
+  "type": "end",
+  "name": "Desktop"
+ }
+]

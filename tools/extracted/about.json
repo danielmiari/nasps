@@ -1,0 +1,755 @@
+[
+ {
+  "type": "begin",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Logo + Nav"
+ },
+ {
+  "type": "link",
+  "href": "./",
+  "name": "Logo",
+  "label": "",
+  "children": [
+   {
+    "type": "image",
+    "src": "assets/images/pyaDngF6J38whdYhhBSMKD5Qug.png",
+    "w": "2421",
+    "h": "510",
+    "alt": ""
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo + Nav"
+ },
+ {
+  "type": "begin",
+  "name": "Navigation"
+ },
+ {
+  "type": "link",
+  "href": "./",
+  "name": "Menu",
+  "label": "Home",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "Home"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "./about",
+  "name": "Menu",
+  "label": "About us",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "About us"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "./project",
+  "name": "Menu",
+  "label": "Project",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "Project"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Navigation"
+ },
+ {
+  "type": "link",
+  "href": "./contact",
+  "name": "Default",
+  "label": "CONTACT US CONTACT US CONTACT US",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Spacer"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "CONTACT US"
+   },
+   {
+    "type": "end",
+    "name": "Spacer"
+   },
+   {
+    "type": "begin",
+    "name": "Content"
+   },
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "CONTACT US"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "end",
+    "name": "Content"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Spacer"
+ },
+ {
+  "type": "end",
+  "name": "Spacer"
+ },
+ {
+  "type": "begin",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Subtitle"
+ },
+ {
+  "type": "begin",
+  "name": "Icon"
+ },
+ {
+  "type": "begin",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Icon"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "About NASPS AB"
+ },
+ {
+  "type": "end",
+  "name": "Subtitle"
+ },
+ {
+  "type": "text",
+  "tag": "h1",
+  "style": "h2",
+  "html": "Nordic Anchor &amp; Steel Pile Supply AB — NASPS AB — is a specialized supplier of products and technical solutions for foundation engineering, geotechnics, ground support, and infrastructure projects."
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "We supply contractors and project owners with high-quality anchors, self-drilling anchor systems, steel pile solutions, interlock systems, grout pumps, drilling equipment, and related components for demanding ground and civil engineering applications. Our focus is on functionality, production efficiency, technical precision, and reliable performance in real project conditions."
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "At NASPS, we understand that every successful structure begins below ground. Whether it is a foundation, retaining structure, tunnel, bridge, quay wall, excavation support, or infrastructure project, the quality of the foundation system is critical for safety, durability, and long-term value."
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "We work closely with contractors, engineers, suppliers, and manufacturers to provide products that meet the practical demands of modern foundation works. By combining technical knowledge, responsive service, and carefully selected product systems, we help our customers build safer, stronger, and more efficient projects."
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Our ambition is to contribute to the future of ground engineering by offering robust, innovative, and cost-effective solutions for the Nordic market and beyond."
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "NASPS AB — Building strength from the ground up."
+ },
+ {
+  "type": "end",
+  "name": "Page Title"
+ },
+ {
+  "type": "link",
+  "href": "./project",
+  "name": "Default",
+  "label": "View Our Projects",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "View Our Projects"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "begin",
+    "name": "Color"
+   },
+   {
+    "type": "begin",
+    "name": "Main Color"
+   },
+   {
+    "type": "end",
+    "name": "Main Color"
+   },
+   {
+    "type": "begin",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Color"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Subtitle"
+ },
+ {
+  "type": "begin",
+  "name": "Icon"
+ },
+ {
+  "type": "begin",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Icon"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "You're in Good Hands"
+ },
+ {
+  "type": "end",
+  "name": "Subtitle"
+ },
+ {
+  "type": "text",
+  "tag": "h2",
+  "style": "h2",
+  "html": "Passionate Expertise, Collaborative Brilliance"
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Team List"
+ },
+ {
+  "type": "link",
+  "href": "https://twitter.com",
+  "name": "Variant 1",
+  "label": "Kim Rasmussen Co-Founder/Co-owner, Senior Advisor, Sales IG64, DTH kim@nasps.se",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Image"
+   },
+   {
+    "type": "image",
+    "src": "assets/images/NO3EV3gw5rPeJC4ulAqO0Chpkc.png",
+    "w": "1500",
+    "h": "2000",
+    "alt": ""
+   },
+   {
+    "type": "end",
+    "name": "Image"
+   },
+   {
+    "type": "begin",
+    "name": "Description"
+   },
+   {
+    "type": "text",
+    "tag": "h6",
+    "style": "h6",
+    "html": "Kim Rasmussen"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "xs",
+    "html": "Co-Founder/Co-owner, Senior Advisor, Sales IG64, DTH"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "xs",
+    "html": "kim@nasps.se"
+   },
+   {
+    "type": "end",
+    "name": "Description"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "https://twitter.com",
+  "name": "Variant 1",
+  "label": "Ingemar Andersson Co-Founder/Co-owner, Senior Advisor, Sales IG64, DTH, DaiPra ingemar@nasps.se",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Image"
+   },
+   {
+    "type": "image",
+    "src": "assets/images/6kNwUeXEnS521sTNiQPdaQxHw.png",
+    "w": "1290",
+    "h": "2796",
+    "alt": ""
+   },
+   {
+    "type": "end",
+    "name": "Image"
+   },
+   {
+    "type": "begin",
+    "name": "Description"
+   },
+   {
+    "type": "text",
+    "tag": "h6",
+    "style": "h6",
+    "html": "Ingemar Andersson"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "xs",
+    "html": "Co-Founder/Co-owner, Senior Advisor, Sales IG64, DTH, DaiPra"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "xs",
+    "html": "ingemar@nasps.se"
+   },
+   {
+    "type": "end",
+    "name": "Description"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "https://twitter.com",
+  "name": "Variant 1",
+  "label": "Jukka Ahonen Co-Founder/Co-owner, Senior Advisor, Sales IG64, DTH, DaiPra, MAIT jukka@nasps.se",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Image"
+   },
+   {
+    "type": "image",
+    "src": "assets/images/Mdf3KpIOjryiDWhH45YOt00RBaI.png",
+    "w": "1254",
+    "h": "1254",
+    "alt": ""
+   },
+   {
+    "type": "end",
+    "name": "Image"
+   },
+   {
+    "type": "begin",
+    "name": "Description"
+   },
+   {
+    "type": "text",
+    "tag": "h6",
+    "style": "h6",
+    "html": "Jukka Ahonen"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "xs",
+    "html": "Co-Founder/Co-owner, Senior Advisor, Sales IG64, DTH, DaiPra, MAIT"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "xs",
+    "html": "jukka@nasps.se"
+   },
+   {
+    "type": "end",
+    "name": "Description"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Team List"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Cover"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "begin",
+  "name": "Main"
+ },
+ {
+  "type": "begin",
+  "name": "Logo"
+ },
+ {
+  "type": "begin",
+  "name": "Logo"
+ },
+ {
+  "type": "link",
+  "href": "./",
+  "name": "Logo",
+  "label": "",
+  "children": [
+   {
+    "type": "image",
+    "src": "assets/images/pyaDngF6J38whdYhhBSMKD5Qug.png",
+    "w": "2421",
+    "h": "510",
+    "alt": ""
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo"
+ },
+ {
+  "type": "link",
+  "href": "./contact",
+  "name": "Default",
+  "label": "Drop us a line",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "Drop us a line"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "begin",
+    "name": "Color"
+   },
+   {
+    "type": "begin",
+    "name": "Main Color"
+   },
+   {
+    "type": "end",
+    "name": "Main Color"
+   },
+   {
+    "type": "begin",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Color"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo"
+ },
+ {
+  "type": "begin",
+  "name": "Links"
+ },
+ {
+  "type": "begin",
+  "name": "Widget"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6-sm",
+  "html": "Links"
+ },
+ {
+  "type": "begin",
+  "name": "Link"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./\">Home</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./about\">About</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./product-hot-dip\">Services</a>"
+ },
+ {
+  "type": "end",
+  "name": "Link"
+ },
+ {
+  "type": "end",
+  "name": "Widget"
+ },
+ {
+  "type": "begin",
+  "name": "Widget"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6-sm",
+  "html": "Support"
+ },
+ {
+  "type": "begin",
+  "name": "Link"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./contact\">Contact us</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./blog\">News</a>"
+ },
+ {
+  "type": "end",
+  "name": "Link"
+ },
+ {
+  "type": "end",
+  "name": "Widget"
+ },
+ {
+  "type": "end",
+  "name": "Links"
+ },
+ {
+  "type": "end",
+  "name": "Main"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "begin",
+  "name": "Copyright"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "Copyright: © 2026 NASPS. All Rights Reserved."
+ },
+ {
+  "type": "end",
+  "name": "Copyright"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Cover"
+ },
+ {
+  "type": "end",
+  "name": "Desktop"
+ }
+]

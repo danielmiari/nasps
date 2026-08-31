@@ -1,0 +1,646 @@
+[
+ {
+  "type": "begin",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Logo + Nav"
+ },
+ {
+  "type": "link",
+  "href": "./",
+  "name": "Logo",
+  "label": "",
+  "children": [
+   {
+    "type": "image",
+    "src": "assets/images/pyaDngF6J38whdYhhBSMKD5Qug.png",
+    "w": "2421",
+    "h": "510",
+    "alt": ""
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo + Nav"
+ },
+ {
+  "type": "begin",
+  "name": "Navigation"
+ },
+ {
+  "type": "link",
+  "href": "./",
+  "name": "Menu",
+  "label": "Home",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "Home"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "./about",
+  "name": "Menu",
+  "label": "About us",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "About us"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "./project",
+  "name": "Menu",
+  "label": "Project",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "nav",
+    "html": "Project"
+   },
+   {
+    "type": "begin",
+    "name": "Line"
+   },
+   {
+    "type": "end",
+    "name": "Line"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Navigation"
+ },
+ {
+  "type": "link",
+  "href": "./contact",
+  "name": "Default",
+  "label": "CONTACT US CONTACT US CONTACT US",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Spacer"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "CONTACT US"
+   },
+   {
+    "type": "end",
+    "name": "Spacer"
+   },
+   {
+    "type": "begin",
+    "name": "Content"
+   },
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "CONTACT US"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "end",
+    "name": "Content"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Spacer"
+ },
+ {
+  "type": "end",
+  "name": "Spacer"
+ },
+ {
+  "type": "begin",
+  "name": "Main Section"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Subtitle"
+ },
+ {
+  "type": "begin",
+  "name": "Icon"
+ },
+ {
+  "type": "begin",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Icon"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "License &amp; Notices"
+ },
+ {
+  "type": "end",
+  "name": "Subtitle"
+ },
+ {
+  "type": "text",
+  "tag": "h2",
+  "style": "h2",
+  "html": "Privacy Policy"
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Last updated: April 20, 2024"
+ },
+ {
+  "type": "end",
+  "name": "Page Title"
+ },
+ {
+  "type": "begin",
+  "name": "Content"
+ },
+ {
+  "type": "begin",
+  "name": "Item"
+ },
+ {
+  "type": "text",
+  "tag": "h5",
+  "style": "h5",
+  "html": "Introduction"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Welcome to [Your Company Name]! We are committed to protecting the privacy and security of your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data when you use our website [URL] or our services."
+ },
+ {
+  "type": "end",
+  "name": "Item"
+ },
+ {
+  "type": "begin",
+  "name": "Item"
+ },
+ {
+  "type": "text",
+  "tag": "h5",
+  "style": "h5",
+  "html": "Information We Collect"
+ },
+ {
+  "type": "text",
+  "tag": "ul",
+  "style": "body",
+  "html": "<li>Personal Information: When you register an account or use our services, we may collect personal information such as your name, email address, phone number, and billing information.</li><li><strong>Usage Data:</strong> We gather information about how you interact with our website or services, including IP address, browser type, pages visited, and device information.</li><li><strong>Cookies:</strong> We use cookies and similar tracking technologies to enhance your experience and gather data about your preferences and browsing behavior.</li>"
+ },
+ {
+  "type": "end",
+  "name": "Item"
+ },
+ {
+  "type": "begin",
+  "name": "Item"
+ },
+ {
+  "type": "text",
+  "tag": "h5",
+  "style": "h5",
+  "html": "How We Use Your Information"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "We use the information we collect for the following purposes:"
+ },
+ {
+  "type": "text",
+  "tag": "ul",
+  "style": "body",
+  "html": "<li>Providing and improving our services</li><li>Personalizing your experience</li><li>Communicating with you about updates, promotions, and offers</li><li>Analyzing usage trends and optimizing our website</li>"
+ },
+ {
+  "type": "end",
+  "name": "Item"
+ },
+ {
+  "type": "begin",
+  "name": "Item"
+ },
+ {
+  "type": "text",
+  "tag": "h5",
+  "style": "h5",
+  "html": "Data Sharing and Disclosure"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "We may share your information with third parties in the following circumstances:"
+ },
+ {
+  "type": "text",
+  "tag": "ul",
+  "style": "body",
+  "html": "<li>With your consent or at your direction</li><li>To comply with legal obligations or respond to legal requests</li><li>To protect our rights, property, or safety, or the rights, property, or safety of others</li><li>In connection with a merger, acquisition, or sale of assets</li>"
+ },
+ {
+  "type": "end",
+  "name": "Item"
+ },
+ {
+  "type": "begin",
+  "name": "Item"
+ },
+ {
+  "type": "text",
+  "tag": "h5",
+  "style": "h5",
+  "html": "Data Security"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "We implement security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security."
+ },
+ {
+  "type": "end",
+  "name": "Item"
+ },
+ {
+  "type": "begin",
+  "name": "Item"
+ },
+ {
+  "type": "text",
+  "tag": "h5",
+  "style": "h5",
+  "html": "Contact Us"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "If you have any questions or concerns about our Privacy Policy, please contact us at [Contact Information]."
+ },
+ {
+  "type": "end",
+  "name": "Item"
+ },
+ {
+  "type": "end",
+  "name": "Content"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Main Section"
+ },
+ {
+  "type": "begin",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "Cover"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "begin",
+  "name": "Main"
+ },
+ {
+  "type": "begin",
+  "name": "Logo"
+ },
+ {
+  "type": "begin",
+  "name": "Logo"
+ },
+ {
+  "type": "link",
+  "href": "./",
+  "name": "Logo",
+  "label": "",
+  "children": [
+   {
+    "type": "image",
+    "src": "assets/images/pyaDngF6J38whdYhhBSMKD5Qug.png",
+    "w": "2421",
+    "h": "510",
+    "alt": ""
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo"
+ },
+ {
+  "type": "link",
+  "href": "./contact",
+  "name": "Default",
+  "label": "Drop us a line",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "Drop us a line"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "begin",
+    "name": "Color"
+   },
+   {
+    "type": "begin",
+    "name": "Main Color"
+   },
+   {
+    "type": "end",
+    "name": "Main Color"
+   },
+   {
+    "type": "begin",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Color"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Logo"
+ },
+ {
+  "type": "begin",
+  "name": "Links"
+ },
+ {
+  "type": "begin",
+  "name": "Widget"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6-sm",
+  "html": "Links"
+ },
+ {
+  "type": "begin",
+  "name": "Link"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./\">Home</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./about\">About</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./product-hot-dip\">Services</a>"
+ },
+ {
+  "type": "end",
+  "name": "Link"
+ },
+ {
+  "type": "end",
+  "name": "Widget"
+ },
+ {
+  "type": "begin",
+  "name": "Widget"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6-sm",
+  "html": "Support"
+ },
+ {
+  "type": "begin",
+  "name": "Link"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./contact\">Contact us</a>"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "<a href=\"./blog\">News</a>"
+ },
+ {
+  "type": "end",
+  "name": "Link"
+ },
+ {
+  "type": "end",
+  "name": "Widget"
+ },
+ {
+  "type": "end",
+  "name": "Links"
+ },
+ {
+  "type": "end",
+  "name": "Main"
+ },
+ {
+  "type": "begin",
+  "name": "Line"
+ },
+ {
+  "type": "end",
+  "name": "Line"
+ },
+ {
+  "type": "begin",
+  "name": "Copyright"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "Copyright: © 2026 NASPS. All Rights Reserved."
+ },
+ {
+  "type": "end",
+  "name": "Copyright"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Cover"
+ },
+ {
+  "type": "end",
+  "name": "Desktop"
+ },
+ {
+  "type": "begin",
+  "name": "No Padding"
+ },
+ {
+  "type": "link",
+  "href": "https://framer.link/2uNk59O",
+  "name": "Buy",
+  "label": "Use for FREE",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "",
+    "html": "Use for FREE"
+   }
+  ]
+ },
+ {
+  "type": "link",
+  "href": "https://marcframe.com/",
+  "name": "More",
+  "label": "More Templates",
+  "children": [
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "",
+    "html": "More Templates"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "No Padding"
+ }
+]
