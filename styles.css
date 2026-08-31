@@ -1076,7 +1076,13 @@ button.showcase__item:hover > span:first-child { border-bottom-color: var(--ink-
 
 .section--prose .section__inner { align-items: flex-start; gap: 30px; }
 
-.product__specs { align-self: center; width: 100%; min-width: 0; max-width: 745px; }
+/* Tabellblocken ska ligga i linje med brödtexten: samma vänsterkant och
+   samma mått som .prose, inte centrerade i sektionen. */
+.product__specs { width: 100%; min-width: 0; max-width: 952px; }
+
+/* Komponenterna har egen padding som annars skjuter in tabellerna 28 px
+   jämfört med texten och lägger extra luft ovanpå sektionsavståndet. */
+.product__specs [class$='-root'] { padding: 0; }
 
 .table-scroll { overflow-x: auto; }
 
@@ -1088,9 +1094,8 @@ button.showcase__item:hover > span:first-child { border-bottom-color: var(--ink-
 
 .video {
   position: relative;
-  align-self: center;
   width: 100%;
-  max-width: 745px;
+  max-width: 952px;
   aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: 5px;
