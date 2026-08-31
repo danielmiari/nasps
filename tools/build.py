@@ -13,6 +13,8 @@ import json, os, re, shutil, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, 'tools', 'extracted')
 
+SITE = 'https://www.nasps.se/'   # för absoluta adresser i og:image
+
 LOGO = 'assets/images/pyaDngF6J38whdYhhBSMKD5Qug.png'
 
 NAV = [('Home', '/'), ('About us', '/about'), ('Products', '/products'), ('Project', '/project')]
@@ -278,6 +280,47 @@ def cta_html(blocks):
   </section>'''
 
 
+def load_specs():
+    """Storlekstabellerna hämtade från nasps.se, se tools/scrape_specs.py.
+
+    Nycklas på flikarnas etiketter i stället för sidnamn, så att den som
+    renderar en embed kan slå upp rätt data utan att veta vilken sida den
+    tillhör.
+    """
+    path = os.path.join(SRC, 'specs.json')
+    if not os.path.exists(path):
+        return {}
+    with open(path, encoding='utf-8') as fh:
+        return {tuple(flikar): flikar for flikar in json.load(fh).values()}
+
+
+SPECS = load_specs()
+
+
+def spec_html(html):
+    """Bygger om storleksflikarna så att alla storlekar finns med.
+
+    Framer-exporten innehöll bara den storlek som var server-renderad. Saknas
+    hämtad data faller vi tillbaka på exportens markup.
+    """
+    etiketter = re.findall(r'<button class="tdt-tab[^"]*"[^>]*>([^<]*)</button>', html)
+    flikar = SPECS.get(tuple(etiketter))
+    if not flikar:
+        return wrap_tables(html)
+
+    stil = re.search(r'<style>.*?</style>', html, re.S)
+    knappar = ''.join(
+        f'<button class="tdt-tab{" active" if i == 0 else ""}" type="button" '
+        f'data-size="{esc(namn)}">{namn}</button>'
+        for i, namn in enumerate(flikar))
+    paneler = ''.join(
+        f'<div class="tdt-panel" data-size="{esc(namn)}"{"" if i == 0 else " hidden"}>'
+        f'{wrap_tables(markup)}</div>'
+        for i, (namn, markup) in enumerate(flikar.items()))
+    return (f'{stil.group(0) if stil else ""}<div class="tdt-root">'
+            f'<div class="tdt-tabs">{knappar}</div>{paneler}</div>')
+
+
 def wrap_tables(html):
     """Tabellerna i produktkomponenterna får en scrollbar behållare på små skärmar."""
     return re.sub(r'(<table\b.*?</table>)', r'<div class="table-scroll">\1</div>', html, flags=re.S)
@@ -318,21 +361,28 @@ def page_head(kicker, heading, paragraphs, level='t-h2', tag='h1', center=False,
     return ''.join(parts)
 
 
-def relative_assets(html, depth):
-    """Filsökvägar relativa till sidan så att den även går att öppna från disk.
+def relative_urls(html, depth):
+    """Alla interna adresser blir relativa till sidan.
 
-    Sidlänkarna är kvar som rena URL:er (/about) - de kräver en webbserver.
+    Sajten måste kunna ligga i en underkatalog - GitHub Pages publicerar den
+    som /nasps/ - och då pekar en rotrelativ länk som /about på domänroten i
+    stället för på sajten. Relativa adresser fungerar oavsett var sajten ligger.
+
+    Mallarna skriver /about internt; omskrivningen sker här, på ett ställe.
     """
-    prefix = '../' * depth
+    up = '../' * depth
     for attr in ('src', 'href'):
-        for path in ('assets/', 'styles.css', 'script.js'):
-            html = html.replace(f'{attr}="/{path}', f'{attr}="{prefix}{path}')
+        # Startsidan först - annars gör den generella regeln href="/" till href=""
+        html = html.replace(f'{attr}="/"', f'{attr}="{up or "./"}"')
+        html = html.replace(f'{attr}="/', f'{attr}="{up}')
     return html
 
 
 def document(title, description, canonical, main, current, og_image=None, base='/', footer=True,
              depth=0):
-    og = og_image or 'assets/images/mDnzXLO8w8dvYWNOeqpLuWrdak.png'
+    # Sociala förhandsvisningar kräver absoluta adresser, så den hängs på samma
+    # domän som canonical redan pekar ut i stället för att bli sidrelativ.
+    og = SITE + (og_image or 'assets/images/mDnzXLO8w8dvYWNOeqpLuWrdak.png')
     # Framer-exportens relativa länkar -> rotrelativa, rena URL:er
     main = main.replace('href="./"', 'href="/"').replace('href="./', f'href="{base}')
     main = main.replace('href="../"', 'href="/"').replace('href="../', 'href="/')
@@ -349,11 +399,11 @@ def document(title, description, canonical, main, current, og_image=None, base='
   <meta property="og:title" content="{esc(title)}">
   <meta property="og:description" content="{esc(description)}">
   <meta property="og:url" content="{canonical}">
-  <meta property="og:image" content="/{og}">
+  <meta property="og:image" content="{og}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{esc(title)}">
   <meta name="twitter:description" content="{esc(description)}">
-  <meta name="twitter:image" content="/{og}">
+  <meta name="twitter:image" content="{og}">
   <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/styles.css?v={version('styles.css')}">
 </head>
@@ -367,7 +417,7 @@ def document(title, description, canonical, main, current, og_image=None, base='
 </body>
 </html>
 '''
-    return relative_assets(page, depth)
+    return relative_urls(page, depth)
 
 
 def section_wrap(inner, extra='', flush=False):
@@ -980,7 +1030,7 @@ def render_product(b):
                 if prose:
                     groups.append(f'<div class="prose">{"".join(prose)}</div>')
                     prose = []
-                groups.append(f'<div class="product__specs">{wrap_tables(blk["html"])}</div>')
+                groups.append(f'<div class="product__specs">{spec_html(blk["html"])}</div>')
         if prose:
             groups.append(f'<div class="prose">{"".join(prose)}</div>')
         parts.append(section_wrap('      ' + ''.join(groups), extra='section--prose', flush=True))

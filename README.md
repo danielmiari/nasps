@@ -28,10 +28,14 @@ Adapter är borttagen och `/product-shank_adapter` omdirigeras till `/products`.
 
 Huvudmenyn är Home / About us / Products / Project + kontaktknappen.
 
-Sidlänkarna är utan filändelse (`/about`). Det kräver en värd som mappar
-`/about` → `about.html` — Vercel gör det via [`vercel.json`](vercel.json)
-(`cleanUrls`). Filsökvägar (CSS, JS, bilder) är relativa till sidan, så
-designen visas även om man öppnar en HTML-fil direkt från disk.
+Alla interna adresser är **relativa till sidan** (`about`, `../about`,
+`./` för start). Det gör att sajten fungerar oavsett var den ligger: på
+domänroten via Vercel, eller i en underkatalog som GitHub Pages
+(`danielmiari.github.io/nasps/`). Mallarna skriver `/about` internt —
+omskrivningen sker på ett ställe, i `relative_urls()` i `tools/build.py`.
+
+Adresserna är utan filändelse, vilket kräver en värd som mappar `/about` →
+`about.html`. GitHub Pages och Vercel gör det, liksom `tools/serve.py`.
 
 ## Förhandsvisa lokalt
 
@@ -101,6 +105,7 @@ sparar som palett-PNG i samma storleksordning som de övriga bilderna.
 
 - `assets/images/` — 22 bilder i originalupplösning, `assets/fonts/` — typsnitt
 - `content/`, `assets-all.txt`, `list-*.txt`, `urls.txt` — underlag från exporten
-- Produktsidornas spec-tabeller är egna HTML-komponenter som följt med från
-  exporten; den innehåller bara data för den första storleken, övriga flikar
-  visar ett tomt läge.
+- Produktsidornas spec-tabeller är egna HTML-komponenter från exporten. Data
+  för storleksflikarna ritas av embed-koden i webbläsaren och fanns därför inte
+  i exporten — den hämtas i stället med `python3 tools/scrape_specs.py` från
+  nasps.se och sparas i `tools/extracted/specs.json`.

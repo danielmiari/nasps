@@ -144,25 +144,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Produktsidornas storlekstabbar. Exporten innehåller bara data för den
-  // första storleken; övriga visar ett tomt läge, precis som i originalet.
-  document.querySelectorAll('.tdt-root, .ct-root, .cv-root, .ss-root, .sa-root').forEach((root) => {
-    const tabs = root.querySelectorAll('.tdt-tab, .ct-tab, .cv-tab, .sa-tab, .ss-tab');
-    if (!tabs.length) return;
-    const sections = root.querySelectorAll('.tdt-section, .ct-section, .cv-section, .sa-section, .ss-section');
-    const empty = document.createElement('div');
-    empty.className = 'tdt-empty';
-    empty.hidden = true;
-    empty.textContent = 'No data available for this size.';
-    root.appendChild(empty);
+  // Produktsidornas storlekstabbar: varje storlek har en egen panel i
+  // markupen, så bytet är bara att visa rätt och dölja resten.
+  document.querySelectorAll('.tdt-root').forEach((root) => {
+    const tabs = root.querySelectorAll('.tdt-tab[data-size]');
+    const panels = root.querySelectorAll('.tdt-panel[data-size]');
+    if (tabs.length < 2 || !panels.length) return;
 
-    tabs.forEach((tab, index) => {
+    tabs.forEach((tab) => {
       tab.addEventListener('click', () => {
-        tabs.forEach((t) => t.classList.remove('active'));
-        tab.classList.add('active');
-        const first = index === 0;
-        sections.forEach((s) => { s.hidden = !first; });
-        empty.hidden = first;
+        const size = tab.dataset.size;
+        tabs.forEach((t) => t.classList.toggle('active', t === tab));
+        panels.forEach((p) => { p.hidden = p.dataset.size !== size; });
       });
     });
   });
