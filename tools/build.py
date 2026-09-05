@@ -441,6 +441,16 @@ def språkprefix(html):
     return html.replace('href="~', 'href="')
 
 
+def ta_bort_externa_länkar(html):
+    """Gör utgående länkar till vanlig text, men behåller texten.
+
+    Sajten ska inte länka vidare till andra webbplatser. Framer-källan har
+    exempelvis en länk till sinorockco.com mitt i en produkttext. mailto: och
+    tel: berörs inte - de öppnar e-post respektive telefon, inte en annan sajt.
+    """
+    return re.sub(r'<a\b[^>]*href="https?://[^"]*"[^>]*>(.*?)</a>', r'\1', html, flags=re.S)
+
+
 def relative_urls(html, depth):
     """Alla interna adresser blir relativa till sidan.
 
@@ -466,6 +476,7 @@ def document(title, description, canonical, main, current, og_image=None, base='
     # Framer-exportens relativa länkar -> rotrelativa, rena URL:er
     main = main.replace('href="./"', 'href="/"').replace('href="./', f'href="{base}')
     main = main.replace('href="../"', 'href="/"').replace('href="../', 'href="/')
+    main = ta_bort_externa_länkar(main)
 
     # Canonical och hreflang pekar på den publicerade domänen, ett par per språk
     kanonisk = SITE + LANG['prefix'] + sida
