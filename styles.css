@@ -274,6 +274,20 @@ ul, ol { padding-left: 1.15em; }
 
 /* ---------- Sidhuvud ---------- */
 
+.lang-switch {
+  flex: none;
+  padding: 6px 10px;
+  border: 1px solid var(--ink-30);
+  border-radius: 4px;
+  color: var(--ink-70);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.lang-switch:hover { color: var(--ink); border-color: var(--ink); }
+
+.lang-switch::after { content: none; }
+
+
 .site-header {
   display: flex;
   flex-direction: column;
@@ -286,7 +300,7 @@ ul, ol { padding-left: 1.15em; }
 .site-header__inner {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   width: 100%;
   max-width: var(--maxw);
 }
@@ -299,7 +313,7 @@ ul, ol { padding-left: 1.15em; }
   flex: 1;
   justify-content: flex-end;
   align-items: center;
-  gap: 30px;
+  gap: 26px;
 }
 
 .site-nav a {

@@ -15,6 +15,57 @@ SRC = os.path.join(ROOT, 'tools', 'extracted')
 
 SITE = 'https://www.nasps.se/'   # för absoluta adresser i og:image
 
+# Språk. Engelska ligger på rotadressen, svenska under /sv/.
+SPRÅK = [
+    {'kod': 'en', 'prefix': '', 'namn': 'English', 'html_lang': 'en'},
+    {'kod': 'sv', 'prefix': 'sv/', 'namn': 'Svenska', 'html_lang': 'sv'},
+]
+
+LANG = SPRÅK[0]          # vilket språk som renderas just nu
+ORDLISTA = {}            # källsträng -> översättning för LANG
+SAKNADE = set()          # samlas in när ORDLISTA saknar en sträng
+
+
+def t(text):
+    """Översätter en sträng till det språk som renderas.
+
+    Gäller även engelska, där ordlistan används för rättelser i källtexten -
+    exempelvis Röda Ulven-sidan, som är skriven på svenska i Framer-exporten.
+
+    Saknas översättningen används originalet, så en ofullständig ordlista ger
+    engelsk text i stället för trasig sida. Det som saknas samlas i SAKNADE
+    och kan skrivas ut med `python3 tools/build.py --saknade`.
+    """
+    if not text:
+        return text
+    if text in ORDLISTA:
+        return ORDLISTA[text]
+    if LANG['kod'] != 'en':
+        SAKNADE.add(text)
+    return text
+
+
+def läs_ordlista(kod):
+    path = os.path.join(ROOT, 'tools', 'translations', f'{kod}.json')
+    if not os.path.exists(path):
+        return {}
+    with open(path, encoding='utf-8') as fh:
+        return json.load(fh)
+
+
+def översätt_block(blocks):
+    """Kör allt textinnehåll från Framer-exporten genom ordlistan.
+
+    Görs på datan i stället för i varje mall, så mallarna slipper veta om
+    språk. Bilder, länkmål och tabellkomponenter rörs inte.
+    """
+    for b in walk(blocks):
+        if b['type'] == 'text':
+            b['html'] = t(b['html'])
+        elif b['type'] == 'image' and b.get('alt'):
+            b['alt'] = t(b['alt'])
+    return blocks
+
 LOGO = 'assets/images/pyaDngF6J38whdYhhBSMKD5Qug.png'
 
 NAV = [('Home', '/'), ('About us', '/about'), ('Products', '/products'), ('Project', '/project')]
@@ -196,14 +247,18 @@ def btn(label, href, variant='', block=False, icon=True):
         cls += ' btn--block'
     icon_html = f'<span class="btn__icon">{ARROW}</span>' if icon else ''
     return (f'<a class="{cls}" href="{href}">'
-            f'<span class="btn__label t-eyebrow">{label}</span>{icon_html}</a>')
+            f'<span class="btn__label t-eyebrow">{t(label)}</span>{icon_html}</a>')
 
 
-def header_html(current):
+def header_html(current, alt_url=''):
     items = []
     for label, href in NAV:
         aria = ' aria-current="page"' if href == current else ''
-        items.append(f'<a class="t-nav" href="{href}"{aria}>{label}</a>')
+        items.append(f'<a class="t-nav" href="{href}"{aria}>{t(label)}</a>')
+    andra = next(s for s in SPRÅK if s['kod'] != LANG['kod'])
+    växlare = (f'<a class="lang-switch t-nav" href="{alt_url}" lang="{andra["html_lang"]}" '
+               f'hreflang="{andra["html_lang"]}" aria-label="{andra["namn"]}">'
+               f'{andra["kod"].upper()}</a>') if alt_url else ''
     return f'''  <header class="site-header" data-open="false">
     <div class="site-header__inner">
       <a class="site-logo" href="/" aria-label="NASPS">
@@ -215,8 +270,9 @@ def header_html(current):
       <nav class="site-nav" aria-label="Main">
         {chr(10).join("        " + i for i in items).strip()}
       </nav>
+      {växlare}
       <a class="btn btn--boxed" href="/contact">
-        <span class="btn__swap t-eyebrow"><span>Contact us</span><span aria-hidden="true">Contact us</span></span>
+        <span class="btn__swap t-eyebrow"><span>{t('Contact us')}</span><span aria-hidden="true">{t('Contact us')}</span></span>
       </a>
     </div>
     <div class="rule site-header__rule"></div>
@@ -226,9 +282,9 @@ def header_html(current):
 def footer_html():
     cols = []
     for title, links in FOOTER_LINKS:
-        items = ''.join(f'<li><a class="t-sm" href="{h}">{l}</a></li>' for l, h in links)
+        items = ''.join(f'<li><a class="t-sm" href="{h}">{t(l)}</a></li>' for l, h in links)
         cols.append(f'''<div class="site-footer__widget">
-            <h2 class="t-h6-sm">{title}</h2>
+            <h2 class="t-h6-sm">{t(title)}</h2>
             <ul>{items}</ul>
           </div>''')
     return f'''  <footer class="site-footer">
@@ -246,7 +302,7 @@ def footer_html():
         </div>
       </div>
       <div class="rule"></div>
-      <p class="t-sm">Copyright: © 2026 NASPS. All Rights Reserved.</p>
+      <p class="t-sm">{t('Copyright: © 2026 NASPS. All Rights Reserved.')}</p>
     </div>
   </footer>'''
 
@@ -361,6 +417,27 @@ def page_head(kicker, heading, paragraphs, level='t-h2', tag='h1', center=False,
     return ''.join(parts)
 
 
+def språkprefix(html):
+    """Lägger språkets prefix på interna sidlänkar: /about -> /sv/about.
+
+    Görs centralt i stället för vid varje anropsställe, så mallarna kan skriva
+    /about rakt av. Filsökvägar hoppas över - de ligger i roten oavsett språk.
+    Språkväxlarens länk pekar på det andra språket och märks med ~ för att
+    slippa prefixet.
+    """
+    if not LANG['prefix']:
+        return html.replace('href="~', 'href="')
+
+    def prefixa(m):
+        adress = m.group(1)
+        if adress.startswith(('/assets/', '/styles.css', '/script.js')):
+            return m.group(0)
+        return f'href="/{LANG["prefix"]}{adress.lstrip("/")}"'
+
+    html = re.sub(r'href="(/[^"]*)"', prefixa, html)
+    return html.replace('href="~', 'href="')
+
+
 def relative_urls(html, depth):
     """Alla interna adresser blir relativa till sidan.
 
@@ -379,26 +456,38 @@ def relative_urls(html, depth):
 
 
 def document(title, description, canonical, main, current, og_image=None, base='/', footer=True,
-             depth=0):
+             depth=0, sida=''):
     # Sociala förhandsvisningar kräver absoluta adresser, så den hängs på samma
     # domän som canonical redan pekar ut i stället för att bli sidrelativ.
     og = SITE + (og_image or 'assets/images/mDnzXLO8w8dvYWNOeqpLuWrdak.png')
     # Framer-exportens relativa länkar -> rotrelativa, rena URL:er
     main = main.replace('href="./"', 'href="/"').replace('href="./', f'href="{base}')
     main = main.replace('href="../"', 'href="/"').replace('href="../', 'href="/')
+
+    # Canonical och hreflang pekar på den publicerade domänen, ett par per språk
+    kanonisk = SITE + LANG['prefix'] + sida
+    hreflang = '\n'.join(
+        f'  <link rel="alternate" hreflang="{sp["html_lang"]}" href="{SITE}{sp["prefix"]}{sida}">'
+        for sp in SPRÅK)
+    hreflang += f'\n  <link rel="alternate" hreflang="x-default" href="{SITE}{sida}">'
+    # Språkväxlarens mål: samma sida i det andra språket. ~ hindrar att den
+    # får språkprefixet i språkprefix().
+    andra = next(sp for sp in SPRÅK if sp['kod'] != LANG['kod'])
+    alt_url = '~/' + andra['prefix'] + sida
     page = f'''<!doctype html>
-<html lang="en">
+<html lang="{LANG['html_lang']}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(description)}">
-  <link rel="canonical" href="{canonical}">
+  <link rel="canonical" href="{kanonisk}">
+{hreflang}
   <link rel="icon" href="/assets/images/T3ZUxEdOhiSFrf9m5g33PWyCt4.png">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{esc(title)}">
   <meta property="og:description" content="{esc(description)}">
-  <meta property="og:url" content="{canonical}">
+  <meta property="og:url" content="{kanonisk}">
   <meta property="og:image" content="{og}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{esc(title)}">
@@ -408,7 +497,7 @@ def document(title, description, canonical, main, current, og_image=None, base='
   <link rel="stylesheet" href="/styles.css?v={version('styles.css')}">
 </head>
 <body>
-{header_html(current)}
+{header_html(current, alt_url)}
   <main>
 {main}
   </main>
@@ -417,7 +506,7 @@ def document(title, description, canonical, main, current, og_image=None, base='
 </body>
 </html>
 '''
-    return relative_urls(page, depth)
+    return relative_urls(språkprefix(page), depth)
 
 
 def section_wrap(inner, extra='', flush=False):
@@ -586,14 +675,14 @@ def showcase_html(kicker):
         on = ' is-active' if i == 0 else ''
         heads.append(f'<div class="showcase__state{on}" data-state="{i}">'
                      f'<h2 class="t-h2">{p["name"]}</h2>'
-                     f'<p class="t-body">{p["lead"]}</p></div>')
+                     f'<p class="t-body">{t(p["lead"])}</p></div>')
         fit = ' showcase__art--photo' if p.get('photo') else ''
         arts.append(f'<img class="showcase__art{fit} showcase__state{on}" data-state="{i}" '
                     f'src="/{p["img"]}" alt="" loading="lazy">')
         cta = btn('Read more', p['href'], block=True) if p['href'] else ''
         panels.append(f'<div class="showcase__state{on}" data-state="{i}">'
                       f'<h3 class="t-h6">{p["name"]}</h3>'
-                      f'<p class="t-body">{p["desc"]}</p>{cta}</div>')
+                      f'<p class="t-body">{t(p["desc"])}</p>{cta}</div>')
 
     index = 0
     for p in SHOWCASE:
@@ -741,7 +830,7 @@ def render_blog(b):
         content = section(chunk, 'Post Content')
         tx = texts(content)
         href = url(link['href'])
-        title = re.sub(r'</?a[^>]*>', '', tx[1]['html'])
+        title = t(re.sub(r'</?a[^>]*>', '', tx[1]['html']))
         cards.append(f'''<article class="card">
           <a class="card__media" href="{href}"><img src="{asset(img["src"])}" alt="{esc(title)}" loading="lazy"></a>
           <div class="card__body">
@@ -812,7 +901,7 @@ def render_faq(b):
     html = []
     for n, (state, tx2) in enumerate(items):
         question = tx2[0]['html']
-        answer = tx2[1]['html'] if len(tx2) > 1 else FAQ_FALLBACK
+        answer = tx2[1]['html'] if len(tx2) > 1 else t(FAQ_FALLBACK)
         open_ = 'true' if state == 'Open' else 'false'
         html.append(f'''<div class="faq__item" data-open="{open_}">
           <button class="faq__q t-h6-sm" type="button" aria-expanded="{open_}" aria-controls="faq-{n}">
@@ -952,7 +1041,7 @@ def related_posts(b):
         img = images(link.get('children', []))[0]
         tx = texts(section(chunk, 'Post Content'))
         href = link['href']
-        name = re.sub(r'</?a[^>]*>', '', tx[1]['html'])
+        name = t(re.sub(r'</?a[^>]*>', '', tx[1]['html']))
         cards.append(f'''<article class="card">
           <a class="card__media" href="{href}"><img src="{asset(img["src"])}" alt="{esc(name)}" loading="lazy"></a>
           <div class="card__body">
@@ -1107,11 +1196,11 @@ def carousel(images, label='Product photos'):
     for i, (src, alt) in enumerate(images):
         slides.append(
             f'<li class="carousel__slide" data-slide="{i}">'
-            f'<img src="{asset(src)}" width="1050" height="1400" alt="{esc(alt)}"'
+            f'<img src="{asset(src)}" width="1050" height="1400" alt="{esc(t(alt))}"'
             f'{"" if i == 0 else " loading=\'lazy\'"}></li>')
         dots.append(
             f'<button class="slider-dot" type="button" data-goto="{i}" '
-            f'aria-label="Show image {i + 1} of {len(images)}"'
+            f'aria-label="{t("Show image")} {i + 1} / {len(images)}"'
             f'{" aria-current=\'true\'" if i == 0 else ""}></button>')
 
     arrow = ('<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 3.5 5.5 8l4.5 '
@@ -1130,7 +1219,7 @@ def carousel(images, label='Product photos'):
             <button class="slider-arrow slider-arrow--next" type="button" data-next
                     aria-label="Next image">{arrow}</button>
           </div>
-          <p class="carousel__caption t-sm muted" data-caption aria-live="polite">{esc(images[0][1])}</p>
+          <p class="carousel__caption t-sm muted" data-caption aria-live="polite">{esc(t(images[0][1]))}</p>
         </div>'''
 
 
@@ -1143,19 +1232,19 @@ def render_htp_roller(_blocks=None):
                alt="HTP Roller 400 attachment for excavators">
         </div>
         <div class="product__intro">
-          {eyebrow(p['tagline'])}
+          {eyebrow(t(p['tagline']))}
           <h1 class="t-h3">{p['name']}</h1>
-          <p class="t-body">{p['lead']}</p>
+          <p class="t-body">{t(p['lead'])}</p>
           {btn('Request a quote', '/contact')}
         </div>
       </div>'''
 
     intro = ('<div class="prose">' + eyebrow('Introduction')
-             + ''.join(f'<p class="t-body">{t}</p>' for t in p['body']) + '</div>')
+             + ''.join(f'<p class="t-body">{t(x)}</p>' for x in p['body']) + '</div>')
 
-    rows = ''.join(f'<tr><th scope="row" class="t-sm">{k}</th><td class="t-body">{v}</td></tr>'
+    rows = ''.join(f'<tr><th scope="row" class="t-sm">{t(k)}</th><td class="t-body">{t(v)}</td></tr>'
                    for k, v in p['specs'])
-    specs = (f'<div class="prose"><h2 class="t-h3">Technical data</h2></div>'
+    specs = (f'<div class="prose"><h2 class="t-h3">{t('Technical data')}</h2></div>'
              f'<div class="product__specs"><table class="spec"><tbody>{rows}</tbody></table></div>')
 
     gallery = carousel(p['gallery'], f"{p['name']} photos")
@@ -1258,17 +1347,17 @@ def render_products():
           <div class="product-card__body">
             <p class="product-card__sizes t-eyebrow">{p['sizes']}</p>
             <h2 class="t-h5">{title}</h2>
-            <p class="t-body">{p['desc']}</p>
+            <p class="t-body">{t(p['desc'])}</p>
             {action}
           </div>
         </article>''')
 
     head_html = '      ' + page_head(
-        'Products',
-        'Systems and components for demanding ground conditions',
-        ['Self-drilling anchors, rock bolt systems, couplings and drilling tools — selected for '
-         'structural performance, installation efficiency and site-proven durability. Every '
-         'product page carries the full technical data.'])
+        t('Products'),
+        t('Systems and components for demanding ground conditions'),
+        [t('Self-drilling anchors, rock bolt systems, couplings and drilling tools — selected for '
+           'structural performance, installation efficiency and site-proven durability. Every '
+           'product page carries the full technical data.')])
     return section_wrap(head_html + f'''
       <div class="product-grid">{''.join(cards)}</div>''')
 
@@ -1325,7 +1414,8 @@ def meta_for(page):
     canon = re.search(r'<link rel="canonical" href="(.*?)"', src)
     og = re.search(r'<meta property="og:image" content="https://framerusercontent.com/images/(.*?)"', src)
     return {
-        'title': (title.group(1) if title else 'NASPS').replace('&amp;', '&'),
+        'title': re.sub(r'\s*-\s*My Framer Site$', '',
+                        (title.group(1) if title else 'NASPS')).replace('&amp;', '&'),
         'description': (desc.group(1) if desc else '').replace('&amp;', '&'),
         'canonical': canon.group(1) if canon else 'https://www.nasps.se/',
         'og': 'assets/images/' + og.group(1) if og else None,
@@ -1338,57 +1428,130 @@ def meta_for(page):
 BORTTAGNA = {'product-shank_adapter': 'products'}
 
 
-def redirect_page(gammal, ny):
-    return f'''<!doctype html>
-<html lang="en">
+def redirect_page(gammal, ny, depth=0):
+    """Vidarebefordran för en borttagen sida.
+
+    GitHub Pages kan inte göra serveromdirigeringar, så sidan skickar vidare
+    med meta refresh och pekar ut målet som canonical. Adresserna skrivs
+    rotrelativt och görs sidrelativa av samma pipeline som övriga sidor.
+    """
+    # Måladressen relativt den här sidan. Meta refresh ligger i ett
+    # content-attribut och nås inte av länkomskrivningen, så den räknas ut här.
+    mål = ('../' * depth) + LANG['prefix'] + ny
+    html = f'''<!doctype html>
+<html lang="{LANG['html_lang']}">
 <head>
   <meta charset="utf-8">
-  <title>Redirecting to products | NASPS</title>
-  <link rel="canonical" href="{SITE}{ny}">
+  <title>{t('This product is no longer part of our range.')} | NASPS</title>
+  <link rel="canonical" href="{SITE}{LANG['prefix']}{ny}">
   <meta name="robots" content="noindex">
-  <meta http-equiv="refresh" content="0; url={ny}">
-  <link rel="stylesheet" href="styles.css?v={version('styles.css')}">
+  <meta http-equiv="refresh" content="0; url={mål}">
+  <link rel="stylesheet" href="/styles.css?v={version('styles.css')}">
 </head>
 <body>
   <main class="section">
     <div class="section__inner">
-      <p class="t-body">This product is no longer part of our range.
-        <a class="rich" href="{ny}">Go to our products</a>.</p>
+      <p class="t-body">{t('This product is no longer part of our range.')}
+        <a class="rich" href="{mål}">{t('Go to our products')}</a>.</p>
     </div>
   </main>
 </body>
 </html>
 '''
+    return relative_urls(språkprefix(html), depth)
+
+
+def bygg_språk(språk):
+    """Bygger alla sidor för ett språk. Engelska i roten, svenska under sv/."""
+    global LANG, ORDLISTA
+    LANG = språk
+    ORDLISTA = läs_ordlista(språk['kod'])
+    prefix = språk['prefix']
+    skrivna = []
+
+    for source, out, current, render in PAGES:
+        blocks = []
+        if os.path.exists(os.path.join(SRC, source + '.json')):
+            blocks = översätt_block(load(source))
+        m = meta_for(source) or {'title': 'NASPS', 'description': '',
+                                 'canonical': SITE, 'og': None}
+        ut = prefix + out
+        sida = out[:-5]                      # about.html -> about
+        sida = '' if sida == 'index' else sida
+        base = '/' + out.rsplit('/', 1)[0] + '/' if '/' in out else '/'
+        html = document(t(m['title']), t(m['description']), m['canonical'], render(blocks),
+                        current, m['og'], base, footer=source != '404',
+                        depth=ut.count('/'), sida=sida)
+        skriv(ut, html)
+        skrivna.append(ut)
+
+    ut = prefix + 'products.html'
+    html = document(t('Products | NASPS - Nordic Anchor & Steel Pile Supply AB'),
+                    t('Self-drilling anchors, rock bolt systems and drilling tools from NASPS.'),
+                    SITE + 'products', render_products(), '/products',
+                    depth=ut.count('/'), sida='products')
+    skriv(ut, html)
+    skrivna.append(ut)
+
+    for gammal, ny in BORTTAGNA.items():
+        ut = prefix + gammal + '.html'
+        skriv(ut, redirect_page(gammal, ny, ut.count('/')))
+        skrivna.append(ut)
+
+    return skrivna
+
+
+def skriv(rel, html):
+    path = os.path.join(ROOT, rel)
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, 'w', encoding='utf-8') as fh:
+        fh.write(html)
+
+
+def skriv_sitemap(adresser):
+    """Sitemap för båda språken, med hreflang-par så sökmotorer kopplar ihop dem."""
+    rader = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
+             '        xmlns:xhtml="http://www.w3.org/1999/xhtml">']
+    for sida in adresser:
+        for sp in SPRÅK:
+            rader.append(f'<url><loc>{SITE}{sp["prefix"]}{sida}</loc>')
+            for alt in SPRÅK:
+                rader.append(f'  <xhtml:link rel="alternate" hreflang="{alt["html_lang"]}" '
+                             f'href="{SITE}{alt["prefix"]}{sida}"/>')
+            rader.append('</url>')
+    rader.append('</urlset>')
+    with open(os.path.join(ROOT, 'sitemap.xml'), 'w', encoding='utf-8') as fh:
+        fh.write('\n'.join(rader) + '\n')
+    return len(adresser) * len(SPRÅK)
 
 
 def main():
-    written = []
-    for source, out, current, render in PAGES:
-        has_content = os.path.exists(os.path.join(SRC, source + '.json'))
-        blocks = load(source) if has_content else []
-        m = meta_for(source) or {'title': 'NASPS', 'description': '', 'canonical': 'https://www.nasps.se/', 'og': None}
-        base = '/' + out.rsplit('/', 1)[0] + '/' if '/' in out else '/'
-        html = document(m['title'], m['description'], m['canonical'], render(blocks), current,
-                        m['og'], base, footer=source != '404', depth=out.count('/'))
-        path = os.path.join(ROOT, out)
-        os.makedirs(os.path.dirname(path), exist_ok=True)
-        with open(path, 'w', encoding='utf-8') as fh:
-            fh.write(html)
-        written.append(out)
+    alla = []
+    for språk in SPRÅK:
+        SAKNADE.clear()
+        skrivna = bygg_språk(språk)
+        alla += skrivna
+        saknas = f', {len(SAKNADE)} strängar utan översättning' if SAKNADE else ''
+        print(f'  {språk["kod"]}: {len(skrivna)} sidor{saknas}')
 
-    html = document('Products | NASPS - Nordic Anchor & Steel Pile Supply AB',
-                    'Self-drilling anchors, rock bolt systems and drilling tools from NASPS.',
-                    'https://www.nasps.se/products', render_products(), '')
-    with open(os.path.join(ROOT, 'products.html'), 'w', encoding='utf-8') as fh:
-        fh.write(html)
-    written.append('products.html')
+    if '--saknade' in sys.argv:
+        LANG_SV = next(sp for sp in SPRÅK if sp['kod'] == 'sv')
+        globals()['LANG'] = LANG_SV
+        globals()['ORDLISTA'] = läs_ordlista('sv')
+        SAKNADE.clear()
+        bygg_språk(LANG_SV)
+        mål = os.path.join(ROOT, 'tools', 'translations', 'sv.saknade.json')
+        os.makedirs(os.path.dirname(mål), exist_ok=True)
+        with open(mål, 'w', encoding='utf-8') as fh:
+            json.dump({k: '' for k in sorted(SAKNADE)}, fh, indent=1, ensure_ascii=False)
+        print(f'{len(SAKNADE)} strängar utan översättning -> {mål}')
 
-    for gammal, ny in BORTTAGNA.items():
-        with open(os.path.join(ROOT, gammal + '.html'), 'w', encoding='utf-8') as fh:
-            fh.write(redirect_page(gammal, ny))
-        written.append(gammal + '.html')
-
-    print(f'{len(written)} sidor byggda')
+    # 404 och vidarebefordringar hör inte hemma i en sitemap
+    adresser = [out[:-5] for _, out, _, _ in PAGES if out != '404.html']
+    adresser = ['' if a == 'index' else a for a in adresser] + ['products']
+    n = skriv_sitemap(adresser)
+    print(f'{len(alla)} sidor byggda, {n} adresser i sitemap.xml')
 
 
 def url(href):

@@ -9,12 +9,34 @@ Designen är hämtad ur den tidigare Framer-sajten: färger, typografi, mått,
 sektionsindelning och all text kommer därifrån. Originalexporten ligger kvar i
 [`pages/`](pages/) som referens.
 
+## Språk
+
+Sajten byggs på två språk. Engelska ligger på rotadressen, svenska under `/sv/`
+med samma slugs: `/about` och `/sv/about`. Språkväxlaren i sidhuvudet länkar
+till samma sida i det andra språket, och varje sida har `hreflang` för båda.
+
+All text går genom `t()` i `tools/build.py` och slås upp i
+`tools/translations/sv.json`, nycklad på den engelska källsträngen. Saknas en
+översättning används originalet — en ofullständig ordlista ger alltså engelsk
+text, inte en trasig sida. Lista det som saknas med:
+
+```sh
+python3 tools/build.py --saknade    # -> tools/translations/sv.saknade.json
+```
+
+Följande står kvar på engelska med avsikt: **produktnamn**, spec-tabellernas
+innehåll (teknisk data från leverantören), och Framers mall-badge som ändå inte
+renderas. `tools/translations/en.json` används tvärtom för rättelser i
+källtexten — Röda Ulven-sidan är skriven på svenska i Framer-exporten och får
+sin engelska text därifrån.
+
 ## Struktur
 
 | Rutt | Fil |
 |---|---|
 | `/` | `index.html` |
 | `/about` | `about.html` |
+| `/sv/…` | svensk version av varje sida |
 | `/project` | `project.html` |
 | `/project/salen`, `/project/rodaulven` | `project/*.html` |
 | `/products` | `products.html` — produktöversikt med kort |
