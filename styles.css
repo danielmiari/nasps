@@ -274,8 +274,11 @@ ul, ol { padding-left: 1.15em; }
 
 /* ---------- Sidhuvud ---------- */
 
+/* Extra luft före språkknappen skiljer menyn från knapparna till höger.
+   Marginal i stället för större gap, så knapparna hålls ihop parvis. */
 .lang-switch {
   flex: none;
+  margin-left: 25px;
   padding: 6px 10px;
   border: 1px solid var(--ink-30);
   border-radius: 4px;
@@ -365,7 +368,20 @@ ul, ol { padding-left: 1.15em; }
 
 @media (max-width: 809.98px) {
   .site-header__inner { flex-wrap: wrap; justify-content: space-between; gap: 0; }
-  .site-logo { width: 189px; }
+  /* Fyra element får inte plats på en rad. Språkvalet flyttas ned i menyn
+     och toppraden behåller logotyp, meny-knapp och kontaktknapp. */
+  .lang-switch {
+    order: 4;
+    display: none;
+    margin: 0 0 10px;
+    align-self: flex-start;
+  }
+  .site-header[data-open='true'] .lang-switch { display: inline-block; }
+  /* Toppraden rymde tidigare "Contact us" med två pixlars marginal, vilket
+     inte räckte för längre etiketter som "Kontakta oss". Mindre logotyp och
+     smalare knapp ger utrymme oavsett språk. */
+  .site-logo { width: 145px; }
+  .btn--boxed { padding: 12px 14px; }
   .nav-toggle { display: flex; }
   .site-nav {
     order: 3;
@@ -373,7 +389,9 @@ ul, ol { padding-left: 1.15em; }
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-    width: 100%;
+    /* flex: 0 0 100% i stället för width: 100% - annars krymper den och
+       släpper upp språkknappen bredvid sig i stället för under. */
+    flex: 0 0 100%;
     padding: 20px 0 10px;
   }
   .site-header[data-open='true'] .site-nav { display: flex; }
@@ -684,6 +702,13 @@ button.showcase__item:hover > span:first-child { border-bottom-color: var(--ink-
 
 @media (max-width: 809.98px) {
   .showcase__panel { margin: -40px 16px 0; padding: 20px; }
+}
+
+/* Under 360 px får logotyp, meny-knapp och kontaktknapp inte plats bredvid
+   varandra. Kontaktknappen flyttas då ned i menyn, som språkvalet. */
+@media (max-width: 359.98px) {
+  .site-header__inner .btn--boxed { order: 5; display: none; margin-bottom: 6px; }
+  .site-header[data-open='true'] .btn--boxed { display: inline-flex; }
 }
 
 /* ---------- Team ---------- */
