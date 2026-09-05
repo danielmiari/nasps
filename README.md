@@ -39,9 +39,17 @@ Adresserna är utan filändelse, vilket kräver en värd som mappar `/about` →
 
 ## Publicering
 
-Sajten ligger på GitHub Pages med domänen i `CNAME` (`www.nasps.se`). Filen ska
-redigeras i repot, inte via GitHubs gränssnitt — gränssnittet committar en egen
-version och då hamnar repot ur synk.
+Sajten ligger på GitHub Pages, tills vidare på
+`danielmiari.github.io/nasps/`.
+
+**Byta till egen domän:** lägg först in DNS-posterna hos GoDaddy (fyra A-poster
+på apex mot 185.199.108–111.153, och `www` som CNAME mot `danielmiari.github.io.`).
+Kopiera sedan `tools/CNAME.väntar` till `CNAME` i rotkatalogen och pusha.
+Ordningen spelar roll: läggs CNAME in före DNS börjar GitHub genast omdirigera
+förhandsadressen till domänen, som då fortfarande pekar någon annanstans.
+
+Filen ska redigeras i repot, inte via GitHubs gränssnitt — gränssnittet
+committar en egen version och då hamnar repot ur synk.
 
 `.github/workflows/pages.yml` kör `tools/build.py` och `tools/check_links.py`
 vid varje push till `main` och publicerar resultatet. Bygget behöver bara
