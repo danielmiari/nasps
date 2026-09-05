@@ -264,6 +264,7 @@ def header_html(current, alt_url=''):
       <a class="site-logo" href="/" aria-label="NASPS">
         <img src="/{LOGO}" width="2421" height="510" alt="NASPS — Nordic Anchor &amp; Steel Pile Supply AB">
       </a>
+      {växlare}
       <button class="nav-toggle" type="button" aria-label="{t('Menu')}" aria-expanded="false"
               aria-controls="site-menu">
         <span></span><span></span><span></span>
@@ -272,7 +273,6 @@ def header_html(current, alt_url=''):
         <nav class="site-nav" aria-label="Main">
           {chr(10).join("          " + i for i in items).strip()}
         </nav>
-        {växlare}
         <a class="btn btn--boxed" href="/contact">
           <span class="btn__swap t-eyebrow"><span>{t('Contact us')}</span><span aria-hidden="true">{t('Contact us')}</span></span>
         </a>
