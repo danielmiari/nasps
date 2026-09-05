@@ -1332,6 +1332,35 @@ def meta_for(page):
     }
 
 
+# Sidor som tagits bort men kan finnas indexerade eller länkade utifrån.
+# GitHub Pages kan inte göra serveromdirigeringar, så de får en liten sida
+# som skickar vidare. vercel.json ger en äkta 301 om sajten flyttar dit.
+BORTTAGNA = {'product-shank_adapter': 'products'}
+
+
+def redirect_page(gammal, ny):
+    return f'''<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting to products | NASPS</title>
+  <link rel="canonical" href="{SITE}{ny}">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="0; url={ny}">
+  <link rel="stylesheet" href="styles.css?v={version('styles.css')}">
+</head>
+<body>
+  <main class="section">
+    <div class="section__inner">
+      <p class="t-body">This product is no longer part of our range.
+        <a class="rich" href="{ny}">Go to our products</a>.</p>
+    </div>
+  </main>
+</body>
+</html>
+'''
+
+
 def main():
     written = []
     for source, out, current, render in PAGES:
@@ -1353,6 +1382,11 @@ def main():
     with open(os.path.join(ROOT, 'products.html'), 'w', encoding='utf-8') as fh:
         fh.write(html)
     written.append('products.html')
+
+    for gammal, ny in BORTTAGNA.items():
+        with open(os.path.join(ROOT, gammal + '.html'), 'w', encoding='utf-8') as fh:
+            fh.write(redirect_page(gammal, ny))
+        written.append(gammal + '.html')
 
     print(f'{len(written)} sidor byggda')
 

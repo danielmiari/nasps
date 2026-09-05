@@ -1,0 +1,65 @@
+# Bygger och publicerar sajten till GitHub Pages vid varje push till main.
+#
+# Poängen är att `tools/build.py` alltid körs innan publicering, så att en
+# ändring i tools/ eller styles.css inte kan glömmas bort och lämna sajten
+# inaktuell. Bygget behöver bara Pythons standardbibliotek.
+#
+# tools/scrape_specs.py körs INTE här - den kräver Playwright och hämtar från
+# nasps.se, och körs manuellt när tabellerna ändras.
+
+name: Publicera till GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Låt en pågående publicering göra klart i stället för att avbrytas.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Bygg sidorna
+        run: python3 tools/build.py
+
+      - name: Kontrollera att inget internt länkmål saknas
+        run: python3 tools/check_links.py
+
+      - name: Samla ihop det som ska publiceras
+        run: |
+          mkdir -p _site
+          rsync -a \
+            --exclude '.git' --exclude '.github' --exclude '_site' \
+            --exclude 'pages' --exclude 'tools' --exclude 'content' \
+            --exclude '*.txt' \
+            ./ _site/
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

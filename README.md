@@ -37,10 +37,26 @@ omskrivningen sker på ett ställe, i `relative_urls()` i `tools/build.py`.
 Adresserna är utan filändelse, vilket kräver en värd som mappar `/about` →
 `about.html`. GitHub Pages och Vercel gör det, liksom `tools/serve.py`.
 
+## Publicering
+
+Sajten ligger på GitHub Pages med domänen i `CNAME` (`www.nasps.se`). Filen ska
+redigeras i repot, inte via GitHubs gränssnitt — gränssnittet committar en egen
+version och då hamnar repot ur synk.
+
+`.github/workflows/pages.yml` kör `tools/build.py` och `tools/check_links.py`
+vid varje push till `main` och publicerar resultatet. Bygget behöver bara
+Pythons standardbibliotek. Att sidorna ändå är incheckade gör repot
+publicerbart även om workflowen skulle fallera.
+
+`vercel.json` ligger kvar för den dag sajten flyttar till Vercel — Pages läser
+den inte. Sidor som tagits bort listas i `BORTTAGNA` i `tools/build.py` och får
+en liten vidarebefordringssida, eftersom Pages inte kan göra serveromdirigeringar.
+
 ## Förhandsvisa lokalt
 
 ```sh
 python3 tools/serve.py        # http://127.0.0.1:8000
+python3 tools/check_links.py  # löser varje intern länk mot sin egen sida
 ```
 
 `python3 -m http.server` duger **inte** — den hittar inte `about.html` när
