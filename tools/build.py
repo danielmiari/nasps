@@ -998,10 +998,14 @@ def render_case(b):
 
     gal = ''.join(f'<img src="{asset(g["src"])}" width="{g["w"]}" height="{g["h"]}" alt="" loading="lazy">'
                   for g in gallery)
-    hero = (f'<div class="case__media"><img src="{asset(hero_img[0]["src"])}" '
+    # En liggande huvudbild får en bredare plats och en tätare textspalt
+    # bredvid, så att den ryms utan att beskäras till stående format.
+    wide = bool(hero_img) and int(hero_img[0]['w']) > int(hero_img[0]['h'])
+    hero = (f'<div class="case__media{" case__media--wide" if wide else ""}">'
+            f'<img src="{asset(hero_img[0]["src"])}" '
             f'width="{hero_img[0]["w"]}" height="{hero_img[0]["h"]}" alt=""></div>') if hero_img else ''
 
-    inner = f'''      <div class="case__top">
+    inner = f'''      <div class="case__top{" case__top--wide" if wide else ""}">
         <div class="case__main">
           {page_head(tx[0], tx[1]['html'], [t['html'] for t in tx[2:]], level='t-display')}
           <dl class="case__facts">{''.join(facts)}</dl>

@@ -938,6 +938,14 @@ button.showcase__item:hover > span:first-child { border-bottom-color: var(--ink-
 
 .case__media img { width: 100%; aspect-ratio: 340 / 431; object-fit: cover; border-radius: 5px; }
 
+/* Liggande huvudbild: bredare plats med bildens egna proportioner, och
+   tätare textspalt bredvid så att toppen håller ihop i höjd. */
+.case__media--wide { width: 560px; }
+.case__media--wide img { aspect-ratio: auto; }
+.case__top--wide .case__main { gap: 28px; }
+.case__top--wide .page-head { gap: 14px; }
+.case__top--wide .case__facts { gap: 20px 30px; }
+
 .case__facts {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -958,6 +966,7 @@ button.showcase__item:hover > span:first-child { border-bottom-color: var(--ink-
 @media (max-width: 1199.98px) {
   .case__top { flex-direction: column; }
   .case__media { width: 100%; max-width: 440px; }
+  .case__media--wide { max-width: 100%; }
   .case__facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 

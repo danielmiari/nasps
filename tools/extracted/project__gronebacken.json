@@ -191,9 +191,9 @@
  },
  {
   "type": "image",
-  "src": "assets/images/gronebacken-anchor.jpg",
-  "w": "1200",
-  "h": "1600",
+  "src": "assets/images/gronebacken.jpg",
+  "w": "850",
+  "h": "574",
   "alt": ""
  },
  {
@@ -222,9 +222,9 @@
  },
  {
   "type": "image",
-  "src": "assets/images/gronebacken.jpg",
-  "w": "850",
-  "h": "574",
+  "src": "assets/images/gronebacken-anchor.jpg",
+  "w": "1200",
+  "h": "1600",
   "alt": ""
  },
  {
