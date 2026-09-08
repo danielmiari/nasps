@@ -264,6 +264,111 @@
  },
  {
   "type": "link",
+  "href": "./project/gronebacken",
+  "name": "Project Image",
+  "label": "",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Image"
+   },
+   {
+    "type": "image",
+    "src": "assets/images/gronebacken.jpg",
+    "w": "850",
+    "h": "574",
+    "alt": ""
+   },
+   {
+    "type": "end",
+    "name": "Image"
+   }
+  ]
+ },
+ {
+  "type": "begin",
+  "name": "Project Description"
+ },
+ {
+  "type": "begin",
+  "name": "Title"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "2026"
+ },
+ {
+  "type": "text",
+  "tag": "h6",
+  "style": "h6",
+  "html": "Grönebacken, Gothenburg"
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "link",
+  "href": "./project/gronebacken",
+  "name": "Default",
+  "label": "View Project",
+  "children": [
+   {
+    "type": "begin",
+    "name": "Main"
+   },
+   {
+    "type": "text",
+    "tag": "p",
+    "style": "eyebrow",
+    "html": "View Project"
+   },
+   {
+    "type": "end",
+    "name": "Main"
+   },
+   {
+    "type": "begin",
+    "name": "Color"
+   },
+   {
+    "type": "begin",
+    "name": "Main Color"
+   },
+   {
+    "type": "end",
+    "name": "Main Color"
+   },
+   {
+    "type": "begin",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Hover Color"
+   },
+   {
+    "type": "end",
+    "name": "Color"
+   }
+  ]
+ },
+ {
+  "type": "end",
+  "name": "Project Description"
+ },
+ {
+  "type": "end",
+  "name": "Variant 1"
+ },
+ {
+  "type": "begin",
+  "name": "Variant 1"
+ },
+ {
+  "type": "link",
   "href": "./project/salen",
   "name": "Project Image",
   "label": "",

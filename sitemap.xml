@@ -41,6 +41,14 @@
   <xhtml:link rel="alternate" hreflang="en" href="https://www.nasps.se/project/rodaulven"/>
   <xhtml:link rel="alternate" hreflang="sv" href="https://www.nasps.se/sv/project/rodaulven"/>
 </url>
+<url><loc>https://www.nasps.se/project/gronebacken</loc>
+  <xhtml:link rel="alternate" hreflang="en" href="https://www.nasps.se/project/gronebacken"/>
+  <xhtml:link rel="alternate" hreflang="sv" href="https://www.nasps.se/sv/project/gronebacken"/>
+</url>
+<url><loc>https://www.nasps.se/sv/project/gronebacken</loc>
+  <xhtml:link rel="alternate" hreflang="en" href="https://www.nasps.se/project/gronebacken"/>
+  <xhtml:link rel="alternate" hreflang="sv" href="https://www.nasps.se/sv/project/gronebacken"/>
+</url>
 <url><loc>https://www.nasps.se/blog</loc>
   <xhtml:link rel="alternate" hreflang="en" href="https://www.nasps.se/blog"/>
   <xhtml:link rel="alternate" hreflang="sv" href="https://www.nasps.se/sv/blog"/>

@@ -1387,6 +1387,7 @@ PAGES = [
     ('project', 'project.html', '/project', render_project),
     ('project__salen', 'project/salen.html', '/project', render_case),
     ('project__rodaulven', 'project/rodaulven.html', '/project', render_case),
+    ('project__gronebacken', 'project/gronebacken.html', '/project', render_case),
     ('blog', 'blog.html', '', render_blog),
     ('blog__project-salen', 'blog/project-salen.html', '', render_post),
     ('blog__nasps-accelerates-growth', 'blog/nasps-accelerates-growth.html', '', render_post),
@@ -1411,6 +1412,14 @@ EXTRA_META = {
                        'max handling load 2500 kg.',
         'canonical': 'https://www.nasps.se/product-htp-roller-400',
         'og': 'assets/images/htp-roller-400.jpg',
+    },
+    'project__gronebacken': {
+        # Projektsida skriven direkt i tools/extracted, utan Framer-förlaga.
+        'title': 'Grönebacken, Gothenburg | NASPS - Nordic Anchor & Steel Pile Supply AB',
+        'description': "T76/51 anchors as tie-back anchoring for 700 m² of dowelled sheet piling at "
+                       "Botrygg's Grönebacken project in Kyrkbyn, Gothenburg, supplied to GrundX.",
+        'canonical': 'https://www.nasps.se/project/gronebacken',
+        'og': 'assets/images/gronebacken.jpg',
     },
 }
 

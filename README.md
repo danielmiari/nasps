@@ -38,7 +38,7 @@ sin engelska text därifrån.
 | `/about` | `about.html` |
 | `/sv/…` | svensk version av varje sida |
 | `/project` | `project.html` |
-| `/project/salen`, `/project/rodaulven` | `project/*.html` |
+| `/project/salen`, `/project/rodaulven`, `/project/gronebacken` | `project/*.html` |
 | `/products` | `products.html` — produktöversikt med kort |
 | 5 produktsidor | `product-*.html` |
 
@@ -120,6 +120,10 @@ komponenter hålls identiska på alla sidor:
 python3 tools/extract.py pages/*.html   # innehåll ur Framer-exporten -> JSON
 python3 tools/build.py                  # JSON + mallar -> HTML i roten
 ```
+
+Grönebacken-projektet har ingen Framer-förlaga: `tools/extracted/project__gronebacken.json`
+och kortet i `project.json` är skrivna för hand i samma blockstruktur, med engelsk källtext
+och svenska i `sv.json`. Metadata ligger i `EXTRA_META`. Nya projekt läggs till på samma sätt.
 
 HTP Roller 400 finns inte i Framer-exporten — dess text, specifikationer och
 bilder ligger i `HTP_ROLLER` överst bland produkterna i `tools/build.py`. Nya
