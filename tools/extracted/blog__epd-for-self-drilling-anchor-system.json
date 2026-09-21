@@ -13,7 +13,7 @@
  },
  {
   "type": "link",
-  "href": "./",
+  "href": "../",
   "name": "Logo",
   "label": "",
   "children": [
@@ -36,7 +36,7 @@
  },
  {
   "type": "link",
-  "href": "./",
+  "href": "../",
   "name": "Menu",
   "label": "Home",
   "children": [
@@ -58,7 +58,7 @@
  },
  {
   "type": "link",
-  "href": "./about",
+  "href": "../about",
   "name": "Menu",
   "label": "About us",
   "children": [
@@ -80,7 +80,7 @@
  },
  {
   "type": "link",
-  "href": "./project",
+  "href": "../project",
   "name": "Menu",
   "label": "Project",
   "children": [
@@ -106,7 +106,7 @@
  },
  {
   "type": "link",
-  "href": "./contact",
+  "href": "../contact",
   "name": "Default",
   "label": "CONTACT US CONTACT US CONTACT US",
   "children": [
@@ -174,7 +174,7 @@
  },
  {
   "type": "begin",
-  "name": "Latest Blog"
+  "name": "Main Content"
  },
  {
   "type": "begin",
@@ -182,7 +182,11 @@
  },
  {
   "type": "begin",
-  "name": "Page Title"
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Post Title"
  },
  {
   "type": "begin",
@@ -211,8 +215,197 @@
  {
   "type": "text",
   "tag": "p",
-  "style": "body",
+  "style": "sm",
   "html": "News"
+ },
+ {
+  "type": "end",
+  "name": "Subtitle"
+ },
+ {
+  "type": "text",
+  "tag": "h1",
+  "style": "h2",
+  "html": "Environmental Product Declaration registered for our self-drilling anchor system"
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Details"
+ },
+ {
+  "type": "begin",
+  "name": "Date"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "Posted on"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Sep 21, 2026"
+ },
+ {
+  "type": "end",
+  "name": "Date"
+ },
+ {
+  "type": "begin",
+  "name": "Author"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "Posted by"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Kim Rasmussen - Co Founder"
+ },
+ {
+  "type": "end",
+  "name": "Author"
+ },
+ {
+  "type": "end",
+  "name": "Details"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "The self-drilling anchoring system that NASPS supplies has completed EPD registration. Environmental data based on a life cycle assessment is now documented and publicly registered for the product."
+ },
+ {
+  "type": "end",
+  "name": "Post Title"
+ },
+ {
+  "type": "begin",
+  "name": "Post Image"
+ },
+ {
+  "type": "begin",
+  "name": "Image"
+ },
+ {
+  "type": "image",
+  "src": "assets/images/gronebacken-bars.jpg",
+  "w": "1200",
+  "h": "1600",
+  "alt": ""
+ },
+ {
+  "type": "end",
+  "name": "Image"
+ },
+ {
+  "type": "end",
+  "name": "Post Image"
+ },
+ {
+  "type": "end",
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Post Content"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "The self-drilling anchoring system that NASPS supplies has completed EPD registration. Environmental data based on a life cycle assessment is now documented and publicly registered for the product."
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "An Environmental Product Declaration, EPD, reports a product’s environmental performance in a standardised way, with a life cycle assessment as its basis. Because every declaration follows the same set of rules, the figures can be compared between products and used directly in a project’s own environmental calculations."
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "The declaration is registered by our supplier Sinorock and covers their self-drilling anchoring system under registration number EPD-IES-0031637_001."
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "For our customers this means the documentation is there when a project asks for it: in procurement with environmental requirements, in the client’s environmental assessment, and as input to the climate declaration required for new buildings in Sweden."
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Do you need the environmental documentation for the anchors in a specific project? Get in touch and we will send it over."
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "body",
+  "html": "Source: Sinorock, “Sinorock Self-Drilling Anchoring System Completes EPD Registration”, published on 18 September 2026 on sinorockco.com."
+ },
+ {
+  "type": "end",
+  "name": "Post Content"
+ },
+ {
+  "type": "end",
+  "name": "Inner"
+ },
+ {
+  "type": "end",
+  "name": "Main Content"
+ },
+ {
+  "type": "begin",
+  "name": "Latest Blog"
+ },
+ {
+  "type": "begin",
+  "name": "Inner"
+ },
+ {
+  "type": "begin",
+  "name": "Title"
+ },
+ {
+  "type": "begin",
+  "name": "Subtitle"
+ },
+ {
+  "type": "begin",
+  "name": "Icon"
+ },
+ {
+  "type": "begin",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Dot"
+ },
+ {
+  "type": "end",
+  "name": "Icon"
+ },
+ {
+  "type": "text",
+  "tag": "p",
+  "style": "sm",
+  "html": "Related Post"
  },
  {
   "type": "end",
@@ -222,86 +415,19 @@
   "type": "text",
   "tag": "h2",
   "style": "h2",
-  "html": "Stay Updated with Our Latest Insights"
+  "html": "Browse Our Resources"
  },
  {
   "type": "end",
   "name": "Title"
  },
  {
-  "type": "text",
-  "tag": "p",
-  "style": "body",
-  "html": "Check out our latest blog posts and industry insights to stay informed about the latest trends, technologies, and project updates."
- },
- {
-  "type": "end",
-  "name": "Page Title"
- },
- {
   "type": "begin",
   "name": "Variant 1"
  },
  {
   "type": "link",
-  "href": "./blog/epd-for-self-drilling-anchor-system",
-  "name": "Post Image",
-  "label": "",
-  "children": [
-   {
-    "type": "begin",
-    "name": "Image"
-   },
-   {
-    "type": "image",
-    "src": "assets/images/gronebacken-bars.jpg",
-    "w": "1200",
-    "h": "1600",
-    "alt": ""
-   },
-   {
-    "type": "end",
-    "name": "Image"
-   }
-  ]
- },
- {
-  "type": "begin",
-  "name": "Post Content"
- },
- {
-  "type": "text",
-  "tag": "p",
-  "style": "nav",
-  "html": "Sep 21, 2026"
- },
- {
-  "type": "text",
-  "tag": "h6",
-  "style": "h6",
-  "html": "<a href=\"./blog/epd-for-self-drilling-anchor-system\">Environmental Product Declaration registered for our self-drilling anchor system</a>"
- },
- {
-  "type": "text",
-  "tag": "p",
-  "style": "xs",
-  "html": "The self-drilling anchoring system that NASPS supplies has completed EPD registration. Environmental data based on a life cycle assessment is now documented and publicly registered for the product."
- },
- {
-  "type": "end",
-  "name": "Post Content"
- },
- {
-  "type": "end",
-  "name": "Variant 1"
- },
- {
-  "type": "begin",
-  "name": "Variant 1"
- },
- {
-  "type": "link",
-  "href": "./blog/röda-ulven-expands-in-skagshamn-–-investing-in-increased-capacity",
+  "href": "./röda-ulven-expands-in-skagshamn-–-investing-in-increased-capacity",
   "name": "Post Image",
   "label": "",
   "children": [
@@ -336,127 +462,13 @@
   "type": "text",
   "tag": "h6",
   "style": "h6",
-  "html": "<a href=\"./blog/röda-ulven-expands-in-skagshamn-–-investing-in-increased-capacity\">Röda Ulven expands in Skagshamn – investing in increased capacity</a>"
+  "html": "<a href=\"./röda-ulven-expands-in-skagshamn-–-investing-in-increased-capacity\">Röda Ulven expands in Skagshamn – investing in increased capacity</a>"
  },
  {
   "type": "text",
   "tag": "p",
   "style": "xs",
   "html": "Nordic Anchor &amp; Steel Pile Supply AB (NASPS AB) is proud to contribute to the development of Röda Ulven, which continues to grow its production in Skagshamn through a planned expansion of the existing facility."
- },
- {
-  "type": "end",
-  "name": "Post Content"
- },
- {
-  "type": "end",
-  "name": "Variant 1"
- },
- {
-  "type": "begin",
-  "name": "Variant 1"
- },
- {
-  "type": "link",
-  "href": "./blog/nasps-accelerates-growth",
-  "name": "Post Image",
-  "label": "",
-  "children": [
-   {
-    "type": "begin",
-    "name": "Image"
-   },
-   {
-    "type": "image",
-    "src": "assets/images/WptqilOuS2ZL8DRfAOY2ch3GZU.png",
-    "w": "1290",
-    "h": "2796",
-    "alt": ""
-   },
-   {
-    "type": "end",
-    "name": "Image"
-   }
-  ]
- },
- {
-  "type": "begin",
-  "name": "Post Content"
- },
- {
-  "type": "text",
-  "tag": "p",
-  "style": "nav",
-  "html": "Apr 1, 2024"
- },
- {
-  "type": "text",
-  "tag": "h6",
-  "style": "h6",
-  "html": "<a href=\"./blog/nasps-accelerates-growth\">NASPS accelerates growth – Ingemar Andersson leads the push on SDA</a>"
- },
- {
-  "type": "text",
-  "tag": "p",
-  "style": "xs",
-  "html": "We are building the foundations of the future – together with our customers."
- },
- {
-  "type": "end",
-  "name": "Post Content"
- },
- {
-  "type": "end",
-  "name": "Variant 1"
- },
- {
-  "type": "begin",
-  "name": "Variant 1"
- },
- {
-  "type": "link",
-  "href": "./blog/project-salen",
-  "name": "Post Image",
-  "label": "",
-  "children": [
-   {
-    "type": "begin",
-    "name": "Image"
-   },
-   {
-    "type": "image",
-    "src": "assets/images/DLBQHynZOkyaXv7UAUQPVj6qYMw.jpg",
-    "w": "800",
-    "h": "482",
-    "alt": ""
-   },
-   {
-    "type": "end",
-    "name": "Image"
-   }
-  ]
- },
- {
-  "type": "begin",
-  "name": "Post Content"
- },
- {
-  "type": "text",
-  "tag": "p",
-  "style": "nav",
-  "html": "Apr 30, 2024"
- },
- {
-  "type": "text",
-  "tag": "h6",
-  "style": "h6",
-  "html": "<a href=\"./blog/project-salen\">Nordic Anchor &amp; Steel Pile Supply AB (NASPS AB) is proud to contribute to the development of a new mountain hotel in Sälen</a>"
- },
- {
-  "type": "text",
-  "tag": "p",
-  "style": "xs",
-  "html": "NASPS delivers high-quality products for geotechnical foundation work in complex environments. Our self-drilling anchor systems enable fast installation and high reliability, even under challenging ground conditions."
  },
  {
   "type": "end",
@@ -508,7 +520,7 @@
  },
  {
   "type": "link",
-  "href": "./",
+  "href": "../",
   "name": "Logo",
   "label": "",
   "children": [
@@ -527,7 +539,7 @@
  },
  {
   "type": "link",
-  "href": "./contact",
+  "href": "../contact",
   "name": "Default",
   "label": "Drop us a line",
   "children": [
@@ -597,19 +609,19 @@
   "type": "text",
   "tag": "p",
   "style": "sm",
-  "html": "<a href=\"./\">Home</a>"
+  "html": "<a href=\"../\">Home</a>"
  },
  {
   "type": "text",
   "tag": "p",
   "style": "sm",
-  "html": "<a href=\"./about\">About</a>"
+  "html": "<a href=\"../about\">About</a>"
  },
  {
   "type": "text",
   "tag": "p",
   "style": "sm",
-  "html": "<a href=\"./product-hot-dip\">Services</a>"
+  "html": "<a href=\"../product-hot-dip\">Services</a>"
  },
  {
   "type": "end",
@@ -637,13 +649,13 @@
   "type": "text",
   "tag": "p",
   "style": "sm",
-  "html": "<a href=\"./contact\">Contact us</a>"
+  "html": "<a href=\"../contact\">Contact us</a>"
  },
  {
   "type": "text",
   "tag": "p",
   "style": "sm",
-  "html": "<a href=\"./blog\">News</a>"
+  "html": "<a href=\"../blog\">News</a>"
  },
  {
   "type": "end",

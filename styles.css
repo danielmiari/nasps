@@ -994,7 +994,34 @@ button.showcase__item:hover > span:first-child { border-bottom-color: var(--ink-
 
 .post__body p { color: var(--ink-80); }
 
+/* Kort inlägg: bilden ställs bredvid ingressen och brödtexten löper under
+   båda. I tvåspaltsuppställningen ovan tar en kort brödtext slut långt
+   ovanför bildens nederkant, och då står högerspalten tom. */
+
+.post--wide { display: block; }
+
+/* align-items: stretch gör bilden exakt lika hög som ingressen bredvid, så
+   den varken slutar ovanför texten eller hänger ner i tomrummet under den. */
+.post--wide .post__top { display: flex; align-items: stretch; gap: var(--gap); }
+
+.post--wide .post__aside { flex: 1; }
+
+/* Bilden ligger absolut i sin ruta. Annars räknas dess egen höjd - en stående
+   bild blir 450 px hög vid 340 px bredd - in i radens höjd, och då är det
+   bilden som styr i stället för texten. */
+.post--wide .post__hero { position: relative; flex: none; width: 340px; min-height: 260px; }
+
+.post--wide .post__hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 5px; }
+
+.post--wide .post__body { margin-top: var(--gap); }
+
 @media (max-width: 809.98px) { .post { flex-direction: column; } .post__aside { flex: none; width: 100%; } }
+
+@media (max-width: 809.98px) {
+  .post--wide .post__top { flex-direction: column; }
+  .post--wide .post__hero { position: static; width: 100%; max-width: 440px; min-height: 0; }
+  .post--wide .post__hero img { position: static; height: auto; aspect-ratio: 340 / 431; }
+}
 
 /* ---------- Produktsida ---------- */
 

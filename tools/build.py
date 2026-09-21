@@ -24,6 +24,12 @@ SPRÅK = [
 LANG = SPRÅK[0]          # vilket språk som renderas just nu
 ORDLISTA = {}            # källsträng -> översättning för LANG
 SAKNADE = set()          # samlas in när ORDLISTA saknar en sträng
+SIDKÄLLA = ''            # vilken sida i PAGES som renderas just nu
+
+# Inlägg som får den breda uppställningen: bilden bredvid ingressen och
+# brödtexten under båda. Standardmallen ställer bilden i vänsterspalten
+# bredvid brödtexten, vilket lämnar högerspalten tom när texten är kort.
+BREDA_INLÄGG = {'blog__epd-for-self-drilling-anchor-system'}
 
 
 def t(text):
@@ -1032,17 +1038,33 @@ def render_post(b):
     img = images(section(main, 'Post Image'))
     img_html = ''.join(f'<img src="{asset(i["src"])}" width="{i["w"]}" height="{i["h"]}" alt="" loading="lazy">'
                        for i in img)
+    body = ''.join(f'<p class="t-body">{t["html"]}</p>'
+                   for t in texts(section(main, 'Post Content')))
 
-    inner = f'''      <article class="post">
-        <div class="post__aside">
+    aside = f'''<div class="post__aside">
           {eyebrow(tx[0])}
           <h1 class="t-h2">{tx[1]['html']}</h1>
           <dl class="post__meta">{''.join(meta)}</dl>
-          <p class="t-sm muted">{excerpt}</p>
+          <p class="t-sm muted">{excerpt}</p>'''
+
+    if SIDKÄLLA in BREDA_INLÄGG:
+        inner = f'''      <article class="post post--wide">
+        <div class="post__top">
+          {aside}
+          </div>
+          <div class="post__hero">{img_html}</div>
+        </div>
+        <div class="post__body">
+          {body}
+        </div>
+      </article>'''
+    else:
+        inner = f'''      <article class="post">
+        {aside}
           {img_html}
         </div>
         <div class="post__body">
-          {''.join(f'<p class="t-body">{t["html"]}</p>' for t in texts(section(main, 'Post Content')))}
+          {body}
         </div>
       </article>'''
     return '\n'.join(x for x in [section_wrap(inner), related_posts(b)] if x)
@@ -1393,6 +1415,8 @@ PAGES = [
     ('project__rodaulven', 'project/rodaulven.html', '/project', render_case),
     ('project__gronebacken', 'project/gronebacken.html', '/project', render_case),
     ('blog', 'blog.html', '', render_blog),
+    ('blog__epd-for-self-drilling-anchor-system',
+     'blog/epd-for-self-drilling-anchor-system.html', '', render_post),
     ('blog__project-salen', 'blog/project-salen.html', '', render_post),
     ('blog__nasps-accelerates-growth', 'blog/nasps-accelerates-growth.html', '', render_post),
     ('blog__röda-ulven-expands-in-skagshamn-–-investing-in-increased-capacity',
@@ -1424,6 +1448,16 @@ EXTRA_META = {
                        "Botrygg's Grönebacken project in Kyrkbyn, Gothenburg, supplied to GrundX.",
         'canonical': 'https://www.nasps.se/project/gronebacken',
         'og': 'assets/images/gronebacken.jpg',
+    },
+    'blog__epd-for-self-drilling-anchor-system': {
+        # Nyhetsinlägg skrivet direkt i tools/extracted, utan Framer-förlaga.
+        'title': 'EPD registered for our self-drilling anchor system | NASPS - Nordic Anchor '
+                 '& Steel Pile Supply AB',
+        'description': 'The self-drilling anchoring system NASPS supplies has completed EPD '
+                       'registration - life cycle based environmental data, documented for '
+                       'procurement, environmental assessment and climate declarations.',
+        'canonical': 'https://www.nasps.se/blog/epd-for-self-drilling-anchor-system',
+        'og': 'assets/images/gronebacken-bars.jpg',
     },
 }
 
@@ -1490,13 +1524,14 @@ def redirect_page(gammal, ny, depth=0):
 
 def bygg_språk(språk):
     """Bygger alla sidor för ett språk. Engelska i roten, svenska under sv/."""
-    global LANG, ORDLISTA
+    global LANG, ORDLISTA, SIDKÄLLA
     LANG = språk
     ORDLISTA = läs_ordlista(språk['kod'])
     prefix = språk['prefix']
     skrivna = []
 
     for source, out, current, render in PAGES:
+        SIDKÄLLA = source
         blocks = []
         if os.path.exists(os.path.join(SRC, source + '.json')):
             blocks = översätt_block(load(source))

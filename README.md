@@ -45,7 +45,7 @@ sin engelska text därifrån.
 Produktöversikten listar sex produkter: Duplex Coating Rock Bolt saknar egen sida
 och visas som ett kort utan Read more-länk (`'slug': None` i `PRODUCTS`). Shank
 Adapter är borttagen och `/product-shank_adapter` omdirigeras till `/products`.
-| `/blog` + 3 inlägg | `blog.html`, `blog/*.html` |
+| `/blog` + 4 inlägg | `blog.html`, `blog/*.html` |
 | `/contact`, `/faq`, `/privacy`, `/terms`, `/404` | resp. fil |
 
 Huvudmenyn är Home / About us / Products / Project + kontaktknappen.
@@ -124,6 +124,12 @@ python3 tools/build.py                  # JSON + mallar -> HTML i roten
 Grönebacken-projektet har ingen Framer-förlaga: `tools/extracted/project__gronebacken.json`
 och kortet i `project.json` är skrivna för hand i samma blockstruktur, med engelsk källtext
 och svenska i `sv.json`. Metadata ligger i `EXTRA_META`. Nya projekt läggs till på samma sätt.
+
+Blogginlägg utan Framer-förlaga läggs till på samma sätt: en fil i `tools/extracted/`, ett
+kort i `blog.json`, en rad i `PAGES` och metadata i `EXTRA_META`. Inlägg som listas i
+`BREDA_INLÄGG` får en bredare uppställning — bilden bredvid ingressen och brödtexten under
+båda — i stället för standardmallens två spalter, som lämnar högerspalten tom när texten
+är kort.
 
 HTP Roller 400 finns inte i Framer-exporten — dess text, specifikationer och
 bilder ligger i `HTP_ROLLER` överst bland produkterna i `tools/build.py`. Nya
