@@ -45,7 +45,7 @@ sin engelska text därifrån.
 Produktöversikten listar sex produkter: Duplex Coating Rock Bolt saknar egen sida
 och visas som ett kort utan Read more-länk (`'slug': None` i `PRODUCTS`). Shank
 Adapter är borttagen och `/product-shank_adapter` omdirigeras till `/products`.
-| `/blog` + 4 inlägg | `blog.html`, `blog/*.html` |
+| `/blog` + 5 inlägg | `blog.html`, `blog/*.html` |
 | `/contact`, `/faq`, `/privacy`, `/terms`, `/404` | resp. fil |
 
 Huvudmenyn är Home / About us / Products / Project + kontaktknappen.

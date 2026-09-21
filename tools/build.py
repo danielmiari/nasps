@@ -29,7 +29,8 @@ SIDKÄLLA = ''            # vilken sida i PAGES som renderas just nu
 # Inlägg som får den breda uppställningen: bilden bredvid ingressen och
 # brödtexten under båda. Standardmallen ställer bilden i vänsterspalten
 # bredvid brödtexten, vilket lämnar högerspalten tom när texten är kort.
-BREDA_INLÄGG = {'blog__epd-for-self-drilling-anchor-system'}
+BREDA_INLÄGG = {'blog__epd-for-self-drilling-anchor-system',
+                'blog__self-drilling-anchor-bolt-technical-parameters'}
 
 
 def t(text):
@@ -1417,6 +1418,8 @@ PAGES = [
     ('blog', 'blog.html', '', render_blog),
     ('blog__epd-for-self-drilling-anchor-system',
      'blog/epd-for-self-drilling-anchor-system.html', '', render_post),
+    ('blog__self-drilling-anchor-bolt-technical-parameters',
+     'blog/self-drilling-anchor-bolt-technical-parameters.html', '', render_post),
     ('blog__project-salen', 'blog/project-salen.html', '', render_post),
     ('blog__nasps-accelerates-growth', 'blog/nasps-accelerates-growth.html', '', render_post),
     ('blog__röda-ulven-expands-in-skagshamn-–-investing-in-increased-capacity',
@@ -1458,6 +1461,16 @@ EXTRA_META = {
                        'procurement, environmental assessment and climate declarations.',
         'canonical': 'https://www.nasps.se/blog/epd-for-self-drilling-anchor-system',
         'og': 'assets/images/gronebacken-bars.jpg',
+    },
+    'blog__self-drilling-anchor-bolt-technical-parameters': {
+        # Nyhetsinlägg skrivet direkt i tools/extracted, utan Framer-förlaga.
+        'title': 'Technical parameters for self-drilling anchors | NASPS - Nordic Anchor '
+                 '& Steel Pile Supply AB',
+        'description': 'Diameter, wall thickness, load capacity, thread system and corrosion '
+                       'protection - the technical parameters that decide which self-drilling '
+                       'anchor suits a given project.',
+        'canonical': 'https://www.nasps.se/blog/self-drilling-anchor-bolt-technical-parameters',
+        'og': 'assets/images/gronebacken-couplings.jpg',
     },
 }
 
