@@ -75,7 +75,8 @@ def översätt_block(blocks):
 
 LOGO = 'assets/images/pyaDngF6J38whdYhhBSMKD5Qug.png'
 
-NAV = [('Home', '/'), ('About us', '/about'), ('Products', '/products'), ('Project', '/project')]
+NAV = [('Home', '/'), ('About us', '/about'), ('Products', '/products'), ('Project', '/project'),
+       ('News', '/blog')]
 
 FOOTER_LINKS = [
     ('Links', [('Home', '/'), ('About', '/about'), ('Services', '/products')]),
@@ -1415,15 +1416,15 @@ PAGES = [
     ('project__salen', 'project/salen.html', '/project', render_case),
     ('project__rodaulven', 'project/rodaulven.html', '/project', render_case),
     ('project__gronebacken', 'project/gronebacken.html', '/project', render_case),
-    ('blog', 'blog.html', '', render_blog),
+    ('blog', 'blog.html', '/blog', render_blog),
     ('blog__epd-for-self-drilling-anchor-system',
-     'blog/epd-for-self-drilling-anchor-system.html', '', render_post),
+     'blog/epd-for-self-drilling-anchor-system.html', '/blog', render_post),
     ('blog__self-drilling-anchor-bolt-technical-parameters',
-     'blog/self-drilling-anchor-bolt-technical-parameters.html', '', render_post),
-    ('blog__project-salen', 'blog/project-salen.html', '', render_post),
-    ('blog__nasps-accelerates-growth', 'blog/nasps-accelerates-growth.html', '', render_post),
+     'blog/self-drilling-anchor-bolt-technical-parameters.html', '/blog', render_post),
+    ('blog__project-salen', 'blog/project-salen.html', '/blog', render_post),
+    ('blog__nasps-accelerates-growth', 'blog/nasps-accelerates-growth.html', '/blog', render_post),
     ('blog__röda-ulven-expands-in-skagshamn-–-investing-in-increased-capacity',
-     'blog/röda-ulven-expands-in-skagshamn-–-investing-in-increased-capacity.html', '', render_post),
+     'blog/röda-ulven-expands-in-skagshamn-–-investing-in-increased-capacity.html', '/blog', render_post),
     ('contact', 'contact.html', '', render_contact),
     ('faq', 'faq.html', '', render_faq),
     ('privacy', 'privacy.html', '', render_legal),

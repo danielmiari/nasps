@@ -48,7 +48,7 @@ Adapter är borttagen och `/product-shank_adapter` omdirigeras till `/products`.
 | `/blog` + 5 inlägg | `blog.html`, `blog/*.html` |
 | `/contact`, `/faq`, `/privacy`, `/terms`, `/404` | resp. fil |
 
-Huvudmenyn är Home / About us / Products / Project + kontaktknappen.
+Huvudmenyn är Home / About us / Products / Project / News + kontaktknappen.
 
 Alla interna adresser är **relativa till sidan** (`about`, `../about`,
 `./` för start). Det gör att sajten fungerar oavsett var den ligger: på
