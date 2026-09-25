@@ -40,9 +40,10 @@ sin engelska text därifrån.
 | `/project` | `project.html` |
 | `/project/salen`, `/project/rodaulven`, `/project/gronebacken` | `project/*.html` |
 | `/products` | `products.html` — produktöversikt med kort |
-| 5 produktsidor | `product-*.html` |
+| 6 produktsidor | `product-*.html` |
+| `/assets/docs/` | dokument att ladda ner från Dai Prà-sidan |
 
-Produktöversikten listar sex produkter: Duplex Coating Rock Bolt saknar egen sida
+Produktöversikten listar sju produkter: Duplex Coating Rock Bolt saknar egen sida
 och visas som ett kort utan Read more-länk (`'slug': None` i `PRODUCTS`). Shank
 Adapter är borttagen och `/product-shank_adapter` omdirigeras till `/products`.
 | `/blog` + 5 inlägg | `blog.html`, `blog/*.html` |
@@ -136,6 +137,19 @@ bilder ligger i `HTP_ROLLER` överst bland produkterna i `tools/build.py`. Nya
 produkter läggs till på samma sätt: en post i `PRODUCTS` (kortet och sidan) och
 en i `SHOWCASE` (startsidans karusell).
 
+Dai Prà-sidan ligger i `DAI_PRA` och har en egen renderare, eftersom den till
+skillnad från övriga produktsidor har flera tabeller i stället för en enda
+specifikation, och en lista med dokument att ladda ner. Vilken renderare en
+produkt får styrs av `EGNA_RENDERARE`; utan nyckeln `render` används
+Framer-mallen. Dokumenten ligger i `assets/docs/` och listas i `DAI_PRA`;
+`downloads_html()` läser filstorleken från disk, så listan behöver inte
+uppdateras när en fil byts ut.
+
+Måtten i Dai Pràs eget underlag är inte helt samstämmiga — företagspresentationen,
+den engelska produktpresentationen och prislistan anger delvis olika tryck och
+flöden. Tabellerna följer den engelska produktpresentationen, och sidan säger att
+siffrorna är riktvärden som bekräftas per konfiguration.
+
 `extract.py` behövs bara om innehållet i `pages/` ändras. Redigera du HTML-filerna
 direkt skrivs ändringarna över nästa gång `build.py` körs — layoutändringar hör
 hemma i `tools/build.py`, formgivning i `styles.css`.
@@ -159,7 +173,8 @@ sparar som palett-PNG i samma storleksordning som de övriga bilderna.
 
 ## Övrigt
 
-- `assets/images/` — 22 bilder i originalupplösning, `assets/fonts/` — typsnitt
+- `assets/images/` — bilder, `assets/docs/` — nedladdningsbara dokument,
+  `assets/fonts/` — typsnitt
 - `content/`, `assets-all.txt`, `list-*.txt`, `urls.txt` — underlag från exporten
 - Produktsidornas spec-tabeller är egna HTML-komponenter från exporten. Data
   för storleksflikarna ritas av embed-koden i webbläsaren och fanns därför inte

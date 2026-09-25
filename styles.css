@@ -1157,9 +1157,28 @@ button.showcase__item:hover > span:first-child { border-bottom-color: var(--ink-
 
 .spec th { width: 40%; padding-right: 20px; font-weight: 400; color: var(--ink-60); }
 
+/* Tabeller med flera värdekolumner, till skillnad från etikett/värde-tabellen
+   ovan: radrubriken ska inte lägga beslag på 40 % av bredden. */
+.spec--cols th { width: auto; }
+
+.spec--cols thead th {
+  padding-right: 24px;
+  color: var(--ink-60);
+  border-bottom: 1px solid var(--ink-20);
+}
+
+.spec--cols tbody th { padding-right: 24px; color: var(--ink); }
+
+.spec--cols td { padding-right: 24px; }
+
+.spec--cols td:last-child, .spec--cols thead th:last-child { padding-right: 0; }
+
+.spec--cols tbody tr:first-child th, .spec--cols tbody tr:first-child td { border-top: none; }
+
 @media (max-width: 809.98px) {
   .product__head { grid-template-columns: 1fr; gap: 30px; }
   .spec th { width: 45%; }
+  .spec--cols th { width: auto; }
 }
 
 .section--prose .section__inner { align-items: flex-start; gap: 30px; }
@@ -1177,6 +1196,62 @@ button.showcase__item:hover > span:first-child { border-bottom-color: var(--ink-
 .table-scroll table { min-width: 520px; }
 
 .product__specs [class$='-tabs'] { flex-wrap: wrap; }
+
+/* ---------- Dokument att ladda ner ---------- */
+
+.downloads {
+  width: 100%;
+  max-width: 952px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--ink-20);
+}
+
+.download { border-bottom: 1px solid var(--ink-20); }
+
+.download__link {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 20px;
+  align-items: center;
+  padding: 18px 4px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.download__link:hover { color: var(--red); }
+
+.download__icon {
+  display: flex;
+  width: 34px;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--ink-20);
+  border-radius: 50%;
+}
+
+.download__link:hover .download__icon { border-color: currentColor; }
+
+.download__icon svg { width: 18px; height: 18px; }
+
+.download__text { display: flex; flex-direction: column; gap: 3px; }
+
+.download__desc { color: var(--ink-60); }
+
+/* Filformat och storlek är sekundärt - det ska kunna läsas, inte dominera */
+.download__meta {
+  white-space: nowrap;
+  color: var(--ink-60);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+@media (max-width: 809.98px) {
+  .download__link { grid-template-columns: auto minmax(0, 1fr); gap: 14px; }
+  .download__meta { grid-column: 2; }
+}
 
 /* ---------- Videofasad ---------- */
 

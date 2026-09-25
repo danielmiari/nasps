@@ -1301,6 +1301,207 @@ def render_htp_roller(_blocks=None):
 
 
 
+DAI_PRA = {
+    'slug': 'product-dai-pra-injection-plants',
+    'name': 'Dai Prà Mixing and Injection Plants',
+    'tagline': 'Colloidal mixing, agitation and grout injection on one frame',
+    'lead': 'Grouting plants from the Italian manufacturer Dai Prà — turbo mixer, agitator and '
+            'injection pump assembled as one unit, from compact site units to fully automatic '
+            'stations with datalogger. NASPS supplies, commissions and services them in the '
+            'Nordics.',
+    'image': 'assets/images/daipra-plant-100.jpg',
+    'gallery': [
+        ('assets/images/daipra-plant-80.jpg',
+         'DE/OL 80 plant with 300 l turbo mixer and 500 l agitator on a lifting frame'),
+        ('assets/images/daipra-site.jpg',
+         'Dai Prà plant in use on site, next to pallets of cement'),
+        ('assets/images/daipra-panel.jpg',
+         'Control panel with the datalogger display for pressure, volume and mix recipe'),
+        ('assets/images/daipra-mixer.jpg',
+         'Turbo mixer with its own motor and control cabinet'),
+    ],
+    'body': [
+        'Dai Prà S.r.l. is an Italian manufacturer with roots in the early 20th century. The '
+        'business started in tunnel and bridge construction and has over four generations '
+        'specialised in machinery for geotechnical works. NASPS is the Nordic distributor and '
+        'handles supply, commissioning, operator training and service.',
+        'A plant is built from three parts. The turbo mixer produces a colloidal grout and '
+        'handles cement or bentonite at ratios up to 2.5:1 cement to water without additives. '
+        'The agitator holds the mixed grout and keeps it homogeneous by slow stirring until it '
+        'is pumped. The injection pump delivers it at the set pressure and flow. For stable '
+        'grout the agitator should hold at least twice the volume of the mixer.',
+        'The plants are used for self-drilling anchors and micropiles, sheet pile and pipe wall '
+        'sealing, tunnel grouting and post-grouting, jet grouting, soil stabilisation, shotcrete '
+        'and geothermal work, and for injecting reagents in environmental remediation.',
+        'Drive can be electric, diesel, hydraulic or compressed air. Electric plants suit sites '
+        'with electrification requirements, and the compact units can also run straight off a '
+        'drilling rig’s hydraulic system.',
+        'Any electrically powered plant can be fitted with a datalogger. It records dosing, mix '
+        'ratio and pumping parameters per work location, stops the injection automatically when '
+        'a set pressure or volume is reached, and transfers data over USB or a SIM connection so '
+        'parameters can be followed and adjusted from the office. Daily reports per location '
+        'support documentation, traceability and billing.',
+        'Every plant is configured for the project. Tell us the pressure, flow, number of '
+        'injectors and level of automation you need — the data sheet below lists what we need to '
+        'know — and we put together a proposal.',
+    ],
+    # Uppgifterna kommer ur Dai Pràs eget underlag, som inte är helt samstämmigt
+    # mellan dokumenten. Sidan säger därför att siffrorna är riktvärden.
+    'tables': [
+        ('Injection pumps',
+         ['Model', 'Max pressure', 'Max output'],
+         [['DE/OL3', '70 bar', '30 l/min'],
+          ['DE/OL 80', '85 bar', '60 l/min'],
+          ['DE/OL 80S', '110 bar', '60 l/min'],
+          ['DE/OL 100', '110 bar', '100 l/min'],
+          ['DE/OL 130', '85 bar', '130 l/min'],
+          ['DE/OL 130S', '85 bar', '215 l/min']]),
+        ('Mixers and agitators',
+         ['Unit', 'Tank volumes', 'Power source'],
+         [['Turbo mixer', '150 · 300 · 500 · 1000 l',
+           'Electric, diesel, hydraulic or compressed air'],
+          ['Agitator', '300 · 500 · 750 · 1000 l',
+           'Electric, diesel, hydraulic or compressed air']]),
+        ('Compact units',
+         ['Model', 'Flow rate', 'Max pressure'],
+         [['Minimix 40', '0–60 l/min', '0–50 bar'],
+          ['Minimix 50', '0–95 l/min', '0–120 bar']]),
+        ('Packaged plants',
+         ['Part', 'DE/OL 80 – T300 – AG500', 'DE/OL 100 – T300 – AG750'],
+         [['Injection pump', '4 kW, 80 bar, 60 l/min', '9.2 kW, 110 bar, 100 l/min'],
+          ['Turbo mixer', '300 l, 5.5 kW, 700 l/min', '300 l, 5.5 kW, 700 l/min'],
+          ['Agitator', '500 l, 1.1 kW, 60 rpm', '750 l, 1.5 kW, 60 rpm'],
+          ['Dimensions', '275 × 112 × h225 cm', '240 × 185 × h230 cm'],
+          ['Weight', '950 kg', '1450 kg'],
+          ['Power supply', '32 A', '32 A']]),
+        ('Automation',
+         ['Level', 'Display', 'Covers'],
+         [['RemoteIn', '10&nbsp;inch',
+           'Injection: break pressure, max pressure, volume, GIN stop and constant flow rate. '
+           'Pressure sensor and flow meter included.'],
+          ['RemoteMes', '10&nbsp;inch',
+           'Mixing: three recipes weighed on load cells, compressor, pneumatic valves and water '
+           'loading pump. Replaces the separate weighing system.'],
+          ['RemoteTot', '16&nbsp;inch', 'Both of the above in one system.']]),
+    ],
+    'notes': [
+        'Figures are indicative and confirmed for each configuration. Plants with automatic '
+        'mixing (RemoteMes) or full automation (RemoteTot) need more room, roughly 200 × 200 cm, '
+        'and the footprint is checked against the chosen setup.',
+        'Accessories include wash pump with lance and hose reel, water loading pump, weighing '
+        'system on load cells, compressor with pneumatic valves, hose reels, shotcrete nozzles '
+        'and excavator attachments, packers, and silo and screw conveyor feeding.',
+    ],
+    'downloads': [
+        ('assets/docs/daipra-data-request-form.pdf',
+         'Data sheet for mixing and injection systems',
+         'Fill in pressure, flow, number of injectors and level of automation, and send it to us.'),
+        ('assets/docs/daipra-data-request-form.xlsx',
+         'Data sheet, spreadsheet version',
+         'The same form as a spreadsheet, if you would rather fill it in on screen.'),
+        ('assets/docs/daipra-pump-packages.pdf',
+         'Product sheet, DE/OL 80 and DE/OL 100',
+         'Photos and specifications for the two packaged plants, accessories and technology.'),
+        ('assets/docs/daipra-company-profile.pdf',
+         'Dai Prà company profile',
+         'The manufacturer’s own presentation, with areas of expertise and reference projects.'),
+        ('assets/docs/daipra-environmental-remediation.pdf',
+         'Environmental remediation technologies',
+         'Dai Prà on injecting contaminated ground and regenerating drainage wells, in English '
+         'and Swedish.'),
+    ],
+}
+
+DOWNLOAD_IKON = ('<svg viewBox="0 0 16 16" fill="none" aria-hidden="true">'
+                 '<path d="M8 3v7.5M8 10.5 5 7.5M8 10.5l3-3M3.5 12.5h9" stroke="currentColor" '
+                 'stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>')
+
+
+def filstorlek(rel):
+    """Filens storlek i kB eller MB, till nedladdningslistan."""
+    byte = os.path.getsize(os.path.join(ROOT, rel))
+    return f'{byte / 1048576:.1f} MB' if byte >= 1048576 else f'{round(byte / 1024)} kB'
+
+
+def downloads_html(filer):
+    """Dokument att ladda ner. Varje rad anger filformat och storlek, så att
+    besökaren vet vad som händer innan hen klickar."""
+    rader = []
+    for rel, titel, beskrivning in filer:
+        typ = rel.rsplit('.', 1)[-1].upper()
+        meta = typ + ' · ' + filstorlek(rel)
+        rader.append(
+            '<li class="download">'
+            f'<a class="download__link" href="{asset(rel)}" download>'
+            f'<span class="download__icon">{DOWNLOAD_IKON}</span>'
+            '<span class="download__text">'
+            f'<span class="download__title t-body">{t(titel)}</span>'
+            f'<span class="download__desc t-sm muted">{t(beskrivning)}</span>'
+            '</span>'
+            f'<span class="download__meta t-xs">{meta}</span>'
+            '</a></li>')
+    intro = t('Everything here opens or downloads straight away. The data sheet is the quickest '
+              'route to a proposal.')
+    return ('<div class="prose">'
+            f'<h2 class="t-h3">{t("Documents")}</h2>'
+            f'<p class="t-body">{intro}</p></div>'
+            f'<ul class="downloads">{"".join(rader)}</ul>')
+
+
+def render_dai_pra(_blocks=None):
+    """Produktsida för Dai Pràs blandnings- och injekteringsanläggningar.
+
+    Skiljer sig från de övriga produktsidorna på två sätt: flera tabeller i
+    stället för en enda specifikation, och en lista med dokument att ladda ner.
+    """
+    p = DAI_PRA
+    alt = t('Dai Prà DE/OL 100 plant with turbo mixer and agitator on a lifting frame')
+    hero = (
+        '      <div class="product__head">\n'
+        '        <div class="product__figure product__figure--photo">\n'
+        f'          <img src="{asset(p["image"])}" width="652" height="870" alt="{esc(alt)}">\n'
+        '        </div>\n'
+        '        <div class="product__intro">\n'
+        f'          {eyebrow(t(p["tagline"]))}\n'
+        f'          <h1 class="t-h3">{p["name"]}</h1>\n'
+        f'          <p class="t-body">{t(p["lead"])}</p>\n'
+        f'          {btn("Request a quote", "/contact")}\n'
+        '        </div>\n'
+        '      </div>')
+
+    intro = ('<div class="prose">' + eyebrow('Introduction')
+             + ''.join(f'<p class="t-body">{t(x)}</p>' for x in p['body']) + '</div>')
+
+    block = []
+    for rubrik, huvud, rader in p['tables']:
+        th = ''.join(f'<th scope="col" class="t-sm">{t(c)}</th>' for c in huvud)
+        tr = ''
+        for rad in rader:
+            celler = ''.join(
+                f'<th scope="row" class="t-sm">{t(c)}</th>' if i == 0
+                else f'<td class="t-body">{t(c)}</td>' for i, c in enumerate(rad))
+            tr += f'<tr>{celler}</tr>'
+        block.append(
+            f'<div class="prose"><h2 class="t-h5">{t(rubrik)}</h2></div>'
+            '<div class="product__specs"><div class="table-scroll">'
+            f'<table class="spec spec--cols"><thead><tr>{th}</tr></thead>'
+            f'<tbody>{tr}</tbody></table>'
+            '</div></div>')
+    noter = ''.join(f'<p class="t-sm muted">{t(x)}</p>' for x in p['notes'])
+    tabeller = (f'<div class="prose"><h2 class="t-h3">{t("Technical data")}</h2></div>'
+                + '\n        '.join(block)
+                + f'<div class="prose">{noter}</div>')
+
+    return '\n'.join([
+        section_wrap(hero),
+        section_wrap('      ' + intro, extra='section--prose', flush=True),
+        section_wrap('      ' + tabeller, extra='section--prose', flush=True),
+        section_wrap('      ' + downloads_html(p['downloads']), extra='section--prose', flush=True),
+        section_wrap('      ' + carousel(p['gallery'], p['name'] + ' photos'), flush=True),
+        cta_html(load('product-r-thread')),
+    ])
+
+
 PRODUCTS = [
     {
         'slug': HTP_ROLLER['slug'],
@@ -1310,6 +1511,15 @@ PRODUCTS = [
         'img': HTP_ROLLER['image'],
         'photo': True,
         'render': 'htp',
+    },
+    {
+        'slug': DAI_PRA['slug'],
+        'name': DAI_PRA['name'],
+        'sizes': '215 l/min · 120 bar · datalogger',
+        'desc': DAI_PRA['lead'],
+        'img': DAI_PRA['image'],
+        'photo': True,
+        'render': 'daipra',
     },
     {
         'slug': 'product-r-thread',
@@ -1408,6 +1618,9 @@ def render_products():
 # Sidregister
 # --------------------------------------------------------------------------
 
+# Produkter som har en egen renderare i stället för Framer-mallen.
+EGNA_RENDERARE = {'htp': render_htp_roller, 'daipra': render_dai_pra}
+
 PAGES = [
     # (källa i tools/extracted, utfil, aktiv nav-post, renderare)
     ('index', 'index.html', '/', render_index),
@@ -1431,7 +1644,7 @@ PAGES = [
     ('terms', 'terms.html', '', render_legal),
     ('404', '404.html', '', render_404),
 ] + [(p['slug'], p['slug'] + '.html', '/products',
-      render_htp_roller if p.get('render') == 'htp' else render_product)
+      EGNA_RENDERARE.get(p.get('render'), render_product))
      for p in PRODUCTS if p['slug']]
 
 
@@ -1472,6 +1685,16 @@ EXTRA_META = {
                        'anchor suits a given project.',
         'canonical': 'https://www.nasps.se/blog/self-drilling-anchor-bolt-technical-parameters',
         'og': 'assets/images/gronebacken-couplings.jpg',
+    },
+    'product-dai-pra-injection-plants': {
+        # Produktsida skriven direkt i tools/build.py, utan Framer-förlaga.
+        'title': 'Dai Prà mixing and injection plants | NASPS - Nordic Anchor & Steel Pile '
+                 'Supply AB',
+        'description': 'Grouting plants from Dai Prà - turbo mixer, agitator and injection pump '
+                       'on one frame, up to 215 l/min and 120 bar, with datalogger for pressure, '
+                       'volume and mix recipe. Supplied and serviced by NASPS.',
+        'canonical': 'https://www.nasps.se/product-dai-pra-injection-plants',
+        'og': 'assets/images/daipra-plant-100.jpg',
     },
 }
 
