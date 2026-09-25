@@ -1301,6 +1301,13 @@ def render_htp_roller(_blocks=None):
 
 
 
+# Dokumenten är dolda tills det är bestämt om de ska ligga publikt. Filerna
+# ligger kvar i tools/dokument/, som inte publiceras - se undantagen i
+# .github/workflows/pages.yml. Så här visar du dem igen: flytta tillbaka
+# katalogen till assets/docs/ och sätt den här till True. Listan, texterna
+# och översättningarna står kvar orörda så länge.
+VISA_DOKUMENT = False
+
 DAI_PRA = {
     'slug': 'product-dai-pra-injection-plants',
     'name': 'Dai Prà Mixing and Injection Plants',
@@ -1489,14 +1496,18 @@ def render_dai_pra(_blocks=None):
                 + '\n        '.join(block)
                 + f'<div class="prose">{noter}</div>')
 
-    return '\n'.join([
+    delar = [
         section_wrap(hero),
         section_wrap('      ' + intro, extra='section--prose', flush=True),
         section_wrap('      ' + tabeller, extra='section--prose', flush=True),
-        section_wrap('      ' + downloads_html(p['downloads']), extra='section--prose', flush=True),
-        section_wrap('      ' + carousel(p['gallery'], p['name'] + ' photos'), flush=True),
-        cta_html(load('product-r-thread')),
-    ])
+    ]
+    if VISA_DOKUMENT:
+        delar.append(section_wrap('      ' + downloads_html(p['downloads']),
+                                  extra='section--prose', flush=True))
+    delar.append(section_wrap('      ' + carousel(p['gallery'], p['name'] + ' photos'),
+                              flush=True))
+    delar.append(cta_html(load('product-r-thread')))
+    return '\n'.join(delar)
 
 
 PRODUCTS = [

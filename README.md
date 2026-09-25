@@ -41,7 +41,6 @@ sin engelska text därifrån.
 | `/project/salen`, `/project/rodaulven`, `/project/gronebacken` | `project/*.html` |
 | `/products` | `products.html` — produktöversikt med kort |
 | 6 produktsidor | `product-*.html` |
-| `/assets/docs/` | dokument att ladda ner från Dai Prà-sidan |
 
 Produktöversikten listar sju produkter: Duplex Coating Rock Bolt saknar egen sida
 och visas som ett kort utan Read more-länk (`'slug': None` i `PRODUCTS`). Shank
@@ -141,9 +140,15 @@ Dai Prà-sidan ligger i `DAI_PRA` och har en egen renderare, eftersom den till
 skillnad från övriga produktsidor har flera tabeller i stället för en enda
 specifikation, och en lista med dokument att ladda ner. Vilken renderare en
 produkt får styrs av `EGNA_RENDERARE`; utan nyckeln `render` används
-Framer-mallen. Dokumenten ligger i `assets/docs/` och listas i `DAI_PRA`;
-`downloads_html()` läser filstorleken från disk, så listan behöver inte
-uppdateras när en fil byts ut.
+Framer-mallen.
+
+Dokumentlistan på Dai Prà-sidan är **avstängd** med `VISA_DOKUMENT = False`, i
+väntan på besked om dokumenten ska ligga publikt. Filerna ligger kvar i
+`tools/dokument/`, som inte publiceras — `tools/` är undantaget i
+`.github/workflows/pages.yml`. Så här tas listan i bruk igen: flytta katalogen
+till `assets/docs/` och sätt flaggan till `True`. Listan, texterna och
+översättningarna står kvar orörda så länge. `downloads_html()` läser
+filstorleken från disk, så listan behöver inte uppdateras när en fil byts ut.
 
 Måtten i Dai Pràs eget underlag är inte helt samstämmiga — företagspresentationen,
 den engelska produktpresentationen och prislistan anger delvis olika tryck och
@@ -173,8 +178,7 @@ sparar som palett-PNG i samma storleksordning som de övriga bilderna.
 
 ## Övrigt
 
-- `assets/images/` — bilder, `assets/docs/` — nedladdningsbara dokument,
-  `assets/fonts/` — typsnitt
+- `assets/images/` — bilder, `assets/fonts/` — typsnitt
 - `content/`, `assets-all.txt`, `list-*.txt`, `urls.txt` — underlag från exporten
 - Produktsidornas spec-tabeller är egna HTML-komponenter från exporten. Data
   för storleksflikarna ritas av embed-koden i webbläsaren och fanns därför inte
