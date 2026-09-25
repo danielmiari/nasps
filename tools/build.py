@@ -630,6 +630,22 @@ SHOWCASE = [
     },
     {
         'num': '02',
+        'name': 'Dai Prà Mixing and Injection Plants',
+        'lead': 'Grouting plants from the Italian manufacturer Dai Prà — turbo mixer, agitator '
+                'and injection pump assembled as one unit, from compact site units to fully '
+                'automatic stations with datalogger. NASPS supplies, commissions and services '
+                'them in the Nordics.',
+        'desc': 'Turbo mixers from 150 to 1000 litres, agitators from 300 to 1000, and '
+                'injection pumps up to 215 l/min and 120 bar. The datalogger records dosing, '
+                'mix ratio and pumping per work location and stops the injection at a set '
+                'pressure or volume, which gives documentation and traceability straight out '
+                'of the plant.',
+        'img': 'assets/images/daipra-plant-100.jpg',
+        'photo': True,
+        'href': '/product-dai-pra-injection-plants',
+    },
+    {
+        'num': '03',
         'name': 'R Thread Self Drilling Anchor Bolt System',
         'lead': 'R thread self drilling anchor bolt system performs drilling, grouting &amp; '
                 'anchoring in one step. Easy to process and no risks of drill hole collapse. '
@@ -641,7 +657,7 @@ SHOWCASE = [
         'href': '/product-r-thread',
     },
     {
-        'num': '03',
+        'num': '04',
         'name': 'T thread self drilling hollow rock bolt',
         'lead': 'T thread self-drilling rock bolts, a wide range of diameter, and more powerful '
                 'support. Widely used in complicated, loose, narrow spaces and broken '
@@ -654,12 +670,12 @@ SHOWCASE = [
     },
     {
         # Punkten finns i listan på originalet men har inget eget läge.
-        'num': '04',
+        'num': '05',
         'name': 'Stainless Steel Self Drilling Anchor Bolt',
         'inert': True,
     },
     {
-        'num': '05',
+        'num': '06',
         'name': 'Hot-dip Galvanizing Rock Bolts System',
         'lead': 'R thread self drilling anchor bolt system performs drilling, grouting &amp; '
                 'anchoring in one step. Easy to process and no risks of drill hole collapse. '
@@ -672,7 +688,7 @@ SHOWCASE = [
         'href': '/product-hot-dip',
     },
     {
-        'num': '06',
+        'num': '07',
         'name': 'Duplex Coating Rock Bolt',
         'lead': 'Duplex coating rock bolt is a supporting method with better anti-corrosion '
                 'effect, which combines hot-dip galvanizing method with epoxy coating method '
