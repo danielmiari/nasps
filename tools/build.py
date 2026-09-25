@@ -1332,7 +1332,7 @@ DAI_PRA = {
             'injection pump assembled as one unit, from compact site units to fully automatic '
             'stations with datalogger. NASPS supplies, commissions and services them in the '
             'Nordics.',
-    'image': 'assets/images/daipra-plant-100.jpg',
+    'image': 'assets/images/daipra-plant-frame.jpg',
     'gallery': [
         ('assets/images/daipra-plant-80.jpg',
          'DE/OL 80 plant with 300 l turbo mixer and 500 l agitator on a lifting frame'),
@@ -1475,11 +1475,11 @@ def render_dai_pra(_blocks=None):
     stället för en enda specifikation, och en lista med dokument att ladda ner.
     """
     p = DAI_PRA
-    alt = t('Dai Prà DE/OL 100 plant with turbo mixer and agitator on a lifting frame')
+    alt = t('Dai Prà plant with turbo mixer, agitator and injection pump in a lifting frame with roof')
     hero = (
         '      <div class="product__head">\n'
         '        <div class="product__figure product__figure--photo">\n'
-        f'          <img src="{asset(p["image"])}" width="652" height="870" alt="{esc(alt)}">\n'
+        f'          <img src="{asset(p["image"])}" width="555" height="740" alt="{esc(alt)}">\n'
         '        </div>\n'
         '        <div class="product__intro">\n'
         f'          {eyebrow(t(p["tagline"]))}\n'
@@ -1718,7 +1718,7 @@ EXTRA_META = {
                        'on one frame, up to 215 l/min and 120 bar, with datalogger for pressure, '
                        'volume and mix recipe. Supplied and serviced by NASPS.',
         'canonical': 'https://www.nasps.se/product-dai-pra-injection-plants',
-        'og': 'assets/images/daipra-plant-100.jpg',
+        'og': 'assets/images/daipra-plant-frame.jpg',
     },
 }
 
