@@ -473,7 +473,9 @@ ul, ol { padding-left: 1.15em; }
   width: min(650px, calc(100% - 80px));
   padding: 39px 20px;
   border-radius: 8px;
-  background: var(--white);
+  background: rgba(255, 255, 255, 0.62);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
 }
 
 .hero__card-head { display: flex; flex-direction: column; gap: 5px; }
@@ -502,7 +504,14 @@ ul, ol { padding-left: 1.15em; }
     overflow: visible;
   }
   .hero__media > img { height: 320px; border-radius: var(--radius); }
-  .hero__card { position: static; width: 100%; padding: 24px 20px; }
+  .hero__card {
+    position: static;
+    width: 100%;
+    padding: 24px 20px;
+    background: var(--white);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
 }
 
 /* ---------- Citatsektion ---------- */

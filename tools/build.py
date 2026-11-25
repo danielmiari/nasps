@@ -548,13 +548,17 @@ def section_wrap(inner, extra='', flush=False):
 # Sidmallar
 # --------------------------------------------------------------------------
 
+# Startsidans huvudbild ersätter den från Framer-exporten: borrigg på
+# byggarbetsplats, nedskalad till 2400 px.
+HERO_IMAGE = 'assets/images/hero-grk-piling-rig.jpg'
+
+
 def render_index(b):
     hero = section(b, 'Hero')
     ht = texts(deep_section(hero, 'Hero Title', 'Title'))
     icon = images(deep_section(hero, 'Hero Title', 'Title'))
     aside = texts(deep_section(hero, 'Hero Title', 'Content'))
     media = section(hero, 'Desktop/01')
-    media_img = images(media)[0]
     card = texts(section(media, 'Content'))
 
     line1 = ht[0]['html'] if ht else ''
@@ -575,7 +579,7 @@ def render_index(b):
         </div>
       </div>
       <div class="hero__media">
-        <img src="{asset(media_img["src"])}" width="{media_img['w']}" height="{media_img['h']}" alt="">
+        <img src="{asset(HERO_IMAGE)}" width="2400" height="1600" alt="">
         <div class="hero__card">
           <div class="hero__card-head">
             {eyebrow(card[0])}
